@@ -26,7 +26,7 @@ export default function About() {
             <div className="text-gray-500 dark:text-gray-400">
               <a
                 href="https://iitk.ac.in"
-                style={{ textDecoration: 'none', color: 'lightblue' }}
+                style={{ textDecoration: 'none', color: 'slate' }}
                 target="_blank"
                 rel="noreferrer"
               >
@@ -58,12 +58,20 @@ export default function About() {
                 competitive programming
               </a>{' '}
               at times, also I am currently learning how to apply deep learning and computer vision
-              into real life applications, it has a lot of unexplored potential and yeah, a lot of
-              math too :/
+              into real products, it has a lot of unexplored potential and yeah, a lot of math too.
+              Also, I love doing the devOps stuff now and then.
             </p>
             <p>
               Apart from my daily endeavor to be a better developer, I can be found reading books on
-              vivid topics, solving my Rubik's cube, vibing to Ed and Taylor.
+              vivid topics, solving my Rubik's cube, vibing to{' '}
+              <a
+                href="https://open.spotify.com/playlist/3Ev3P5Fq9CGHAP4brUrtYz"
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noreferrer"
+              >
+                Ed and Taylor.
+              </a>
             </p>
           </div>
         </div>

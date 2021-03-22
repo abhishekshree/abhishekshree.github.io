@@ -49,13 +49,16 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                     <dl className="text-sm font-medium leading-5 whitespace-nowrap">
                       <dt className="sr-only">Name</dt>
                       <dd className="text-gray-900 dark:text-gray-100">{siteMetdata.author}</dd>
-                      <dt className="sr-only">Twitter</dt>
+                      <dt className="sr-only">Facebook</dt>
                       <dd>
                         <Link
-                          href={siteMetdata.twitter}
+                          href={siteMetdata.facebook}
                           className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                         >
-                          {siteMetdata.twitter.replace('https://twitter.com/', '@')}
+                          {siteMetdata.facebook.replace(
+                            'https://www.facebook.com/profile.php?id=100005639057729',
+                            '@Abhishek'
+                          )}
                         </Link>
                       </dd>
                     </dl>
@@ -65,13 +68,6 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-700 dark:text-gray-300">
-                <Link href={discussUrl(slug)} rel="nofollow">
-                  {'Discuss on Twitter'}
-                </Link>
-                {` • `}
-                <Link href={editUrl(fileName)}>{'View on GitHub'}</Link>
-              </div>
             </div>
             <footer>
               <div className="text-sm font-medium leading-5 divide-gray-200 xl:divide-y dark:divide-gray-700 xl:col-start-1 xl:row-start-2">
