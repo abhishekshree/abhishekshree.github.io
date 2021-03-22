@@ -1,10 +1,8 @@
-![tailwind-nextjs-banner](/public/static/images/twitter-card.png)
-
-# Portfolio
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fabhishekshree%2Fabhishekshree.github.io)
+<img src="./public/static/images/twitter-card.png" width='100%' height="310px" alt="banner">
 
 ![example workflow](https://github.com/abhishekshree/abhishekshree.github.io/actions/workflows/node-js.yml/badge.svg)
+
+# Portfolio
 
 This is a [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) blogging starter template. Comes out of the box configured with the latest technologies to make technical writing a breeze. Easily configurable and customizable. Perfect as a replacement to existing Jekyll and Hugo individual blogs.
 
