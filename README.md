@@ -2,7 +2,7 @@
 
 # Portfolio
 
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/timlrx/tailwind-nextjs-starter-blog)
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https%3A%2F%2Fgithub.com%2Fabhishekshree%2Fabhishekshree.github.io)
 
 ![example workflow](https://github.com/abhishekshree/abhishekshree.github.io/actions/workflows/node-js.yml/badge.svg)
 
@@ -35,5 +35,3 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
