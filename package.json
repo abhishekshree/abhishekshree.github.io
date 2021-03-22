@@ -8,8 +8,8 @@
     "build": "next build && node ./scripts/generate-sitemap",
     "serve": "next start",
     "analyze": "env ANALYZE=true next build",
-    "export": "next start && next export && touch out/.nojekyll",
-    "build-ssg": "next start && next build && next export && touch out/.nojekyll",
+    "export": "next export && touch out/.nojekyll",
+    "build-ssg": "next build && next export && touch out/.nojekyll",
     "deploy": "gh-pages -d out -t true"
   },
   "dependencies": {
