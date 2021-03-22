@@ -1,6 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 
 .remark-code-title {
   @apply px-5 py-3 font-mono text-sm font-bold text-gray-200 bg-gray-700 rounded-t;
@@ -16,4 +17,9 @@
 
 html {
   scroll-behavior: smooth;
+}
+
+.bree-head {
+  font-family: 'Bree Serif', serif;
+  letter-spacing: 2px;
 }
