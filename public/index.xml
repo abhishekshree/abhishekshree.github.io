@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
       <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
-      <lastBuildDate>Sat, 20 Feb 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 01 Mar 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://abhishekshree.github.io//index.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://abhishekshree.github.io//blog/buildina-a-basic-vimrc.</guid>
+    <title>About vim and building a basic .vimrc</title>
+    <link>https://abhishekshree.github.io//blog/buildina-a-basic-vimrc.</link>
+    <description>This is a blog about vim and what a basic vimrc should contain, also a reminder for me on how I set up my .vimrc</description>
+    <pubDate>Mon, 01 Mar 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>vim</category><category>vimrc</category><category>bash</category><category>zsh</category><category>terminal</category>
+  </item>
+
   <item>
     <guid>https://abhishekshree.github.io//blog/revision-resources.</guid>
     <title>Revision Resources</title>
