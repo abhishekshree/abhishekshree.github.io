@@ -61,18 +61,5 @@
     "remark-stringify": "9.0.0",
     "unified": "9.2.0",
     "unist-util-visit": "2.0.3"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "*.+(js|jsx|ts|tsx)": [
-      "eslint --fix"
-    ],
-    "*.+(js|jsx|ts|tsx|json|css|md|mdx)": [
-      "prettier --write"
-    ]
   }
 }

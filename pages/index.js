@@ -110,7 +110,7 @@ export default function About({ posts }) {
               {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
                 const { slug, date, title, summary, tags } = frontMatter
                 return (
-                    <article>
+                    <article key={slug}>
                       <div className="space-y-1 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                         <dl>
                           <dt className="sr-only">Published on</dt>
