@@ -2,6 +2,8 @@
 @tailwind components;
 @tailwind utilities;
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
 
 .remark-code-title {
   @apply px-5 py-3 font-mono text-sm font-bold text-gray-200 bg-gray-700 rounded-t;
@@ -22,4 +24,11 @@ html {
 .bree-head {
   font-family: 'Bree Serif', serif;
   letter-spacing: 2px;
+}
+
+.m {
+  font-family: 'Montserrat', 'sans-serif';
+  font-size: 28px;
+  line-height: 30px;
+
 }

@@ -110,7 +110,7 @@ export default function About({ posts }) {
               {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
                 const { slug, date, title, summary, tags } = frontMatter
                 return (
-                  <div key={slug}> 
+                  <div key={slug}>
                     <article>
                       <div className="space-y-1 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                         <dl>
@@ -135,7 +135,7 @@ export default function About({ posts }) {
                                     textDecoration: 'none',
                                   }}
                                 >
-                                  {title}
+                                  <span className="uppercase m">{title}</span>
                                 </Link>
                               </h2>
                             </div>
