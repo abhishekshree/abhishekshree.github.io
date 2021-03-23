@@ -110,6 +110,7 @@ export default function About({ posts }) {
               {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
                 const { slug, date, title, summary, tags } = frontMatter
                 return (
+                  <div key={slug}> 
                     <article>
                       <div className="space-y-1 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
                         <dl>
@@ -131,7 +132,7 @@ export default function About({ posts }) {
                                   href={`/blog/${slug}`}
                                   className="text-gray-900 dark:text-gray-100"
                                   style={{
-                                    textDecoration:'none'
+                                    textDecoration: 'none',
                                   }}
                                 >
                                   {title}
@@ -155,9 +156,10 @@ export default function About({ posts }) {
                         </div>
                       </div>
                     </article>
+                  </div>
                 )
               })}
-
+          
           </div>
         </div>
       </div>
