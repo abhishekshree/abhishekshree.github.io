@@ -31,16 +31,6 @@
   </item>
 
   <item>
-    <guid>https://abhishekshree.github.io//blog/guide-to-using-images-in-nextjs</guid>
-    <title>Images in Next.js</title>
-    <link>https://abhishekshree.github.io//blog/guide-to-using-images-in-nextjs</link>
-    <description>In this article we introduce adding images in the tailwind starter blog and the benefits and limitations of the next/image component.</description>
-    <pubDate>Wed, 11 Nov 2020 00:00:00 GMT</pubDate>
-    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
-    <category>next js</category><category>guide</category>
-  </item>
-
-  <item>
     <guid>https://abhishekshree.github.io//blog/github-markdown-guide</guid>
     <title>Markdown Guide</title>
     <link>https://abhishekshree.github.io//blog/github-markdown-guide</link>

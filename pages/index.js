@@ -1,8 +1,19 @@
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
 import { PageSeo } from '@/components/SEO'
+import Link from '@/components/Link'
+import { getAllFilesFrontMatter } from '@/lib/mdx'
 
-export default function About() {
+const MAX_DISPLAY = 2
+const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
+
+export async function getStaticProps() {
+  const posts = await getAllFilesFrontMatter('blog')
+
+  return { props: { posts } }
+}
+
+export default function About({ posts }) {
   return (
     <>
       <PageSeo
@@ -76,6 +87,91 @@ export default function About() {
           </div>
         </div>
       </div>
+      <br/>
+      <br/>
+      <br/>
+      <hr/>
+      {/* Next Section */}
+      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+        {/* My way */}
+        <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
+          <div className="flex flex-col items-center pt-8 space-x-2">
+            {/* Left Part */}
+            <div className="pt-6 pb-8 space-y-2 md:space-y-5">
+              <br/>
+              <h1 className="bree-head text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
+                Latest Posts
+              </h1>
+            </div>
+          </div>
+          <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
+            {/* Right part */}
+              {!posts.length && 'No posts found.'}
+              {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
+                const { slug, date, title, summary, tags } = frontMatter
+                return (
+                    <article>
+                      <div className="space-y-1 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+                        <dl>
+                          <dt className="sr-only">Published on</dt>
+                          <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                            <time dateTime={date}>
+                              {new Date(date).toLocaleDateString(
+                                siteMetadata.locale,
+                                postDateTemplate
+                              )}
+                            </time>
+                          </dd>
+                        </dl>
+                        <div className="space-y-5 xl:col-span-3">
+                          <div className="space-y-6">
+                            <div>
+                              <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                                <Link
+                                  href={`/blog/${slug}`}
+                                  className="text-gray-900 dark:text-gray-100"
+                                  style={{
+                                    textDecoration:'none'
+                                  }}
+                                >
+                                  {title}
+                                </Link>
+                              </h2>
+                            </div>
+                            <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                              {summary}
+                            </div>
+                          </div>
+                          <div className="text-base font-medium leading-6">
+                            <Link
+                              href={`/blog/${slug}`}
+                              className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+                              aria-label={`Read "${title}"`}
+                              style={{ textDecoration: 'none' }}
+                            >
+                              Read more &rarr;
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </article>
+                )
+              })}
+
+          </div>
+        </div>
+      </div>
+      {posts.length > MAX_DISPLAY && (
+        <div className="flex justify-end text-base font-medium leading-6">
+          <Link
+            href="/blog"
+            className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+            aria-label="all posts"
+          >
+            All Posts &rarr;
+          </Link>
+        </div>
+      )}
     </>
   )
 }
