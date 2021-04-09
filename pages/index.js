@@ -68,9 +68,9 @@ export default function About({ posts }) {
               >
                 competitive programming
               </a>{' '}
-              at times, also I am currently learning how to apply deep learning and computer vision
-              into real products, it has a lot of unexplored potential and yeah, a lot of math too.
-              Also, I love doing the devOps stuff now and then.
+              at times. Currently my major interests include Deep Learning, Number Theory and Cyber
+              Security (I like doing CTF's now and then). I love to learn random things now and
+              then, be it about the web or linux or even vim xD.
             </p>
             <p>
               Apart from my daily endeavor to be a better developer, I can be found reading books on
@@ -84,13 +84,55 @@ export default function About({ posts }) {
                 Ed and Taylor.
               </a>
             </p>
+
+            <div className="grid md:grid-cols-2 grid-cols-1">
+              <div>
+                <p className="antialiased font-black text-lg"> Interests </p>
+                <ul className="leading-none">
+                  <li>Web Development</li>
+                  <li>Deep Learning</li>
+                  <li>Cyber Security</li>
+                  <li>Competitive Programming</li>
+                </ul>
+              </div>
+              <div>
+                {/* <ul className="li-custom"> */}
+                <p className="antialiased font-black text-lg"> Education </p>
+                {/* <li> */}
+                <div>
+                  <div className="leading-tight font-semibold ">
+                    Batchelor of Technology, 2024 (Expected)
+                  </div>
+                  <div className="leading-none text-sm">Indian Institute of Technology, Kanpur</div>
+                </div>
+                {/* </li> */}
+                <br />
+                {/* <li> */}
+                <div>
+                  <div className="leading-tight font-semibold ">
+                    AISSCE – XII, 2020 <span className="text-right">(Score: 95.2%)</span>
+                  </div>
+                  <div className="leading-none text-sm">Loyola High School, Patna</div>
+                </div>
+                {/* </li> */}
+                <br />
+                {/* <li> */}
+                <div>
+                  <div className="leading-tight font-semibold ">
+                    CBSE – X, 2018 <span className="text-right">(Score: 9%)</span>
+                  </div>
+                  <div className="leading-none text-sm">Loyola High School, Patna</div>
+                </div>
+                {/* </li> */}
+                {/* </ul> */}
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <br/>
-      <br/>
-      <br/>
-      <hr/>
+      <br />
+      <br />
+      <hr />
       {/* Next Section */}
       <div className="divide-y divide-gray-200 dark:divide-gray-700">
         {/* My way */}
@@ -98,7 +140,7 @@ export default function About({ posts }) {
           <div className="flex flex-col items-center pt-8 space-x-2">
             {/* Left Part */}
             <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-              <br/>
+              <br />
               <h1 className="bree-head text-2xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-4xl md:leading-14">
                 Latest Posts
               </h1>
@@ -106,60 +148,59 @@ export default function About({ posts }) {
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
             {/* Right part */}
-              {!posts.length && 'No posts found.'}
-              {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
-                const { slug, date, title, summary, tags } = frontMatter
-                return (
-                  <div key={slug}>
-                    <article>
-                      <div className="space-y-1 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
-                        <dl>
-                          <dt className="sr-only">Published on</dt>
-                          <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                            <time dateTime={date}>
-                              {new Date(date).toLocaleDateString(
-                                siteMetadata.locale,
-                                postDateTemplate
-                              )}
-                            </time>
-                          </dd>
-                        </dl>
-                        <div className="space-y-5 xl:col-span-3">
-                          <div className="space-y-6">
-                            <div>
-                              <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                                <Link
-                                  href={`/blog/${slug}`}
-                                  className="text-gray-900 dark:text-gray-100"
-                                  style={{
-                                    textDecoration: 'none',
-                                  }}
-                                >
-                                  <span className="uppercase m">{title}</span>
-                                </Link>
-                              </h2>
-                            </div>
-                            <div className="prose text-gray-500 max-w-none dark:text-gray-400">
-                              {summary}
-                            </div>
+            {!posts.length && 'No posts found.'}
+            {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
+              const { slug, date, title, summary, tags } = frontMatter
+              return (
+                <div key={slug}>
+                  <article>
+                    <div className="space-y-1 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+                      <dl>
+                        <dt className="sr-only">Published on</dt>
+                        <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                          <time dateTime={date}>
+                            {new Date(date).toLocaleDateString(
+                              siteMetadata.locale,
+                              postDateTemplate
+                            )}
+                          </time>
+                        </dd>
+                      </dl>
+                      <div className="space-y-5 xl:col-span-3">
+                        <div className="space-y-6">
+                          <div>
+                            <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                              <Link
+                                href={`/blog/${slug}`}
+                                className="text-gray-900 dark:text-gray-100"
+                                style={{
+                                  textDecoration: 'none',
+                                }}
+                              >
+                                <span className="uppercase m">{title}</span>
+                              </Link>
+                            </h2>
                           </div>
-                          <div className="text-base font-medium leading-6">
-                            <Link
-                              href={`/blog/${slug}`}
-                              className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
-                              aria-label={`Read "${title}"`}
-                              style={{ textDecoration: 'none' }}
-                            >
-                              Read more &rarr;
-                            </Link>
+                          <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                            {summary}
                           </div>
                         </div>
+                        <div className="text-base font-medium leading-6">
+                          <Link
+                            href={`/blog/${slug}`}
+                            className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
+                            aria-label={`Read "${title}"`}
+                            style={{ textDecoration: 'none' }}
+                          >
+                            Read more &rarr;
+                          </Link>
+                        </div>
                       </div>
-                    </article>
-                  </div>
-                )
-              })}
-          
+                    </div>
+                  </article>
+                </div>
+              )
+            })}
           </div>
         </div>
       </div>
