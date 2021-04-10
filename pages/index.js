@@ -103,25 +103,27 @@ export default function About({ posts }) {
                   <div className="leading-tight font-semibold ">
                     Batchelor of Technology, 2024 (Expected)
                   </div>
-                  <div className="leading-none text-sm">Indian Institute of Technology, Kanpur</div>
+                  <div className="leading-none text-sm text-gray-500">
+                    Indian Institute of Technology, Kanpur
+                  </div>
                 </div>
                 {/* </li> */}
                 <br />
                 {/* <li> */}
                 <div>
-                  <div className="leading-tight font-semibold ">
-                    AISSCE – XII, 2020 <span className="text-right">(Score: 95.2%)</span>
+                  <div className="leading-tight font-semibold ">AISSCE – XII, 2020</div>
+                  <div className="leading-none text-sm text-gray-500">
+                    Loyola High School, Patna
                   </div>
-                  <div className="leading-none text-sm">Loyola High School, Patna</div>
                 </div>
                 {/* </li> */}
                 <br />
                 {/* <li> */}
                 <div>
-                  <div className="leading-tight font-semibold ">
-                    CBSE – X, 2018 <span className="text-right">(Score: 9%)</span>
+                  <div className="leading-tight font-semibold ">CBSE – X, 2018</div>
+                  <div className="leading-none text-sm text-gray-500">
+                    Loyola High School, Patna
                   </div>
-                  <div className="leading-none text-sm">Loyola High School, Patna</div>
                 </div>
                 {/* </li> */}
                 {/* </ul> */}
