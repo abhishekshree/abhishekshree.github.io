@@ -1,6 +1,6 @@
 /*
 EXAMPLE:
-{
+  {
     title: 'A Search Engine',
     description: `What is you could look up any information in the world? Webpages, images, videos
     and more. Google has many features to help you find exactly what you're looking
@@ -18,6 +18,13 @@ EXAMPLE:
   },
 */
 
-const projectsData = []
+const projectsData = [
+  {
+    title: 'Sudoku Solver',
+    description: `Created this mini project while studying about recursion in ESC101. Backtracking is pretty cool in board games. It is currently hosted on heroku, so the website may take some time to load.`,
+    imgSrc: '/static/images/pp/sudoku.png',
+    href: 'https://solve-sudoku-fast.herokuapp.com/',
+  },
+]
 
 export default projectsData

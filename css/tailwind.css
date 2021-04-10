@@ -32,3 +32,13 @@ html {
   line-height: 30px;
 
 }
+
+.logo {
+  max-width: 60px;
+  max-height: 60px;
+
+}
+.li-custom {
+  list-style: url("/static/images/graduate.svg");
+  list-style-image: url("/static/images/graduate.svg");
+}

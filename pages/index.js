@@ -69,7 +69,7 @@ export default function About({ posts }) {
                 competitive programming
               </a>{' '}
               at times. Currently my major interests include Deep Learning, Number Theory and Cyber
-              Security (I like doing CTF's now and then). I love to learn random things now and
+              Security (I like doing CTF's). I love to learn random things now and
               then, be it about the web or linux or even vim xD.
             </p>
             <p>
@@ -97,21 +97,28 @@ export default function About({ posts }) {
               </div>
               <div>
                 {/* <ul className="li-custom"> */}
-                <p className="antialiased font-black text-lg"> Education </p>
+                <div className="leading-none">
+                  <p className="antialiased font-black text-lg leading-tight"> Education </p>
+                </div>
                 {/* <li> */}
-                <div>
-                  <div className="leading-tight font-semibold ">
-                    Batchelor of Technology, 2024 (Expected)
-                  </div>
-                  <div className="leading-none text-sm text-gray-500">
-                    Indian Institute of Technology, Kanpur
+                <div className="">
+                  {/* <div>
+                    <img src="/static/images/graduate.svg" alt="hat" className="logo p-0 m-0" />
+                  </div> */}
+                  <div>
+                    <div className="leading-tight font-semibold ">
+                      Batchelor of Technology, 2024 (Expected)
+                    </div>
+                    <div className="leading-none text-sm text-gray-500">
+                      Indian Institute of Technology, Kanpur
+                    </div>
                   </div>
                 </div>
                 {/* </li> */}
                 <br />
                 {/* <li> */}
                 <div>
-                  <div className="leading-tight font-semibold ">AISSCE – XII, 2020</div>
+                  <div className="leading-tight font-semibold">AISSCE – XII, 2020</div>
                   <div className="leading-none text-sm text-gray-500">
                     Loyola High School, Patna
                   </div>
