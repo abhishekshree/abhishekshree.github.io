@@ -205,7 +205,7 @@ Things to note:
 ## Opinion on using vim
 
 Just start using it today! There's no going back after that. Coming from vscode I can surely say that the flexibilty vim provides is unbeatable and is so amazing that you cannot live without a `dd` remap anytime you use some other editor.
-Yeah I mean try it for yourself, tmux and vim make THE PERFECT PAIR I tell you. About that in some other blog :P
+Yeah I mean try it for yourself, my [.vimrc](https://gist.github.com/712a1085a8f1e648b113b76c99e88900.git) just in case :P
 
 ---
 
