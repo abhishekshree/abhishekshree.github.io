@@ -42,3 +42,41 @@ html {
   list-style: url("/static/images/graduate.svg");
   list-style-image: url("/static/images/graduate.svg");
 }
+
+.strikethrough {
+  position: relative;
+  cursor: pointer;
+}
+
+.strikethrough:before,
+.strikethrough:after {
+  content: '';
+  position: absolute;
+  width: 0%;
+  height: 1.8px;
+  top: 50%;
+  margin-top: -0.5px;
+  background: rgb(56, 170, 159);
+}
+
+.strikethrough:before {
+  left: -1.5px;
+}
+
+.strikethrough:after {
+  right: 1.5px;
+  background: rgb(56, 170, 159);
+  transition: width 0.8s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strikethrough:hover:before {
+  background: rgb(56, 170, 159);
+  width: 100%;
+  transition: width 0.5s cubic-bezier(0.22, 0.61, 0.36, 1);
+}
+
+.strikethrough:hover:after {
+  background: transparent;
+  width: 100%;
+  transition: 0s;
+}
