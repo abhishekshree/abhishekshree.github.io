@@ -13,8 +13,8 @@ const LayoutWrapper = ({ children }) => {
       <div className="flex flex-col justify-between h-screen">
         <header className="flex items-center justify-between py-10">
           <div>
-            <Link href="/" aria-label="Tailwind CSS Blog">
-              <div className="flex items-center justify-between">
+            <Link href="/" aria-label="Abhishek's Blog">
+              <div className="flex items-center justify-between mono">
                 <div className="mr-3">
                   <Logo />
                 </div>
@@ -34,9 +34,9 @@ const LayoutWrapper = ({ children }) => {
                 <Link
                   key={link.title}
                   href={link.href}
-                  className="p-1 font-medium text-gray-900 sm:p-4 dark:text-gray-100"
+                  className="m-1 text-gray-900 sm:m-4 dark:text-gray-100"
                 >
-                  <span className="strikethrough">{link.title}</span>
+                  <span className="strikethrough dark:strikethrough-dark">{link.title}</span>
                 </Link>
               ))}
             </div>

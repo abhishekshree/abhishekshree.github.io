@@ -1,11 +1,10 @@
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
 import { PageSeo } from '@/components/SEO'
-import Link from '@/components/Link'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 
-const MAX_DISPLAY = 2
-const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
+// const MAX_DISPLAY = 2
+// const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
 export async function getStaticProps() {
   const posts = await getAllFilesFrontMatter('blog')
@@ -13,7 +12,7 @@ export async function getStaticProps() {
   return { props: { posts } }
 }
 
-export default function About({ posts }) {
+export default function About() {
   return (
     <>
       <PageSeo
@@ -25,11 +24,13 @@ export default function About({ posts }) {
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           <div className="flex flex-col items-center pt-8 space-x-2">
             <img src={siteMetadata.image} alt="avatar" className="w-48 h-48 rounded-full" />
-            <h3 className="pt-4 pb-2 text-2xl font-bold leading-8 tracking-tight">
+            <h3 className="pt-4 pb-2 mono text-2xl font-bold leading-8 tracking-tight">
               {siteMetadata.author}
             </h3>
-            <div className="text-gray-500 dark:text-gray-400">First Year Undergraduate Student</div>
-            <div className="text-gray-500 dark:text-gray-400">
+            <div className="text-gray-500 mono text-xs dark:text-gray-400">
+              First Year Undergraduate Student
+            </div>
+            <div className="text-gray-500 mono text-xs dark:text-gray-400">
               <a
                 href="https://iitk.ac.in"
                 style={{ textDecoration: 'none', color: 'slate' }}
@@ -48,7 +49,7 @@ export default function About({ posts }) {
             </div>
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
-            <h1 className="bree-head text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+            <h1 className="mono text-3xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
               Namaste!
             </h1>
             <p>
