@@ -44,6 +44,12 @@ const projectsData = [
     href: 'http://aca.pythonanywhere.com/',
   },
   {
+    title: 'Chat Application',
+    description: `Created a chat application as a part of learning android development. This app is based on Java and is powered by Firebase. Learned how firebase auth, storage and database. Also learned to implement recyclerView in applications.`,
+    imgSrc: '/static/images/pp/chat.png',
+    href: 'https://github.com/abhishekshree/Android-Project',
+  },
+  {
     title: 'Sudoku Solver',
     description: `Created this mini project while studying about recursion in ESC101. Backtracking is pretty cool in board games. It is currently hosted on heroku, so the website may take some time to load.`,
     imgSrc: '/static/images/pp/sudoku.png',

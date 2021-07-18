@@ -55,8 +55,7 @@ export default function About({ posts }) {
             </h1>
             <p>
               I am Abhishek Shree, a rising sophomore at the Indian Institute of Technology,
-              Kanpur. I am interested in full stack web development, deep learning and pretty much anything
-              about technology fascinates me.
+              Kanpur. I am interested in deep learning, full stack web development and pretty much anything about technology fascinates me.
             </p>
             <p>
               I like{' '}
@@ -68,9 +67,15 @@ export default function About({ posts }) {
               >
                 competitive programming
               </a>{' '}
-              at times. Currently my major interests include Deep Learning, Number Theory and Cyber
-              Security (I like doing CTF's). I love to learn random things now and then, be it about
-              the web or linux or even vim xD.
+              at times. Currently my major interests include Deep Learning, Abstract Algebra and Functional Programming (just got started with CIS194, loved it). I love to learn random things now and then, be it about the web or linux or even vim xD. I am also exploring the field of Robotics by being a part of {' '}
+              <a
+                href="https://auv.sntiitk.in/"
+                style={{ textDecoration: 'none' }}
+                target="_blank"
+                rel="noreferrer"
+              > 
+                AUV IITK. 
+              </a>
             </p>
             <p>
               Apart from my daily endeavor to be a better developer, I can be found reading books on
@@ -97,24 +102,20 @@ export default function About({ posts }) {
                               className="text-gray-900 dark:text-gray-100"
                               style={{ textDecoration: 'none'}}
                             >
-                              {title}
+                              <div style={{ lineHeight:1.5 }}>
+                                {title}
+                              </div>
                             </Link>
-                            <br />
                             <br />
                       </div>
                   )
                 })}
               </div>
               <div>
-                {/* <ul className="li-custom"> */}
                 <div className="leading-none">
                   <p className="antialiased font-black text-lg leading-tight"> Education </p>
                 </div>
-                {/* <li> */}
                 <div className="">
-                  {/* <div>
-                    <img src="/static/images/graduate.svg" alt="hat" className="logo p-0 m-0" />
-                  </div> */}
                   <div>
                     <div className="leading-tight font-semibold ">
                       Batchelor of Technology, 2024 (Expected)
@@ -124,26 +125,20 @@ export default function About({ posts }) {
                     </div>
                   </div>
                 </div>
-                {/* </li> */}
                 <br />
-                {/* <li> */}
                 <div>
                   <div className="leading-tight font-semibold">AISSCE – XII, 2020</div>
                   <div className="leading-none text-sm text-gray-500">
                     Loyola High School, Patna
                   </div>
                 </div>
-                {/* </li> */}
                 <br />
-                {/* <li> */}
                 <div>
                   <div className="leading-tight font-semibold ">CBSE – X, 2018</div>
                   <div className="leading-none text-sm text-gray-500">
                     Loyola High School, Patna
                   </div>
                 </div>
-                {/* </li> */}
-                {/* </ul> */}
               </div>
             </div>
           </div>
