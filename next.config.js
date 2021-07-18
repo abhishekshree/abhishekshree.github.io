@@ -7,6 +7,11 @@ module.exports = withBundleAnalyzer({
   experimental: {
     modern: true,
   },
+  eslint: {
+    // Warning: Dangerously allow production builds to successfully complete even if
+    // your project has ESLint errors.
+    ignoreDuringBuilds: true,
+  },
   webpack: (config, { dev, isServer }) => {
     config.module.rules.push({
       test: /\.(png|jpe?g|gif|mp4)$/i,
