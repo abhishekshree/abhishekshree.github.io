@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
       <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
-      <lastBuildDate>Mon, 01 Mar 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 15 Jul 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://abhishekshree.github.io//index.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://abhishekshree.github.io//blog/til-how-to-tranfer-storage-space-between-operating-systems</guid>
+    <title>TIL - How to tranfer storage space between Operating Systems</title>
+    <link>https://abhishekshree.github.io//blog/til-how-to-tranfer-storage-space-between-operating-systems</link>
+    <description>null</description>
+    <pubDate>Thu, 15 Jul 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    
+  </item>
+
   <item>
     <guid>https://abhishekshree.github.io//blog/building-a-basic-vimrc</guid>
     <title>About vim and building a basic .vimrc</title>
@@ -18,16 +28,6 @@
     <pubDate>Mon, 01 Mar 2021 00:00:00 GMT</pubDate>
     <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
     <category>vim</category><category>vimrc</category><category>bash</category><category>zsh</category><category>terminal</category>
-  </item>
-
-  <item>
-    <guid>https://abhishekshree.github.io//blog/revision-resources</guid>
-    <title>Revision Resources</title>
-    <link>https://abhishekshree.github.io//blog/revision-resources</link>
-    <description>A list of helpful resources.</description>
-    <pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate>
-    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
-    <category>C</category><category>DSA</category><category>CP</category>
   </item>
 
   <item>

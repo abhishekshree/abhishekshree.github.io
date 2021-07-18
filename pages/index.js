@@ -2,8 +2,9 @@ import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
 import { PageSeo } from '@/components/SEO'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
+import Link from '@/components/Link'
 
-// const MAX_DISPLAY = 2
+const MAX_DISPLAY = 2
 // const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
 export async function getStaticProps() {
@@ -12,7 +13,7 @@ export async function getStaticProps() {
   return { props: { posts } }
 }
 
-export default function About() {
+export default function About({ posts }) {
   return (
     <>
       <PageSeo
@@ -28,7 +29,7 @@ export default function About() {
               {siteMetadata.author}
             </h3>
             <div className="text-gray-500 mono text-xs dark:text-gray-400">
-              First Year Undergraduate Student
+              Second Year Undergraduate Student
             </div>
             <div className="text-gray-500 mono text-xs dark:text-gray-400">
               <a
@@ -53,8 +54,8 @@ export default function About() {
               Namaste!
             </h1>
             <p>
-              I am Abhishek Shree, a first-year undergrad at the Indian Institute of Technology,
-              Kanpur. I am interested in web development, design tools and pretty much anything
+              I am Abhishek Shree, a rising sophomore at the Indian Institute of Technology,
+              Kanpur. I am interested in full stack web development, deep learning and pretty much anything
               about technology fascinates me.
             </p>
             <p>
@@ -86,13 +87,23 @@ export default function About() {
 
             <div className="grid md:grid-cols-2 grid-cols-1">
               <div>
-                <p className="antialiased font-black text-lg"> Interests </p>
-                <ul className="leading-none">
-                  <li>Web Development</li>
-                  <li>Deep Learning</li>
-                  <li>Cyber Security</li>
-                  <li>Competitive Programming</li>
-                </ul>
+                <p className="antialiased font-black text-lg"> Recently I wrote: </p>
+                {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
+                  const { slug, date, title, summary, tags } = frontMatter
+                  return (
+                      <div className="font-bold leading-8 tracking-tight" key={slug}>
+                            <Link
+                              href={`/blog/${slug}`}
+                              className="text-gray-900 dark:text-gray-100"
+                              style={{ textDecoration: 'none'}}
+                            >
+                              {title}
+                            </Link>
+                            <br />
+                            <br />
+                      </div>
+                  )
+                })}
               </div>
               <div>
                 {/* <ul className="li-custom"> */}
