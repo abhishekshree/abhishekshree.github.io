@@ -54,7 +54,7 @@ export default function About({ posts }) {
               Namaste!
             </h1>
             <p>
-              I am Abhishek Shree, a rising sophomore at the Indian Institute of Technology,
+              I am Abhishek Shree, a sophomore at the Indian Institute of Technology,
               Kanpur. I am interested in deep learning, full stack web development and pretty much anything about technology fascinates me.
             </p>
             <p>
@@ -118,7 +118,7 @@ export default function About({ posts }) {
                 <div className="">
                   <div>
                     <div className="leading-tight font-semibold ">
-                      Batchelor of Technology, 2024 (Expected)
+                      BS Economics, 2024 (Expected)
                     </div>
                     <div className="leading-none text-sm text-gray-500">
                       Indian Institute of Technology, Kanpur
