@@ -20,6 +20,12 @@ EXAMPLE:
 
 const projectsData = [
   {
+    title: 'Webserver in C++',
+    description: `Wrote a simple webserver using websockets purely in C++. The webserver listens on port 8080, which is the default port. Learnt how webservers communicate with the client to process requests.`,
+    imgSrc: '/static/images/pp/webserver.png',
+    href: 'https://github.com/abhishekshree/webserver-cpp',
+  },
+  {
     title: 'Handpose detection using tensorflow',
     description: `This project is based on MediaPipe Handpose, a lightweight ML pipeline . Currently it detects the thumbs up and peace emojis with hand gestures. Through this project I explored about the ideas on Convolutional Neural Networks and AR.`,
     imgSrc: '/static/images/pp/tfjs.jpeg',
