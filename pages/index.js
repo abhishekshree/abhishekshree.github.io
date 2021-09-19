@@ -67,7 +67,7 @@ export default function About({ posts }) {
               >
                 competitive programming
               </a>{' '}
-              at times. Currently my major interests include Deep Learning, Abstract Algebra and Functional Programming (just got started with CIS194, loved it). I love to learn random things now and then, be it about the web, <a href="https://github.com/abhishekshree/DOTFILES" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer"> linux </a> or even vim xD. I am also exploring the field of Robotics by being a part of {' '}
+              at times. Currently my major interests include Deep Learning and Functional Programming (just got started with CIS194, loved it). I love to learn random things now and then, be it about the web, <a href="https://github.com/abhishekshree/DOTFILES" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer"> linux </a> or even vim xD. I am also exploring the field of Robotics by being a part of {' '}
               <a
                 href="https://auv.sntiitk.in/"
                 style={{ textDecoration: 'none' }}
@@ -118,7 +118,7 @@ export default function About({ posts }) {
                 <div className="">
                   <div>
                     <div className="leading-tight font-semibold ">
-                      Batchelor of Technology, 2024 (Expected)
+                      BS Economics, 2024 (Expected)
                     </div>
                     <div className="leading-none text-sm text-gray-500">
                       Indian Institute of Technology, Kanpur
