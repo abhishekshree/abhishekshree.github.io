@@ -1,0 +1,1 @@
+{"pageProps":{"posts":[{"title":"About vim and building a basic .vimrc","date":"2021-03-01","tags":["vim","vimrc","bash","zsh","terminal"],"draft":false,"summary":"This is a blog about vim and what a basic vimrc should contain, also a reminder for me on how I set up my .vimrc","images":["/static/images/vim.png"],"slug":"building-a-basic-vimrc"}],"tag":"zsh"},"__N_SSG":true}

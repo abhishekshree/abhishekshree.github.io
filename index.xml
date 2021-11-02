@@ -1,0 +1,64 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Abhishek Shree</title>
+      <link>https://abhishekshree.github.io//blog</link>
+      <description>I am an undergraduate at Indian Institute of Technology, Kanpur. Also I try to blog about the amazing stuff I come across.</description>
+      <language>en-us</language>
+      <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
+      <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
+      <lastBuildDate>Mon, 02 Aug 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://abhishekshree.github.io//index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://abhishekshree.github.io//blog/life-update-travelling-postamidst-pandemic</guid>
+    <title>Life update - Travelling post/amidst(?) pandemic</title>
+    <link>https://abhishekshree.github.io//blog/life-update-travelling-postamidst-pandemic</link>
+    <description>The one where everyone meets in Jaipur.</description>
+    <pubDate>Mon, 02 Aug 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>life</category><category>jaipur</category><category>travel</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/til-how-to-tranfer-storage-space-between-operating-systems</guid>
+    <title>TIL - How to tranfer storage space between Operating Systems</title>
+    <link>https://abhishekshree.github.io//blog/til-how-to-tranfer-storage-space-between-operating-systems</link>
+    <description>How to move X space to some Y place on disk, and vice versa.</description>
+    <pubDate>Thu, 15 Jul 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>Linux</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/building-a-basic-vimrc</guid>
+    <title>About vim and building a basic .vimrc</title>
+    <link>https://abhishekshree.github.io//blog/building-a-basic-vimrc</link>
+    <description>This is a blog about vim and what a basic vimrc should contain, also a reminder for me on how I set up my .vimrc</description>
+    <pubDate>Mon, 01 Mar 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>vim</category><category>vimrc</category><category>bash</category><category>zsh</category><category>terminal</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/revision-resources</guid>
+    <title>Revision Resources</title>
+    <link>https://abhishekshree.github.io//blog/revision-resources</link>
+    <description>A list of helpful resources.</description>
+    <pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>C</category><category>DSA</category><category>CP</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/github-markdown-guide</guid>
+    <title>Markdown Guide</title>
+    <link>https://abhishekshree.github.io//blog/github-markdown-guide</link>
+    <description>Markdown cheatsheet for all your blogging needs - headers, lists, images, tables and more! An illustrated guide based on Github Flavored Markdown.</description>
+    <pubDate>Fri, 11 Oct 2019 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>github</category><category>guide</category>
+  </item>
+
+    </channel>
+  </rss>

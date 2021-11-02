@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Abhishek Shree</title>
+      <link>https://abhishekshree.github.io//blog</link>
+      <description>I am an undergraduate at Indian Institute of Technology, Kanpur. Also I try to blog about the amazing stuff I come across.</description>
+      <language>en-us</language>
+      <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
+      <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
+      <lastBuildDate>Mon, 02 Aug 2021 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://abhishekshree.github.io//tags/travel/index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://abhishekshree.github.io//blog/life-update-travelling-postamidst-pandemic</guid>
+    <title>Life update - Travelling post/amidst(?) pandemic</title>
+    <link>https://abhishekshree.github.io//blog/life-update-travelling-postamidst-pandemic</link>
+    <description>The one where everyone meets in Jaipur.</description>
+    <pubDate>Mon, 02 Aug 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>life</category><category>jaipur</category><category>travel</category>
+  </item>
+
+    </channel>
+  </rss>
