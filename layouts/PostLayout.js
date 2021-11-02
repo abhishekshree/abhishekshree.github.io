@@ -56,7 +56,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                           className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                         >
                           {siteMetdata.facebook.replace(
-                            'https://www.facebook.com/profile.php?id=100005639057729',
+                            siteMetdata.facebook,
                             '@Abhishek'
                           )}
                         </Link>

@@ -42,7 +42,7 @@ export default function About({ posts }) {
               </a>
             </div>
             <div className="flex pt-6 space-x-3">
-              <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} />
+              {/* <SocialIcon kind="mail" href={`mailto:${siteMetadata.email}`} /> */}
               <SocialIcon kind="github" href={siteMetadata.github} />
               <SocialIcon kind="facebook" href={siteMetadata.facebook} />
               <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
@@ -54,40 +54,32 @@ export default function About({ posts }) {
               Namaste!
             </h1>
             <p>
-              I am Abhishek Shree, a sophomore at the Indian Institute of Technology,
-              Kanpur. I am interested in deep learning, full stack web development and pretty much anything about technology fascinates me.
+              I am Abhishek Shree, a sophomore at the Indian Institute of Technology, Kanpur. I am
+              interested in deep learning, full stack development and pretty much anything about
+              technology fascinates me.
             </p>
             <p>
               I like{' '}
-              <a
-                href="https://www.stopstalk.com/user/profile/shree_e"
-                style={{ textDecoration: 'none' }}
-                target="_blank"
-                rel="noreferrer"
-              >
+              <Link href="https://www.stopstalk.com/user/profile/shree_e">
                 competitive programming
-              </a>{' '}
-              at times. Currently my major interests include Deep Learning and Functional Programming (just got started with CIS194, loved it). I love to learn random things now and then, be it about the web, <a href="https://github.com/abhishekshree/DOTFILES" style={{ textDecoration: 'none' }} target="_blank" rel="noreferrer"> linux </a> or even vim xD. I am also exploring the field of Robotics by being a part of {' '}
-              <a
-                href="https://auv.sntiitk.in/"
-                style={{ textDecoration: 'none' }}
-                target="_blank"
-                rel="noreferrer"
-              > 
-                AUV IITK. 
-              </a>
+              </Link>{' '}
+              at times. Currently my major interests include Deep Generative Modeling and Functional
+              Programming (λ-calculus is supreme). I love to learn random things
+              now and then, be it about the web,{' '}
+              <Link href="https://github.com/abhishekshree/DOTFILES">
+                linux{' '}
+              </Link>
+              or even vim xD. I am also exploring the field of Robotics by being a part of{' '}
+              <Link href="https://auv.sntiitk.in/">
+                AUV, IITK.
+              </Link>
             </p>
             <p>
               Apart from my daily endeavor to be a better developer, I can be found reading books on
-              vivid topics, solving my Rubik's cube, vibing to{' '}
-              <a
-                href="https://open.spotify.com/playlist/3Ev3P5Fq9CGHAP4brUrtYz"
-                style={{ textDecoration: 'none' }}
-                target="_blank"
-                rel="noreferrer"
-              >
-                Ed and Taylor.
-              </a>
+              vivid topics, solving my Rubik's cube, vibing {' '}
+              <Link href="https://open.spotify.com/playlist/6zEzwCUleF6E1mvBUH14Cw?si=d98823be31a5453d">
+                here.
+              </Link>
             </p>
 
             <div className="grid md:grid-cols-2 grid-cols-1">
@@ -96,18 +88,16 @@ export default function About({ posts }) {
                 {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
                   const { slug, date, title, summary, tags } = frontMatter
                   return (
-                      <div className="font-bold leading-8 tracking-tight" key={slug}>
-                            <Link
-                              href={`/blog/${slug}`}
-                              className="text-gray-900 dark:text-gray-100"
-                              style={{ textDecoration: 'none'}}
-                            >
-                              <div style={{ lineHeight:1.5 }}>
-                                {title}
-                              </div>
-                            </Link>
-                            <br />
-                      </div>
+                    <div className="font-bold leading-8 tracking-tight" key={slug}>
+                      <Link
+                        href={`/blog/${slug}`}
+                        className="text-gray-900 dark:text-gray-100"
+                        style={{ textDecoration: 'none' }}
+                      >
+                        <div style={{ lineHeight: 1.5 }}>{title}</div>
+                      </Link>
+                      <br />
+                    </div>
                   )
                 })}
               </div>

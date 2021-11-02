@@ -1,4 +1,4 @@
-<img src="./public/static/images/twitter-card.png" width='100%' height="310px" alt="banner">
+<img src="./public/static/images/twitter-card.png" width='100%' alt="banner">
 
 ![example workflow](https://github.com/abhishekshree/abhishekshree.github.io/actions/workflows/node-js.yml/badge.svg)
 
@@ -26,7 +26,7 @@ This is a [Next.js](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com
 
 First, run the development server:
 
-```bash
+```bash 
 npm start
 # or
 npm run dev
