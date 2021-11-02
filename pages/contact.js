@@ -22,7 +22,7 @@ export default function Contact() {
           <h2 className="text-xl font-bold mt-6">Email</h2>
           abhishek[dot]shree[at]outlook[dot]com <br />
           shreea20[at]iitk[dot]ac[dot]in <br /> <br />
-          If you are from IITK, feel free to ping me on Discorrd or Messenger. <br />
+          If you are from IITK, feel free to ping me on Discord or Messenger. <br />
           <hr />
           <h2 className="text-xl font-bold mt-6">Socials</h2>
           <div className="flex mb-3 space-x-6">
