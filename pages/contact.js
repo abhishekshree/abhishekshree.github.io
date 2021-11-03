@@ -35,7 +35,7 @@ export default function Contact() {
           </div>
           <hr />
 
-          You can also write me a message to me here: <Link href="https://forms.gle/vh7DzwMwKxGXXKiB9"> Here </Link>
+          You can also write me a message to me <Link href="https://forms.gle/vh7DzwMwKxGXXKiB9"> here. </Link>
         </div>
       </div>
     </>
