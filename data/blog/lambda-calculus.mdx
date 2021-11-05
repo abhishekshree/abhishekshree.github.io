@@ -1,0 +1,41 @@
+---
+title: Lambda Calculus and all the fuzz around it
+date: '2021-11-05'
+tags: ['fp', 'math', 'lambda calculus']
+draft: false
+summary: Wait, you're saying that I have to generate numbers from functions?
+images: []
+---
+
+> $\lambda$-calculus is a mathematical system for describing functions. Any computable function can be evaluated in the context of $\lambda$-calculus, and evaluating programs in the language consist of a single transformation rule: variable substitution. 
+
+That in itself was a good enough motivation to get me started on this. This would not be a tutorial, but I'd try making sense of what I did in the past weeks and why you should be doing it too, maybe?
+
+Imagine deducing a medium where you have no arithmetic, boolean, or other operations. You can only use functions. Also, this _function_ calculates nothing. It is just a kind of expression, with a head and a body. It just stands there. The only thing we can do with it is to resolve it.
+
+Quick detour: Lambdas are **curried**. $\lambda abc.a$ is just shorthand for $\lambda a$.$\lambda b$.$\lambda c$.a (even with the brackets.)
+$\lambda$-calculus has excellent overlap with combinatory logic. What are combinators? $\lambda$'s with no free variables as the output. 
+
+Abstracting the definition of the given function even further. Some of them could be (combinators):
+- Identity: $I \coloneqq \lambda x.x$ 
+- Self-application: $M \coloneqq \lambda x.x x$
+- Cardinal: $C \coloneqq \lambda xy.yx$
+
+( $M I = I$, how? Self apply Identity on Identity.)
+
+And more and more, but essentially, only a few combinators are needed as the **basis** to span the space of all functions.
+
+Even with generating booleans and numbers, the idea remains consistent, giving a completely different meaning to doing arithmetic on numbers (apply some other function on two functions🤯). You can find a talk on it [here.](https://www.youtube.com/watch?v=3VQ382QG-y4)
+
+Diving further, it was a mess initially? But then, understanding the inductive proofs, recursive structures, reductions, type-systems, and the works of Church and Haskell got me an absolute fanboy.
+
+In the end, I'd suggest giving $\lambda$-calculus a read on some random weekend.
+
+---
+
+Some resources just in case:
+- [The introductory blog you need.](https://www.jrebel.com/blog/what-is-lambda-calculus)
+- [Notes from the talk.](https://glebec.github.io/lambda-talk/)
+- [Bit complicated.](https://cs.nju.edu.cn/hongjin/teaching/semantics/lambdanotes.pdf)
+- [All the reductions oof.](https://www.cs.ox.ac.uk/andrew.ker/docs/lambdacalculus-lecture-notes-ht2009.pdf)
+- [Another fascinating read.](https://www.cs.cmu.edu/~rwh/talks/cs50talk.pdf)
