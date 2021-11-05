@@ -41,6 +41,10 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io//blog/lambda-calculus</loc>
+  </url>
+
+  <url>
     <loc>https://abhishekshree.github.io//blog/life-update-travelling-postamidst-pandemic</loc>
   </url>
 
@@ -83,6 +87,10 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io//tags/fp</loc>
+  </url>
+
+  <url>
     <loc>https://abhishekshree.github.io//tags/github</loc>
   </url>
 
@@ -95,11 +103,19 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io//tags/lambda-calculus</loc>
+  </url>
+
+  <url>
     <loc>https://abhishekshree.github.io//tags/life</loc>
   </url>
 
   <url>
     <loc>https://abhishekshree.github.io//tags/linux</loc>
+  </url>
+
+  <url>
+    <loc>https://abhishekshree.github.io//tags/math</loc>
   </url>
 
   <url>
