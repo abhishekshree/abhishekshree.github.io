@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
       <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
-      <lastBuildDate>Fri, 05 Nov 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 13 Dec 2021 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://abhishekshree.github.io//index.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://abhishekshree.github.io//blog/til-git-folders</guid>
+    <title>TIL - Github and ASCIIbetically sorted folders</title>
+    <link>https://abhishekshree.github.io//blog/til-git-folders</link>
+    <description>null</description>
+    <pubDate>Mon, 13 Dec 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>TIL</category><category>Github</category><category>Git</category>
+  </item>
+
   <item>
     <guid>https://abhishekshree.github.io//blog/lambda-calculus</guid>
     <title>Lambda Calculus and all the fuzz around it</title>
@@ -37,7 +47,7 @@
     <description>How to move X space to some Y place on disk, and vice versa.</description>
     <pubDate>Thu, 15 Jul 2021 00:00:00 GMT</pubDate>
     <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
-    <category>Linux</category>
+    <category>TIL</category><category>Linux</category>
   </item>
 
   <item>
