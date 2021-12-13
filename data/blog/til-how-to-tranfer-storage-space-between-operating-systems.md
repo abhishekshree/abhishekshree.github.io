@@ -1,7 +1,7 @@
 ---
 title: TIL - How to tranfer storage space between Operating Systems
 date: '2021-07-15'
-tags: ['Linux']
+tags: ['TIL', 'Linux']
 draft: false
 summary: How to move X space to some Y place on disk, and vice versa.
 images: []
