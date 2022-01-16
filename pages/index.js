@@ -61,10 +61,9 @@ export default function About({ posts }) {
             <p>
               I like{' '}
               <Link href="https://www.stopstalk.com/user/profile/shree_e">
-                competitive programming
+                solving problems
               </Link>{' '}
-              at times. Currently my major interests include Deep Generative Modeling and Functional
-              Programming (λ-calculus is supreme). I love to learn random things
+              at times. Currently my major interests include Deep Generative Modeling and Reinforcement learning. I love to learn random things
               now and then, be it about the web,{' '}
               <Link href="https://github.com/abhishekshree/DOTFILES">
                 linux{' '}
