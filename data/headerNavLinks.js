@@ -5,6 +5,7 @@ const headerNavLinks = [
   // { href: '/latest', title: 'Latest Posts' },
   { href: '/contact', title: 'Contact' },
   { href: '/tags', title: 'Tags' },
+  { href: '/static/cv/abhishekshree.pdf', title: 'Resume' },
 ]
 
 export default headerNavLinks
