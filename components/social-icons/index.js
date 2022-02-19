@@ -6,7 +6,7 @@ import Linkedin from './linkedin.svg'
 import Twitter from './twitter.svg'
 import Instagram from './instagram.svg'
 import Discord from './discord.svg'
-import CV from './cv.pdf'
+import CV from './cv.svg'
 // Icons taken from: https://simpleicons.org/
 
 const components = {
