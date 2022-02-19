@@ -6,7 +6,7 @@ import Linkedin from './linkedin.svg'
 import Twitter from './twitter.svg'
 import Instagram from './instagram.svg'
 import Discord from './discord.svg'
-
+import CV from './cv.pdf'
 // Icons taken from: https://simpleicons.org/
 
 const components = {
@@ -18,6 +18,7 @@ const components = {
   twitter: Twitter,
   instagram: Instagram,
   discord: Discord,
+  cv: CV,
 }
 
 const SocialIcon = ({ kind, href, size = 8 }) => {
