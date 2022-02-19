@@ -47,6 +47,7 @@ export default function About({ posts }) {
               <SocialIcon kind="facebook" href={siteMetadata.facebook} />
               <SocialIcon kind="linkedin" href={siteMetadata.linkedin} />
               <SocialIcon kind="twitter" href={siteMetadata.twitter} />
+              <SocialIcon kind="cv" href={siteMetadata.cv} />
             </div>
           </div>
           <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
