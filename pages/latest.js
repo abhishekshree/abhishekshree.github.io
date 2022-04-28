@@ -13,7 +13,6 @@ export async function getStaticProps() {
   return { props: { posts } }
 }
 
-
 export default function Home({ posts }) {
   return (
     <>

@@ -55,28 +55,22 @@ export default function About({ posts }) {
               Namaste!
             </h1>
             <p>
-              I am Abhishek Shree, a sophomore at the Indian Institute of Technology, Kanpur. I am
-              interested in deep learning, full stack development and pretty much anything about
-              technology fascinates me.
+              I am Abhishek Shree, a sophomore at the Indian Institute of Technology, Kanpur. My
+              interests are manifold and are constantly evolving, including Cryptography, Backend
+              system design, Devops, AI and Algorithmic Trading.
             </p>
             <p>
               I like{' '}
-              <Link href="https://www.stopstalk.com/user/profile/shree_e">
-                solving problems
-              </Link>{' '}
-              at times. Currently my major interests include Deep Generative Modeling and Reinforcement learning. I love to learn random things
-              now and then, be it about the web,{' '}
-              <Link href="https://github.com/abhishekshree/DOTFILES">
-                linux{' '}
-              </Link>
+              <Link href="https://www.stopstalk.com/user/profile/shree_e">solving problems</Link> at
+              times. Currently I'm learning about Low Level System Design and Reinforcement
+              learning. I love to explore random things now and then, be it about the web,{' '}
+              <Link href="https://github.com/abhishekshree/DOTFILES">linux </Link>
               or even vim xD. I am also exploring the field of Robotics by being a part of{' '}
-              <Link href="https://auv.sntiitk.in/">
-                AUV, IITK.
-              </Link>
+              <Link href="https://auv.sntiitk.in/">AUV, IITK.</Link>
             </p>
             <p>
               Apart from my daily endeavor to be a better developer, I can be found reading books on
-              vivid topics, solving my Rubik's cube, vibing {' '}
+              vivid topics, solving my Rubik's cube, vibing{' '}
               <Link href="https://open.spotify.com/playlist/6zEzwCUleF6E1mvBUH14Cw?si=d98823be31a5453d">
                 here.
               </Link>
