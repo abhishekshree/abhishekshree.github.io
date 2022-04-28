@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
       <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
-      <lastBuildDate>Fri, 05 Nov 2021 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Fri, 29 Apr 2022 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://abhishekshree.github.io//tags/fp/index.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://abhishekshree.github.io//blog/tiluber-eats</guid>
+    <title>TIL - The case with Uber Eats</title>
+    <link>https://abhishekshree.github.io//blog/tiluber-eats</link>
+    <description>null</description>
+    <pubDate>Fri, 29 Apr 2022 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>fp</category><category>idempotency</category><category>backend</category>
+  </item>
+
   <item>
     <guid>https://abhishekshree.github.io//blog/lambda-calculus</guid>
     <title>Lambda Calculus and all the fuzz around it</title>
