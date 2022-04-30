@@ -1,24 +1,24 @@
-/*
-EXAMPLE:
-  {
-    title: 'A Search Engine',
-    description: `What is you could look up any information in the world? Webpages, images, videos
-    and more. Google has many features to help you find exactly what you're looking
-    for.`,
-    imgSrc: '/static/images/google.png',
-    href: 'https://www.google.com',
-  },
-  {
-    title: 'The Time Machine',
-    description: `Imagine being able to travel back in time or to the future. Simple turn the knob
-    to the desired date and press "Go". No more worrying about lost keys or
-    forgotten handphones with this simple yet affordable solution.`,
-    imgSrc: '/static/images/time-machine.jpg',
-    href: '/blog/the-time-machine',
-  },
-*/
-
 const projectsData = [
+  {
+    title: 'Digital Alpha SaaS Analyzer',
+    description:
+      'Prepared a solution for the High Problem Statement of Digital Alpha to develop a scalable web application on a custom ML model to analyze large SEC fillings and get SaaS metrics of given companies',
+    imgSrc: '/static/images/pp/digitalalpha.png',
+    href:
+      'https://docs.google.com/presentation/d/1zgRrYwIt0juemg0FGrPXUjsLX2gD7f9wmv1iU7j4Gxo/edit?usp=sharing',
+  },
+  {
+    title: 'PubSub',
+    description: `Wrote a PubSub for in-process communication between multiple goroutines over channels. Channels in Go are powerful. Difficult questions of ownership and ordering still arise, and it's instructive to think through a single problem from multiple angles.`,
+    imgSrc: '/static/images/pp/pubsub.png',
+    href: 'https://github.com/abhishekshree/pubsub',
+  },
+  {
+    title: 'Container Zoo',
+    description: `A repository where I am storing the (useful?) containers I've created/came across till now.`,
+    imgSrc: '/static/images/pp/container-zoo.jpg',
+    href: 'https://github.com/abhishekshree/container-zoo',
+  },
   {
     title: 'Webserver in C++',
     description: `Wrote a simple webserver using websockets purely in C++. The webserver listens on port 8080, which is the default port. Learnt how webservers communicate with the client to process requests.`,
@@ -61,6 +61,6 @@ const projectsData = [
     imgSrc: '/static/images/pp/sudoku.png',
     href: 'https://solve-sudoku-fast.herokuapp.com/',
   },
-] 
+]
 
 export default projectsData

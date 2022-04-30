@@ -57,7 +57,7 @@ export default function About({ posts }) {
             <p>
               I am Abhishek Shree, a sophomore at the Indian Institute of Technology, Kanpur. My
               interests are manifold and are constantly evolving, including Cryptography, Backend
-              system design, Devops, AI and Algorithmic Trading.
+              System Design, Devops and AI.
             </p>
             <p>
               I like{' '}
@@ -65,8 +65,7 @@ export default function About({ posts }) {
               times. Currently I'm learning about Low Level System Design and Reinforcement
               learning. I love to explore random things now and then, be it about the web,{' '}
               <Link href="https://github.com/abhishekshree/DOTFILES">linux </Link>
-              or even vim xD. I am also exploring the field of Robotics by being a part of{' '}
-              <Link href="https://auv.sntiitk.in/">AUV, IITK.</Link>
+              or even facts about the Vikings.
             </p>
             <p>
               Apart from my daily endeavor to be a better developer, I can be found reading books on
