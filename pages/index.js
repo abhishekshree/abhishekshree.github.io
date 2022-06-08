@@ -69,7 +69,7 @@ export default function About({ posts }) {
             </p>
             <p>
               Apart from my daily endeavor to be a better developer, I tend to consume a lot of pop
-              culture and read, at a concerningly fast pace occasionally. If not that, I can also be
+              culture and read, at a concerningly fast pace at times. If not that, I can also be
               found solving my Rubik's cube or vibing{' '}
               <Link href="https://open.spotify.com/playlist/37i9dQZF1DXaQm3ZVg9Z2X">to this.</Link>
             </p>
