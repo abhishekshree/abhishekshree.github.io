@@ -29,7 +29,7 @@ export default function About({ posts }) {
               {siteMetadata.author}
             </h3>
             <div className="text-gray-500 mono text-xs dark:text-gray-400">
-              Second Year Undergraduate Student
+              Third Year Undergraduate Student
             </div>
             <div className="text-gray-500 mono text-xs dark:text-gray-400">
               <a
@@ -55,24 +55,23 @@ export default function About({ posts }) {
               Namaste!
             </h1>
             <p>
-              I am Abhishek Shree, a sophomore at the Indian Institute of Technology, Kanpur. My
+              I am Abhishek Shree, a Junior at the Indian Institute of Technology, Kanpur. My
               interests are manifold and are constantly evolving, including Cryptography, Backend
               System Design, Devops and AI.
             </p>
             <p>
-              I like{' '}
+              I (used to) like{' '}
               <Link href="https://www.stopstalk.com/user/profile/shree_e">solving problems</Link> at
               times. Currently I'm learning about Low Level System Design and Reinforcement
               learning. I love to explore random things now and then, be it about the web,{' '}
               <Link href="https://github.com/abhishekshree/DOTFILES">linux </Link>
-              or even facts about the Vikings.
+              or even geopolitics recently.
             </p>
             <p>
-              Apart from my daily endeavor to be a better developer, I can be found reading books on
-              vivid topics, solving my Rubik's cube, vibing{' '}
-              <Link href="https://open.spotify.com/playlist/6zEzwCUleF6E1mvBUH14Cw?si=d98823be31a5453d">
-                here.
-              </Link>
+              Apart from my daily endeavor to be a better developer, I tend to consume a lot of pop
+              culture and read, at a concerningly fast pace occasionally. If not that, I can also be
+              found solving my Rubik's cube or vibing{' '}
+              <Link href="https://open.spotify.com/playlist/37i9dQZF1DXaQm3ZVg9Z2X">to this.</Link>
             </p>
 
             <div className="grid md:grid-cols-2 grid-cols-1">
