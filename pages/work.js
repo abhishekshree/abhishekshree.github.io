@@ -24,6 +24,34 @@ export default function Work({ posts }) {
               <dl>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <time>May, 2022 ‑ Present</time>
+                </dd>
+              </dl>
+              <div className="space-y-5 xl:col-span-3">
+                <div className="space-y-6">
+                  <div>
+                    <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                      <div className="text-gray-900 dark:text-gray-100">Team Head, AUV-IITK</div>
+                    </h2>
+                    <div className="flex flex-wrap">IIT Kanpur</div>
+                  </div>
+                  <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                    <ul>
+                      <li>
+                        Leading a team of 50+ undergraduates working in the field of marine
+                        robotics.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article className="py-4">
+            <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+              <dl>
+                <dt className="sr-only">Published on</dt>
+                <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                   <time>March, 2022 ‑ Present</time>
                 </dd>
               </dl>
