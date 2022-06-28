@@ -1,0 +1,62 @@
+---
+title: ROS - A Primer
+date: '2022-06-28'
+tags: ['ROS', 'Linux']
+draft: false
+summary: Discussed the essentials of ROS for a smoother learning curve. 
+images: []
+---
+
+Starting to learn ROS can be a bit of a challenge. There are tons of new terminology and concepts to learn and this blog is designed to help you get started.
+
+# Why ROS?
+
+ROS is used as a framework for robot software development, by that I mean it is used for abstraction of hardware, low-level device control, passing information between processes, and several other niche areas. While all of it can possibly be implemented using bare metal C++ ([Cornell](https://github.com/cuauv/software) does it pretty well), it is a lot easier to use when you are using a toolchain which is pretty much industry standard.
+
+# Structure
+- __Nodes__: Base unit in ROS, a node is a process that runs on a computer. It uses a ROS client library (rospy, roscpp) to communicate with other nodes. Commands `rosnode` helps you manage nodes, `rosrun` helps you run nodes.
+- __Packages__: A package is a low level, **independent**, shareable directory that contains files such as source code, configuration files, message descriptions, service descriptions, libraries, data, and build files. Anologous to a package in NodeJS (not precisely tho). A package can contain **multiple nodes**. A [good read](https://answers.ros.org/question/9133/packages-vs-nodes/).
+- __Workspace__: A workspace is a directory that contains multiple packages.
+- __Topics__: A topic is a communication channel between nodes. It is a way to pass information between nodes. Could be some sort of sensor data, or a command to move a robot. Command `rostopic` helps you manage topics.
+- __Messages__: Topics are categorised by the information they contain. This information is called a message. For example, a topic publishing camera data and another publishing velocity would have different messages (kindof obvious right?).
+- __Publisher and Subscriber__: A publisher publishes messages, a subscriber subscribes to messages, through topics.
+- __Services__: A service is a way to communicate with other nodes. It is a way to request information from other nodes. Could be a way to request a robot to move, or a way to request a robot to stop. Resemble the standard [client-server model](https://en.wikipedia.org/wiki/Client%E2%80%93server_model). Here, one node registers a service, and another node can request the service and get a response, two-way communication.
+- __Client and Server__: A client is a node that requests a service, and a server is a node that provides the service.
+- __Parameter Server__: A parameter server is a node that stores parameters. Parameters are variables that can be set by a node, and read by other nodes, like a shared dictionary. Must read: [this](http://wiki.ros.org/Parameter%20Server).
+- __Master__: It kind of acts as a [DNS server](https://www.cloudflare.com/en-in/learning/dns/what-is-a-dns-server/) for your nodes, so they can retrieve each other. Keeps a record of all the nodes that are running (can be from different packages). It tracks publishers and subscribers to topics as well as services. The command `roscore` starts the master, along with the logging and parameter server. Cannot use ROS without the master running.
+
+NOTE: The publish/subscribe framework is a many-to-many system where multiple nodes can publish to and subscribe from a topic. It is also a one-way transport of information. To alleviate these problems and to facilitate one-to-one, two-way transport of short-lived information, the service framework is used.
+
+![ros](/static/images/ros.gif)
+
+<center>A neat illustration, pretty close to how ROS actually works. </center>
+
+---
+
+# Utilities
+- `rqt`: rqt is a package that lets you visualise the current network of nodes and topics in ROS.
+- `roslaunch`: Lets you run launch files, which contain a list of nodes and topics to be run (very convenient for running multiple nodes).
+- `rosbag`: Lets you create and manage bags of data, consisting of messages from topics.
+- `urdf`: Lets you create and manage URDF files, which are used to describe the robot's kinematics.
+- `gazebo`: A simulation tool to work with the bots in an artificial environment with physics similar to the use-case and customisable.
+- `catkin`: A build system (if you feel like criticizing ROS, [start here](http://wiki.ros.org/catkin/conceptual_overview)) for ROS, which is a lot more convenient than the standard CMake.
+- `tf`: A library for transforming between coordinate frames.
+- `rviz`: A visualization tool for ROS. Displays a lot of information about the system i.e. nodes, topics, messages, etc.
+- `dynamic_reconfigure`: A library for configuring parameters of ROS nodes. It can help you to change the parameters of a node without restarting the node, i.e. at runtime. To understand how to use it, read [this](http://wiki.ros.org/dynamic_reconfigure/Tutorials).
+
+> Found this [glossary](https://nu-msr.github.io/me495_site/glossary.html) to be helpful occasionally.
+
+---
+
+# Resources
+- [ROS Wiki](https://wiki.ros.org/ROS/): The official ROS wiki.
+- [Maybe](https://sir.upc.edu/projects/rostutorials/): A course, but prefer the wiki.
+- [Another course with better examples](https://nu-msr.github.io/me495_site/): Still prefer the wiki first.
+- [To have a look on how things work](http://www.clearpathrobotics.com/assets/guides/kinetic/ros/Intro%20to%20the%20Robot%20Operating%20System.html)
+
+It is pretty important to go through the ROS wiki thouroughly.
+
+
+![ros-filesystem](/static/images/filesystem.png)
+
+<center>How the working directory usually looks like.</center>
