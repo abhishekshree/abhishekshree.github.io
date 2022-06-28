@@ -76,7 +76,7 @@ export default function About({ posts }) {
 
             <div className="grid md:grid-cols-2 grid-cols-1">
               <div>
-                <p className="antialiased font-black text-lg"> Recently I wrote: </p>
+                <p className="antialiased font-black text-lg"> Recently I wrote</p>
                 {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
                   const { slug, date, title, summary, tags } = frontMatter
                   return (
