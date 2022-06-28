@@ -8,7 +8,7 @@
       <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
       <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
       <lastBuildDate>Tue, 28 Jun 2022 00:00:00 GMT</lastBuildDate>
-      <atom:link href="https://abhishekshree.github.io//tags/linux/index.xml" rel="self" type="application/rss+xml"/>
+      <atom:link href="https://abhishekshree.github.io//tags/ros/index.xml" rel="self" type="application/rss+xml"/>
       
   <item>
     <guid>https://abhishekshree.github.io//blog/ros-a-primer</guid>
@@ -18,16 +18,6 @@
     <pubDate>Tue, 28 Jun 2022 00:00:00 GMT</pubDate>
     <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
     <category>ROS</category><category>Linux</category>
-  </item>
-
-  <item>
-    <guid>https://abhishekshree.github.io//blog/til-how-to-tranfer-storage-space-between-operating-systems</guid>
-    <title>TIL - How to tranfer storage space between Operating Systems</title>
-    <link>https://abhishekshree.github.io//blog/til-how-to-tranfer-storage-space-between-operating-systems</link>
-    <description>How to move X space to some Y place on disk, and vice versa.</description>
-    <pubDate>Thu, 15 Jul 2021 00:00:00 GMT</pubDate>
-    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
-    <category>TIL</category><category>Linux</category>
   </item>
 
     </channel>
