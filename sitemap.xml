@@ -33,6 +33,10 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io//blog/engineering-ras</loc>
+  </url>
+
+  <url>
     <loc>https://abhishekshree.github.io//blog/github-markdown-guide</loc>
   </url>
 
@@ -119,6 +123,10 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io//tags/go</loc>
+  </url>
+
+  <url>
     <loc>https://abhishekshree.github.io//tags/guide</loc>
   </url>
 
@@ -147,7 +155,15 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io//tags/product</loc>
+  </url>
+
+  <url>
     <loc>https://abhishekshree.github.io//tags/ros</loc>
+  </url>
+
+  <url>
+    <loc>https://abhishekshree.github.io//tags/system-design</loc>
   </url>
 
   <url>
