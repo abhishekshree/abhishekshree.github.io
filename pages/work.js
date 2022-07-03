@@ -1,5 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSeo } from '@/components/SEO'
+import Link from 'next/link'
 
 export default function Work({ posts }) {
   return (
@@ -24,6 +25,57 @@ export default function Work({ posts }) {
               <dl>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <time>March, 2022 ‑ June, 2022</time>
+                </dd>
+              </dl>
+              <div className="space-y-5 xl:col-span-3">
+                <div className="space-y-6">
+                  <div>
+                    <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                      <div className="text-gray-900 dark:text-gray-100">Product Engineer</div>
+                    </h2>
+                    <div className="flex flex-wrap">Students’ Placement Office</div>
+                  </div>
+                  <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                    <ul>
+                      <li>
+                        Created Recruitment Automation System for use in IITK by about 500 companies
+                        and 1700 students in the coming recruitment phase this year.
+                      </li>
+                      <li>
+                        Enhanced security and achieved an improvement in response time by
+                        approximately 60%.
+                      </li>
+                      <li>Spearheaded a team of 2 Lead and 6 Junior developers</li>
+                      <li>
+                        Designed and built a microservice based backend with more than 150 endpoints
+                        in Go including context models, an async mailing system, a Content Delivery
+                        System.
+                      </li>
+                      <li>
+                        Built a responsive frontend in Next.js, with features including type-based
+                        API calls, notifications, data filtering, a persistent store, Lazy Loading,
+                        page-level auth and RTE.
+                      </li>
+                      <li>
+                        Ideated and wrote CI/CD pipeline for smooth deployment, orchestrated using
+                        Nginx and Docker.
+                      </li>
+                      <li>
+                        Details about the solution architecture are available{' '}
+                        <Link href={`/blog/engineering-ras`}>here</Link>.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article className="py-4">
+            <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+              <dl>
+                <dt className="sr-only">Published on</dt>
+                <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
                   <time>May, 2022 ‑ Present</time>
                 </dd>
               </dl>
@@ -38,8 +90,12 @@ export default function Work({ posts }) {
                   <div className="prose text-gray-500 max-w-none dark:text-gray-400">
                     <ul>
                       <li>
-                        Leading a team of 50+ undergraduates working in the field of marine
-                        robotics.
+                        Leading a team of 50+ undergraduates to participate in international marine
+                        robotics competitions like RoboSub 2023
+                      </li>
+                      <li>
+                        Responsible for improving the software stack and design of our 3rd
+                        generation AUV-Tarang
                       </li>
                     </ul>
                   </div>
@@ -67,19 +123,14 @@ export default function Work({ posts }) {
                   </div>
                   <div className="prose text-gray-500 max-w-none dark:text-gray-400">
                     <ul>
+                      <li>Leading a team of 5 Web Executives.</li>
                       <li>
-                        Leading a team of 6 Web Executives and Volunteers to work on the web stack
-                        at Students’ Placement Office (SPO).
-                      </li>
-                      <li>Creation of a new website for SPO in Next.js.</li>
-                      <li>
-                        Ran performance tests on the current Recruitment Portal. Identified
-                        vulnerabilities and shortcomings in the backend of the portal.
+                        Maintaining the organization’s servers and VM, designed new infrastructure
+                        including the website, CDN, and portals.
                       </li>
                       <li>
-                        Designing the architecture of a New Recruitment Portal for SPO with the
-                        backend based on microservices pattern orchestrated using Kubernetes and the
-                        frontend in Next.js.
+                        Solved critical networking challenges while various deployments within IITK
+                        and SPO internal networks
                       </li>
                     </ul>
                   </div>
@@ -105,19 +156,19 @@ export default function Work({ posts }) {
                   </div>
                   <div className="prose text-gray-500 max-w-none dark:text-gray-400">
                     <ul>
-                      <li>Improved the team website, which ranked 3rd in Robosub, 2021.</li>
                       <li>
-                        Implemented Kalman filters based localisation technique to solve the SLAM
-                        problem, integrated the algorithm with ROS to work with real world data.
+                        Improved the team website , which ranked 3rd amongst 52 participating teams
+                        in Robosub, 2021, the largest competition for student-built AUVs in the
+                        world.
                       </li>
                       <li>
-                        Worked on Monte Carlo Markov Chain methods, Neural Networks and Biomimicry
-                        to implement algorithms for robot mapping like FastSLAM, RatSLAM, and
-                        BioSLAM.
+                        Utilized Extended Kalman Filters based SLAM algorithm to enhance pose
+                        estimation and navigation.
                       </li>
                       <li>
-                        Researched for methods to test the FastSLAM algorithm in underwater
-                        conditions.
+                        Implemented and researched the efficiency of graph-based, probabilistic, and
+                        deep learning-based SLAM algorithms like FastSLAM and RatSLAM in underwater
+                        conditions
                       </li>
                     </ul>
                   </div>
