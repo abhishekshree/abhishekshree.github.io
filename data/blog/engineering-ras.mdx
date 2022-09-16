@@ -9,6 +9,12 @@ images: []
 
 The work is done for Students' Placement Office, IIT Kanpur.
 
+<!-- quote -->
+Leave a star if you appreciate the work :P
+- [Backend](https://github.com/spo-iitk/ras-backend)
+- [Frontend](https://github.com/spo-iitk/ras-frontend)
+- [CDN](https://github.com/spo-iitk/ras-cdn)
+
 ## Assessing the Problem
 It started back in December 2021 when I got to work and improve the existing recruitment portal. We ran several security, stress, performance, and scalability tests on the portal. As a result, several vulnerabilities and performance issues were found. The was pretty well built to serve its purpose in 2014, but times have changed. We cannot have a deprecated Django version on the server sending complete HTML pages on API calls now. Moreover, operating on one thread with blocking synchronous requests, like emailing and zipping files would have never improved the performance.
 
@@ -24,9 +30,6 @@ The complete product architecture can be broadly dividied into these parts:
 
 ### The Backend 
 The backend was implementated keeping in mind a context-based model which allows us to pass request-scoped values, cancelation signals, and deadlines across API boundaries to all the goroutines involved in handling a request. We used `gin` as the HTTP framework and `gorm` as the ORM. The databases were designed keeping in mind the independence of each microservice. We used a total of 5 databases loosely tied to each other with keys to link them together. Indexes were used appropriately to make the queries faster. We had to use extensive joins to filter out data relevant to the end users, even across databases sometimes. 
-
-The ER diagram for the backend is shown below.
-
 
 We ensured panic recovery and error handling throughout the backend. Another important aspect was to keep logs of every important action performed at the admin end, so that we could track them back if needed, and also, to keep a record of the backend performance.
 
