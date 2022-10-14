@@ -33,6 +33,12 @@
   </url>
 
   <url>
+    <loc
+      >https://abhishekshree.github.io//blog/dont-like-rust-use-some-cli-tools-written-in-it-once</loc
+    >
+  </url>
+
+  <url>
     <loc>https://abhishekshree.github.io//blog/engineering-ras</loc>
   </url>
 
@@ -103,6 +109,10 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io//tags/cli</loc>
+  </url>
+
+  <url>
     <loc>https://abhishekshree.github.io//tags/cp</loc>
   </url>
 
@@ -160,6 +170,10 @@
 
   <url>
     <loc>https://abhishekshree.github.io//tags/ros</loc>
+  </url>
+
+  <url>
+    <loc>https://abhishekshree.github.io//tags/rust</loc>
   </url>
 
   <url>
