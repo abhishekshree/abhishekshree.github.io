@@ -80,7 +80,7 @@ export default function About({ posts }) {
                 {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
                   const { slug, date, title, summary, tags } = frontMatter
                   return (
-                    <div className="font-bold leading-8 tracking-tight" key={slug}>
+                    <div className="font-bold leading-8 tracking-tight mr-1" key={slug}>
                       <Link
                         href={`/blog/${slug}`}
                         className="text-gray-900 dark:text-gray-100"
