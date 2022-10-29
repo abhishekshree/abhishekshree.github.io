@@ -57,15 +57,15 @@ export default function About({ posts }) {
             <p>
               I am Abhishek Shree, a Junior at the Indian Institute of Technology, Kanpur. My
               interests are manifold and are constantly evolving, including Cryptography, Backend
-              System Design, Devops and AI.
+              System Design and Devops.
             </p>
             <p>
               I (used to) like{' '}
               <Link href="https://www.stopstalk.com/user/profile/shree_e">solving problems</Link> at
-              times. Currently I'm learning about Low Level System Design and Reinforcement
-              learning. I love to explore random things now and then, be it about the web,{' '}
+              times. Currently I'm learning about Low Level System Design and a lot of AWS. I love
+              to explore random things now and then, be it about the web,{' '}
               <Link href="https://github.com/abhishekshree/DOTFILES">linux </Link>
-              or even geopolitics recently.
+              or even startups very recently.
             </p>
             <p>
               Apart from my daily endeavor to be a better developer, I tend to consume a lot of pop
