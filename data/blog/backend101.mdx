@@ -1,0 +1,121 @@
+---
+title: "Backing Up Your Backend: Tips for Building a Functional System"
+date: '2023-01-02'
+tags: ['system design', 'go', 'RAS', 'guide']
+draft: false
+summary: A summary of learnings and failings and the loop.
+images: []
+---
+
+Tl;dr: This post is going to be based on my experience with building and monitoring the Recruitment Automation System on which I worked the past summer. I will also summarize some decisions made during the development process and discuss some of the challenges we faced.
+
+---
+
+## Primer
+
+Anyone who has wanted to build something which others can use has probably thought about the following questions:
+1. How do I make sure people can use my product?
+2. How many people can use my product?
+3. What harm can exposing my product to the world do? (yeah I mean you don't want to make something which can be compromised and has 1000s of users)
+
+Most of what people see lies on the Frontend or the more visual component of the solution. But a lot of heavy lifting happens on the backend hidden from the rest of the users. A lot of answers to the above questions lie in the choices made while thinking about the backend of the system.
+
+Anyway I am not here to narrate a story, I would assume the reader to know something about building elementary frontend and backend. 
+
+Also consider reading: 
+- [About which language to use](https://www.joelonsoftware.com/2006/08/01/can-your-programming-language-do-this/)
+- Being a [duct tape programmer](https://www.joelonsoftware.com/2009/09/23/the-duct-tape-programmer/)
+- [Inspiring work](https://engineering.grab.com/zero-downtime-migration)
+
+---
+
+## More Technical Stuff
+
+### Writing neat code
+Structuring how the backend services look (in an abstract way) contribute to a lot in terms of maintainability and scalability. Yeah one can write all of the logic in one huge file with all primitive types and no abstractions but that is not the way to go. There is a reason why `struct` exists in most languages, use it to your advantage. Folders are free of cost and the visibility they provide at a glance is priceless (for real).
+
+### Abstraction
+Abstraction always helps. However difficult it might seem to be, it kind of simplifies the whole process in the long run. There are a lot of high-level frameworks which currently enable to abstract out a lot of the low-level details from the developer and still be pretty powerful. For example, I came across a framework in Scala after the [Twitter Layoff News](https://www.bloomberg.com/news/articles/2022-11-16/twitter-layoffs-are-bad-example-of-how-to-fire-people) called [Finagle](https://twitter.github.io/finagle/). It is a RPC framework which is used by Twitter to build their backend services. The most amazing part about Finagle is in how simplistic it is to write services and client code too, meanwhile the services can be as complex as nodes on a distributed system communicating with each other (in form of `Future[Unit]`, for the enthusiasts).
+
+This [example](https://twitter.github.io/scala_school/searchbird.html) over here is just beautiful. Scala is a pretty amazing language with all the good parts of Java, ngl.
+
+Moreover, another abstraction over [Finagle](https://twitter.github.io/finagle/) and [TwitterServer](https://twitter.github.io/twitter-server/) is [Finatra](https://twitter.github.io/finatra/). It is a web framework built on top of Finagle. It is pretty amazing to see how much of the boilerplate code can be abstracted away.
+
+More on [Finagle](https://blog.rockthejvm.com/finagle/) for the curious. Just check out the Load Balancer part over there. Fascinating!
+
+### Architecture
+How a system is designed, the choices made at one particular point in time, with one particular tool/protocol/middleware, might sound to have a lot of value. But it does not kill in most of the cases. It is important to keep in mind that the system is not going to be static. It is going to evolve and change. So it is important to keep the architecture as decoupled as possible and not over-engineering it needs real skills.
+
+Prime examples of over-engineering:
+- Thinking of [microservices](https://martinfowler.com/articles/microservices.html) in the beginning.
+- Using [gRPC](https://grpc.io/) for everything. It is fast but for a very different use case. It is not a replacement for REST APIs.
+- Using [Kafka](https://kafka.apache.org/) for simple pub-sub use cases. It is a distributed streaming platform and not a message broker.
+- Fancy "Design Patterns", yeah I would totally not write anything v1 with CQRS in mind.
+
+Anyway, the above mentioned tools are pretty awesome, but they're just too good for some 1000s of users in my opinion.
+
+### DevOps
+Learn about Docker containers today! Learn some network basics! Learn how to use bash! Learn how to setup secrets properly! These are things which quantify how the system performs and how to make it even better, eg. The `top` command was a life saver for me in one of my projects.
+
+Webservers, Certificate Authorities, Load Balancers, Reverse Proxies, Databases, Caches, Message Brokers, Queues, etc. are all things which are pretty common in a system. It is important to know how they work and how to use them.
+
+GitHub Actions are pretty cool. They can be used to automate a lot of things. _A lot_. Combined with `Make` and `Docker` they can be used as a small self contained CI/CD pipeline. Plus the community is pretty active and there are a lot of actions available for free.
+
+Finally the talk of the town, Orchestration. Putting all images to work at once. There are a lot of ways to orchestrate the backend services. The most common ones are [Kubernetes](https://kubernetes.io/), [Docker Swarm](https://docs.docker.com/engine/swarm/) and [Nomad](https://www.nomadproject.io/)
+
+Using Kubernetes was pretty tempting for me initially for RAS. 6 months down the line, it turns out that all we needed to get going was 4 docker images in total with ability to restart on failing. We went with Docker Swarm and it worked out pretty well and easy. Learning about how to use Docker and Kubernetes to their full potential is something I definitely look forward to. 
+
+P.s. Fun [networking](https://engineering.grab.com/dns-resolution-in-go-and-cgo) read.
+
+### Monitoring
+What to monitor? How to monitor? There are a lot of really useful metrics generated at the time when the system is live. That's something worth looking into. For example,
+- How many requests are being made to the backend?
+- Data in and data out
+- Average response time
+- Peak response time
+- Hardware usage
+- Thread count (specifically a pain with JVM based languages)
+
+These are number which won't be present just on their own but quantifying them is important. There are a lot of tools which can be used to monitor the system for such metrics. A really popular tool for the same is [Prometheus](https://prometheus.io/). It is a time series database which can be used to store and query metrics. It has SQL like querying capabilities and a lot of exporters for different services. 
+A lot of other tools can be used to monitor the system. For example, [Grafana](https://grafana.com/) can be used to visualize the metrics. [Jaeger](https://www.jaegertracing.io/) can be used to trace the requests. [Kibana](https://www.elastic.co/kibana) can be used to visualize logs.
+
+On a sidenote it is always better to have a lot of "unused" metrics than worrying about the quality of the metrics. 
+
+
+### Cloud Providers
+Cloud is mostly the place where the whole system would be running. One should totally understand [AWS](https://aws.amazon.com/) and work with it to get a better picture of what happens in the real software world. (It is mostly a discussion of the company being ready to bear the cost of the cloud provider or not, with every new tool you start to build around the system.)
+
+A lot of IaC (Infrastructure as Code) tools are available for the same. [Terraform](https://www.terraform.io/) is one of the most popular ones. It is a tool which can be used to automate the provisioning of the cloud resources. Pretty cool stuff.
+
+### Database
+There are a lot of a fancy databases apart from the usual SQL and NoSQL choices, highly specific to a smaller set of tasks. So before deciding to use MongoDB for everything, it is a nice idea to look into the problem at hand and see if there is a better fit. Just to state some examples,
+- [Cassandra](https://cassandra.apache.org/), has a lot of horizontal scaling capabilities and is a distributed database
+- [Redis](https://redis.io/) for caching and pub-sub as it works in memory
+- [Elasticsearch](https://www.elastic.co/elasticsearch/) for search and analytics as it is a distributed search engine
+- [Neo4j](https://neo4j.com/) for graph databases such as social networks
+- [CockroachDB](https://www.cockroachlabs.com/) for distributed SQL databases with ACID guarantees
+- [Minio](https://min.io/) for object storage
+- [ClickHouse](https://clickhouse.tech/) for analytics and big data processing
+- [TimescaleDB](https://www.timescale.com/) for time series data
+- [S3](https://aws.amazon.com/s3/) a lot of easy to use key-value storage
+
+The list is not exhasutive and I find it fascinating to what extent the niche has been developed.
+
+---
+
+There are a shit ton of tools getting built everday. As a crux of the whole technical chat, one can take away a key advice to not reinvet the wheel as much as possible.
+
+
+Coming to RAS, things are pretty good as of now, but, following my own advice (narcissistic AF) I'd try to bring about the following changes:
+- Add more abstraction to the backend services
+- Add an alert system for network failure
+- Cleaning up old CDN data (I'm not sure if it is possible)
+- Add a better logging system, more consise
+- gRPC for internal communication with a GraphQL API layer on top
+- A better filestorage system, with a better(read that functional) database
+- Secret management from outside the cluster
+- Removing redundant business specific logic from backend (GraphQL would help with this)
+- [Addition] A real caching system for large queries (not talking Redis here)
+- TESTS (I'm not sure if it is possible to add tests to the current system, but it would be nice to have)
+
+This blog and the list would probably be updated as I learn more. I'd love to hear your thoughts on the same. Thanks for reading!
