@@ -1,12 +1,12 @@
 import siteMetadata from '@/data/siteMetadata'
-import { PageSeo } from '@/components/SEO'
+import { PageSEO } from '@/components/SEO'
 import SocialIcon from '@/components/social-icons'
 import Link from '@/components/Link'
 
 export default function Contact() {
   return (
     <>
-      <PageSeo
+      <PageSEO
         title={`Contact - ${siteMetadata.author}`}
         description="Find me here"
         url={`${siteMetadata.siteUrl}/contact`}

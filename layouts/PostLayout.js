@@ -1,7 +1,7 @@
 import Link from '@/components/Link'
 import PageTitle from '@/components/PageTitle'
 import SectionContainer from '@/components/SectionContainer'
-import { BlogSeo } from '@/components/SEO'
+import { BlogSEO } from '@/components/SEO'
 import Tag from '@/components/Tag'
 import siteMetdata from '@/data/siteMetadata'
 import ScrollToTop from '@/components/ScrollToTop'
@@ -17,7 +17,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
 
   return (
     <SectionContainer>
-      <BlogSeo url={`${siteMetdata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
+      <BlogSEO url={`${siteMetdata.siteUrl}/blog/${frontMatter.slug}`} {...frontMatter} />
       <ScrollToTop />
       <article>
         <div className="xl:divide-y xl:divide-gray-200 xl:dark:divide-gray-700">
@@ -57,10 +57,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                           href={siteMetdata.facebook}
                           className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
                         >
-                          {siteMetdata.facebook.replace(
-                            siteMetdata.facebook,
-                            '@Abhishek'
-                          )}
+                          {siteMetdata.facebook.replace(siteMetdata.facebook, '@Abhishek')}
                         </Link>
                       </dd>
                     </dl>
@@ -71,10 +68,12 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-500 dark:text-gray-300">
-                Hi, In case you want to discuss anything about this post, you can reach out to me over{' '}
+                Hi, In case you want to discuss anything about this post, you can reach out to me
+                over{' '}
                 <span className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
                   <Link href={`/contact`}>here</Link>
-                </span>.
+                </span>
+                .
               </div>
             </div>
             <footer>

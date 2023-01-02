@@ -27,8 +27,10 @@ export async function getStaticProps({ params }) {
   const post = await getFileBySlug('blog', params.slug)
 
   // rss
-  const rss = generateRss(allPosts)
-  fs.writeFileSync('./public/index.xml', rss)
+  if (allPosts.length > 0) {
+    const rss = generateRss(allPosts)
+    fs.writeFileSync('./public/feed.xml', rss)
+  }
 
   return { props: { post, prev, next } }
 }

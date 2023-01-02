@@ -1,11 +1,11 @@
 import siteMetadata from '@/data/siteMetadata'
-import { PageSeo } from '@/components/SEO'
+import { PageSEO } from '@/components/SEO'
 import Link from 'next/link'
 
 export default function Work({ posts }) {
   return (
     <>
-      <PageSeo
+      <PageSEO
         title={`Work - ${siteMetadata.author}`}
         description={siteMetadata.description}
         url={`${siteMetadata.siteUrl}/work`}

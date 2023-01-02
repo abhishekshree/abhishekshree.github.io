@@ -1,6 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import SocialIcon from '@/components/social-icons'
-import { PageSeo } from '@/components/SEO'
+import { PageSEO } from '@/components/SEO'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import Link from '@/components/Link'
 
@@ -16,7 +16,7 @@ export async function getStaticProps() {
 export default function About({ posts }) {
   return (
     <>
-      <PageSeo
+      <PageSEO
         title={siteMetadata.title}
         description={siteMetadata.description}
         url={siteMetadata.siteUrl}
