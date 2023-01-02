@@ -1,0 +1,124 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Abhishek Shree</title>
+      <link>https://abhishekshree.github.io//blog</link>
+      <description>I am an undergraduate at Indian Institute of Technology, Kanpur. Also I try to blog about the amazing stuff I come across.</description>
+      <language>en-us</language>
+      <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
+      <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
+      <lastBuildDate>Fri, 14 Oct 2022 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://abhishekshree.github.io//index.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://abhishekshree.github.io//blog/dont-like-rust-use-some-cli-tools-written-in-it-once</guid>
+    <title>Don't like Rust? Use some CLI tools written in it once</title>
+    <link>https://abhishekshree.github.io//blog/dont-like-rust-use-some-cli-tools-written-in-it-once</link>
+    <description>🦀 appreciation era</description>
+    <pubDate>Fri, 14 Oct 2022 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>rust</category><category>linux</category><category>cli</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/engineering-ras</guid>
+    <title>Engineering the Recruitment Automation System</title>
+    <link>https://abhishekshree.github.io//blog/engineering-ras</link>
+    <description>Discussed the design and implementational complexity behind the new Recruitment Automation System.</description>
+    <pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>system design</category><category>go</category><category>product</category><category>RAS</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/ros-a-primer</guid>
+    <title>ROS - A Primer</title>
+    <link>https://abhishekshree.github.io//blog/ros-a-primer</link>
+    <description>Discussed the essentials of ROS for a smoother learning curve.</description>
+    <pubDate>Tue, 28 Jun 2022 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>ROS</category><category>Linux</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/tiluber-eats</guid>
+    <title>TIL - The case with Uber Eats</title>
+    <link>https://abhishekshree.github.io//blog/tiluber-eats</link>
+    <description>null</description>
+    <pubDate>Fri, 29 Apr 2022 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>fp</category><category>idempotency</category><category>backend</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/til-git-folders</guid>
+    <title>TIL - Github and ASCIIbetically sorted folders</title>
+    <link>https://abhishekshree.github.io//blog/til-git-folders</link>
+    <description>Weirdly sorted oof!</description>
+    <pubDate>Mon, 13 Dec 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>TIL</category><category>Github</category><category>Git</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/lambda-calculus</guid>
+    <title>Lambda Calculus and all the fuzz around it</title>
+    <link>https://abhishekshree.github.io//blog/lambda-calculus</link>
+    <description>Wait, you're saying that I have to generate numbers from functions?</description>
+    <pubDate>Fri, 05 Nov 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>fp</category><category>math</category><category>lambda calculus</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/life-update-travelling-postamidst-pandemic</guid>
+    <title>Life update - Travelling post/amidst(?) pandemic</title>
+    <link>https://abhishekshree.github.io//blog/life-update-travelling-postamidst-pandemic</link>
+    <description>The one where everyone meets in Jaipur.</description>
+    <pubDate>Mon, 02 Aug 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>life</category><category>jaipur</category><category>travel</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/til-how-to-tranfer-storage-space-between-operating-systems</guid>
+    <title>TIL - How to tranfer storage space between Operating Systems</title>
+    <link>https://abhishekshree.github.io//blog/til-how-to-tranfer-storage-space-between-operating-systems</link>
+    <description>How to move X space to some Y place on disk, and vice versa.</description>
+    <pubDate>Thu, 15 Jul 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>TIL</category><category>Linux</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/building-a-basic-vimrc</guid>
+    <title>About vim and building a basic .vimrc</title>
+    <link>https://abhishekshree.github.io//blog/building-a-basic-vimrc</link>
+    <description>This is a blog about vim and what a basic vimrc should contain, also a reminder for me on how I set up my .vimrc</description>
+    <pubDate>Mon, 01 Mar 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>vim</category><category>vimrc</category><category>bash</category><category>zsh</category><category>terminal</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/revision-resources</guid>
+    <title>Revision Resources</title>
+    <link>https://abhishekshree.github.io//blog/revision-resources</link>
+    <description>A list of helpful resources.</description>
+    <pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>C</category><category>DSA</category><category>CP</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/github-markdown-guide</guid>
+    <title>Markdown Guide</title>
+    <link>https://abhishekshree.github.io//blog/github-markdown-guide</link>
+    <description>Markdown cheatsheet for all your blogging needs - headers, lists, images, tables and more! An illustrated guide based on Github Flavored Markdown.</description>
+    <pubDate>Fri, 11 Oct 2019 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>github</category><category>guide</category>
+  </item>
+
+    </channel>
+  </rss>

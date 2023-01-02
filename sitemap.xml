@@ -97,110 +97,114 @@
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/backend</loc>
+    <loc>https://abhishekshree.github.io//tags/backend/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/bash</loc>
+    <loc>https://abhishekshree.github.io//tags/bash/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/c</loc>
+    <loc>https://abhishekshree.github.io//tags/c/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/cli</loc>
+    <loc>https://abhishekshree.github.io//tags/cli/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/cp</loc>
+    <loc>https://abhishekshree.github.io//tags/cp/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/dsa</loc>
+    <loc>https://abhishekshree.github.io//tags/dsa/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/fp</loc>
+    <loc>https://abhishekshree.github.io//tags/fp/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/git</loc>
+    <loc>https://abhishekshree.github.io//tags/git/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/github</loc>
+    <loc>https://abhishekshree.github.io//tags/github/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/go</loc>
+    <loc>https://abhishekshree.github.io//tags/go/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/guide</loc>
+    <loc>https://abhishekshree.github.io//tags/guide/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/idempotency</loc>
+    <loc>https://abhishekshree.github.io//tags/idempotency/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/jaipur</loc>
+    <loc>https://abhishekshree.github.io//tags/jaipur/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/lambda-calculus</loc>
+    <loc>https://abhishekshree.github.io//tags/lambda-calculus/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/life</loc>
+    <loc>https://abhishekshree.github.io//tags/life/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/linux</loc>
+    <loc>https://abhishekshree.github.io//tags/linux/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/math</loc>
+    <loc>https://abhishekshree.github.io//tags/math/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/product</loc>
+    <loc>https://abhishekshree.github.io//tags/product/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/ros</loc>
+    <loc>https://abhishekshree.github.io//tags/ras/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/rust</loc>
+    <loc>https://abhishekshree.github.io//tags/ros/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/system-design</loc>
+    <loc>https://abhishekshree.github.io//tags/rust/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/terminal</loc>
+    <loc>https://abhishekshree.github.io//tags/system-design/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/til</loc>
+    <loc>https://abhishekshree.github.io//tags/terminal/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/travel</loc>
+    <loc>https://abhishekshree.github.io//tags/til/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/vim</loc>
+    <loc>https://abhishekshree.github.io//tags/travel/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/vimrc</loc>
+    <loc>https://abhishekshree.github.io//tags/vim/feed.xml</loc>
   </url>
 
   <url>
-    <loc>https://abhishekshree.github.io//tags/zsh</loc>
+    <loc>https://abhishekshree.github.io//tags/vimrc/feed.xml</loc>
+  </url>
+
+  <url>
+    <loc>https://abhishekshree.github.io//tags/zsh/feed.xml</loc>
   </url>
 </urlset>
