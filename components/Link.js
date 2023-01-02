@@ -17,7 +17,15 @@ const CustomLink = ({ href, ...rest }) => {
     return <a href={href} {...rest} />
   }
 
-  return <a target="_blank" rel="noopener noreferrer" style={{textDecoration: 'none'}} href={href} {...rest} />
+  return (
+    <a
+      target="_blank"
+      rel="noopener noreferrer"
+      style={{ textDecoration: 'none' }}
+      href={href}
+      {...rest}
+    />
+  )
 }
 
 export default CustomLink

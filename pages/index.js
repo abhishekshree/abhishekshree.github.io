@@ -4,7 +4,7 @@ import { PageSEO } from '@/components/SEO'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import Link from '@/components/Link'
 
-const MAX_DISPLAY = 2
+const MAX_DISPLAY = 3
 // const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
 
 export async function getStaticProps() {
@@ -75,23 +75,35 @@ export default function About({ posts }) {
             </p>
 
             <div className="grid md:grid-cols-2 grid-cols-1">
-              <div>
-                <p className="antialiased font-black text-lg"> Recently I wrote</p>
+              <div className="mr-5">
+                <p className="antialiased font-black text-lg leading-tight"> Recently I wrote</p>
                 {posts.slice(0, MAX_DISPLAY).map((frontMatter) => {
                   const { slug, date, title, summary, tags } = frontMatter
                   return (
-                    <div className="font-bold leading-8 tracking-tight mr-1" key={slug}>
+                    <div className="font-bold leading-tight" key={slug}>
                       <Link
                         href={`/blog/${slug}`}
                         className="text-gray-900 dark:text-gray-100"
                         style={{ textDecoration: 'none' }}
                       >
-                        <div style={{ lineHeight: 1.5 }}>{title}</div>
+                        <div>{title}</div>
                       </Link>
                       <br />
                     </div>
                   )
                 })}
+                {/* all posts button
+                <div className="pt-0 align-text-bottom	float-right">
+                  <Link
+                    href="/blog"
+                    className="text-gray-900 dark:text-gray-100"
+                    style={{ textDecoration: 'none' }}
+                  >
+                    <div style={{ lineHeight: 2.8 }} className="pr-2">
+                      All Posts ➜
+                    </div>
+                  </Link>
+                </div> */}
               </div>
               <div>
                 <div className="leading-none">
