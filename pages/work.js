@@ -25,7 +25,7 @@ export default function Work({ posts }) {
               <dl>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                  <time>August, 2022 ‑ Present</time>
+                  <time>August, 2022 ‑ December, 2022</time>
                 </dd>
               </dl>
               <div className="space-y-5 xl:col-span-3">
@@ -36,14 +36,45 @@ export default function Work({ posts }) {
                         Graduate Product Engineer
                       </div>
                     </h2>
-                    <div className="flex flex-wrap">paradime.io 🚀</div>
+                    <div className="flex flex-wrap">paradime.io </div> {/*🚀*/}
                   </div>
                   <div className="prose text-gray-500 max-w-none dark:text-gray-400">
-                    {/* <ul> */}
-                    {/* <li> */}
-                    Building new infratructure and contributing to better DevOps.
-                    {/* </li> */}
-                    {/* </ul> */}
+                    <ul>
+                      <li>Built new infratructure and contributed to better DevOps practices</li>
+                      <li>
+                        Built Kubernetes Vulnerability Scanner for automated weekly vulnerability
+                        assessments using tools including Trivy, Kubeaudit, and Kube_bench, deployed
+                        to airflow. Developed a way to securely connect to the production clusters.
+                      </li>
+                      <li>
+                        Implemented a web‑based Kubernetes user interface with multiple‑level role
+                        access, attached a Tailscale sidecar for the interface to be accessible just
+                        via internal VPN using Terraform
+                      </li>
+                      <li>
+                        Implemented alarms for failed Kubernetes nodes (failing status check) in
+                        ASG(auto‑scaling groups) and per node
+                      </li>
+                      <li>Built a new monitoring infrastructure:</li>
+                    </ul>
+                    <div className="pl-4">
+                      <ol className="list-inside list-none">
+                        <li>
+                          Installed cluster‑level Prometheus instances, AWS‑managed Grafana, and
+                          Prometheus (AMP), using Terraform
+                        </li>
+                        <li>
+                          Built a pipeline to transfer data related to metrics from cluster‑level
+                          Prometheus instances to AWS‑managed Prometheus instance, utilized those to
+                          generate dashboards in Grafana using AMP as the primary data source using
+                          Terraform and Helm
+                        </li>
+                        <li>
+                          Built custom dashboards to generate meaningful insights from the collected
+                          metrics
+                        </li>
+                      </ol>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -186,7 +217,7 @@ export default function Work({ posts }) {
                   <div className="prose text-gray-500 max-w-none dark:text-gray-400">
                     <ul>
                       <li>
-                        Improved the team website , which ranked 3rd amongst 52 participating teams
+                        Improved the team website, which ranked 3rd amongst 52 participating teams
                         in Robosub, 2021, the largest competition for student-built AUVs in the
                         world.
                       </li>
