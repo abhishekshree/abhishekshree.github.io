@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "next-remote-watch ./data",
+    "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
     "dev": "next dev",
     "build": "next build && node ./scripts/generate-sitemap",
     "serve": "next start",
@@ -41,6 +41,7 @@
   "devDependencies": {
     "@next/bundle-analyzer": "^10.0.0",
     "@svgr/webpack": "^5.5.0",
+    "cross-env": "^7.0.3",
     "eslint": "^7.17.0",
     "eslint-config-prettier": "^7.1.0",
     "eslint-plugin-jsx-a11y": "^6.4.1",
@@ -59,6 +60,8 @@
     "remark-parse": "9.0.0",
     "remark-stringify": "9.0.0",
     "unified": "9.2.0",
-    "unist-util-visit": "2.0.3"
+    "unist-util-visit": "2.0.3",
+    "socket.io": "^4.4.0",
+    "socket.io-client": "^4.4.0"
   }
 }
