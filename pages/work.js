@@ -32,7 +32,7 @@ export default function Work({ posts }) {
                 <div className="space-y-6">
                   <div>
                     <h2 className="text-2xl font-bold leading-8 tracking-tight">
-                      <div className="text-gray-900 dark:text-gray-100">Quantitative Technologist Intern</div>
+                      <div className="text-gray-900 dark:text-gray-100">Quantitative Technology Intern</div>
                     </h2>
                     <div className="flex flex-wrap">Qube Research & Technologies</div>
                   </div>
