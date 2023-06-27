@@ -29,7 +29,7 @@ export default function About({ posts }) {
               {siteMetadata.author}
             </h3>
             <div className="text-gray-500 mono text-xs dark:text-gray-400">
-              Third Year Undergraduate Student
+              Fourth Year Undergraduate Student
             </div>
             <div className="text-gray-500 mono text-xs dark:text-gray-400">
               <a
@@ -38,7 +38,7 @@ export default function About({ posts }) {
                 target="_blank"
                 rel="noreferrer"
               >
-                Indian Institute of Technology, Kanpur
+                Indian Institute of Technology Kanpur
               </a>
             </div>
             <div className="flex pt-6 space-x-3">
@@ -55,25 +55,16 @@ export default function About({ posts }) {
               Namaste!
             </h1>
             <p>
-              I am Abhishek Shree, a Junior at the Indian Institute of Technology, Kanpur. My
-              interests are manifold and are constantly evolving, including Cryptography, Backend
-              System Design and Devops.
-            </p>
-            <p>
-              I (used to) like{' '}
-              <Link href="https://www.stopstalk.com/user/profile/shree_e">solving problems</Link> at
-              times. Currently I'm learning about Low Level System Design and a lot of AWS. I love
-              to explore random things now and then, be it about the web,{' '}
-              <Link href="https://github.com/abhishekshree/DOTFILES">linux </Link>
-              or even startups very recently.
+              I am Abhishek Shree, a Senior at the Indian Institute of Technology, Kanpur. My
+              interests are manifold and are constantly evolving, recently I found an appreciation
+              for programming languages and systems around those.
             </p>
             <p>
               Apart from my daily endeavor to be a better developer, I tend to consume a lot of pop
-              culture and read, at a concerningly fast pace at times. If not that, I can also be
-              found solving my Rubik's cube or vibing{' '}
+              culture and read, at a concerningly fast pace at times. I have also found a new appreciation towards
+              traveling and abstract photography. If not that, I can also be found solving my Rubik's cube or vibing{' '}
               <Link href="https://open.spotify.com/playlist/37i9dQZF1DXaQm3ZVg9Z2X">to this.</Link>
             </p>
-
             <div className="grid md:grid-cols-2 grid-cols-1">
               <div className="mr-5">
                 <p className="antialiased font-black text-lg leading-tight"> Recently I wrote</p>
@@ -112,7 +103,7 @@ export default function About({ posts }) {
                 <div className="">
                   <div>
                     <div className="leading-tight font-semibold ">
-                      BS Economics, 2024 (Expected)
+                      BS Economic Sciences, 2024 (Expected)
                     </div>
                     <div className="leading-none text-sm text-gray-500">
                       Indian Institute of Technology, Kanpur
