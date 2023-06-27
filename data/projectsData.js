@@ -1,5 +1,53 @@
 const projectsData = [
   {
+    title: 'Engn',
+    description: 'Wrote a dummy trading and order matching engine with guarantees of matching in Rust while learning the language.',
+    imgSrc: '/static/images/pp/engn.png',
+    href: 'https://github.com/abhishekshree/engn',
+  },
+  {
+    title: 'GrowSimplee Route Optimization',
+    description: 'Attempted to solve the travelling salseman problem with additional real-life constraints and created an end to end product for the same.',
+    imgSrc: '/static/images/pp/gs.png',
+    href: 'https://github.com/abhishekshree/GrowSimplee',
+  },
+  {
+    title: 'Fcache',
+    description: 'Caching based on a distributed system implemented in golang over a custom protocol.',
+    imgSrc: '/static/images/pp/fcache.png',
+    href: 'https://github.com/abhishekshree/fcache',
+  },
+  {
+    title: 'Feral',
+    description: 'Contributed a gitter8 template to the feral serverless for generating a simple lambda in scala (typelevel).',
+    imgSrc: '/static/images/pp/feral.png',
+    href: 'https://github.com/typelevel/feral.g8',
+  },
+  {
+    title: 'Immutable SegTrees',
+    description: 'This implementation consists of a Scala class depicting behavior of standard segment trees but the states of each node being immutable.',
+    imgSrc: '/static/images/pp/segtree.png',
+    href: 'https://github.com/spo-iitk/immutable-segment-tree',
+  },
+  {
+    title: 'RAS-CDN',
+    description: 'An attempt to make a self hosted Content Delivery System keeping in mind latency and correctness in the files delivered.',
+    imgSrc: '/static/images/pp/cdn.png',
+    href: 'https://github.com/spo-iitk/ras-cdn',
+  },
+  {
+    title: 'Firewall Filtering and FHE',
+    description: 'Implemented firewall based packet filtering and a prototype for fully homomorphic encryption based on paillier encryption.',
+    imgSrc: '/static/images/pp/packet.png',
+    href: 'https://github.com/abhishekshree/cybersecurity-engage',
+  },
+  {
+    title: 'Simulating MultiNode Communication',
+    description: 'Wrote a simple simulation in C++ to demonstrate how data (vectors) can be transmitted over multiple receivers by one or many senders.',
+    imgSrc: '/static/images/pp/senders.png',
+    href: 'https://github.com/abhishekshree/SKA',
+  },
+  {
     title: 'Digital Alpha SaaS Analyzer',
     description:
       'Prepared a solution for the High Problem Statement of Digital Alpha to develop a scalable web application on a custom ML model to analyze large SEC fillings and get SaaS metrics of given companies',

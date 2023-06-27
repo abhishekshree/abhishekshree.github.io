@@ -25,7 +25,32 @@ export default function Work({ posts }) {
               <dl>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                  <time>August, 2022 ‑ December, 2022</time>
+                  <time>May, 2023 - Present</time>
+                </dd>
+              </dl>
+              <div className="space-y-5 xl:col-span-3">
+                <div className="space-y-6">
+                  <div>
+                    <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                      <div className="text-gray-900 dark:text-gray-100">Quantitative Technologist Intern</div>
+                    </h2>
+                    <div className="flex flex-wrap">Qube Research & Technologies</div>
+                  </div>
+                  <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                    <ul>
+                      <li>Building latency sensative software for the hedge fund</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article className="py-4">
+            <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+              <dl>
+                <dt className="sr-only">Published on</dt>
+                <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <time>August, 2022 - March, 2023</time>
                 </dd>
               </dl>
               <div className="space-y-5 xl:col-span-3">
@@ -47,25 +72,25 @@ export default function Work({ posts }) {
                         to airflow. Developed a way to securely connect to the production clusters.
                       </li>
                       <li>
-                        Implemented a web‑based Kubernetes user interface with multiple‑level role
+                        Implemented a web-based Kubernetes user interface with multiple-level role
                         access, attached a Tailscale sidecar for the interface to be accessible just
                         via internal VPN using Terraform
                       </li>
                       <li>
                         Implemented alarms for failed Kubernetes nodes (failing status check) in
-                        ASG(auto‑scaling groups) and per node
+                        ASG(auto-scaling groups) and per node
                       </li>
                       <li>Built a new monitoring infrastructure:</li>
                     </ul>
                     <div className="pl-4">
                       <ol className="list-inside list-none">
                         <li>
-                          Installed cluster‑level Prometheus instances, AWS‑managed Grafana, and
+                          Installed cluster-level Prometheus instances, AWS-managed Grafana, and
                           Prometheus (AMP), using Terraform
                         </li>
                         <li>
-                          Built a pipeline to transfer data related to metrics from cluster‑level
-                          Prometheus instances to AWS‑managed Prometheus instance, utilized those to
+                          Built a pipeline to transfer data related to metrics from cluster-level
+                          Prometheus instances to AWS-managed Prometheus instance, utilized those to
                           generate dashboards in Grafana using AMP as the primary data source using
                           Terraform and Helm
                         </li>
@@ -75,6 +100,9 @@ export default function Work({ posts }) {
                         </li>
                       </ol>
                     </div>
+                    <ul>
+                      <li>Worked on adding support for Hightouch integration in the Paradime Ecosystem</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -85,7 +113,7 @@ export default function Work({ posts }) {
               <dl>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                  <time>March, 2022 ‑ June, 2022</time>
+                  <time>March, 2022 - June, 2022</time>
                 </dd>
               </dl>
               <div className="space-y-5 xl:col-span-3">
@@ -136,7 +164,7 @@ export default function Work({ posts }) {
               <dl>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                  <time>May, 2022 ‑ Present</time>
+                  <time>May, 2022 - April, 2023</time>
                 </dd>
               </dl>
               <div className="space-y-5 xl:col-span-3">
@@ -168,7 +196,7 @@ export default function Work({ posts }) {
               <dl>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                  <time>March, 2022 ‑ Present</time>
+                  <time>March, 2022 - April, 2023</time>
                 </dd>
               </dl>
               <div className="space-y-5 xl:col-span-3">
@@ -186,7 +214,7 @@ export default function Work({ posts }) {
                       <li>Leading a team of 5 Web Executives.</li>
                       <li>
                         Maintaining the organization’s servers and VM, designed new infrastructure
-                        including the website, CDN, and portals.
+                        including the website, CDN, and portals
                       </li>
                       <li>
                         Solved critical networking challenges while various deployments within IITK
@@ -203,7 +231,7 @@ export default function Work({ posts }) {
               <dl>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                  <time>April, 2021 ‑ Present</time>
+                  <time>April, 2021 - Present</time>
                 </dd>
               </dl>
               <div className="space-y-5 xl:col-span-3">
@@ -219,11 +247,11 @@ export default function Work({ posts }) {
                       <li>
                         Improved the team website, which ranked 3rd amongst 52 participating teams
                         in Robosub, 2021, the largest competition for student-built AUVs in the
-                        world.
+                        world
                       </li>
                       <li>
                         Utilized Extended Kalman Filters based SLAM algorithm to enhance pose
-                        estimation and navigation.
+                        estimation and navigation
                       </li>
                       <li>
                         Implemented and researched the efficiency of graph-based, probabilistic, and
@@ -241,7 +269,7 @@ export default function Work({ posts }) {
               <dl>
                 <dt className="sr-only">Published on</dt>
                 <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
-                  <time>September, 2021 ‑ April, 2022</time>
+                  <time>September, 2021 - April, 2022</time>
                 </dd>
               </dl>
               <div className="space-y-5 xl:col-span-3">
@@ -258,11 +286,11 @@ export default function Work({ posts }) {
                     <ul>
                       <li>
                         Among the 25 selected secretaries responsible for various activities of the
-                        club.
+                        club
                       </li>
                       <li>
-                        Wrote a multi‑part blog series aimed as an explainer about the various
-                        low‑level components of a Linux Distribution (Linux Demystified).
+                        Wrote a multi-part blog series aimed as an explainer about the various
+                        low-level components of a Linux Distribution (Linux Demystified)
                       </li>
                     </ul>
                   </div>
