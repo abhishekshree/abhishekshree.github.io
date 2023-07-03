@@ -21,7 +21,7 @@ module.exports = {
         14: '3.5rem',
       },
       fontFamily: {
-        sans: ['Inter', ...defaultTheme.fontFamily.sans],
+        sans: ['Inconsolata', ...defaultTheme.fontFamily.mono],
       },
       colors: {
         blue: colors.sky,

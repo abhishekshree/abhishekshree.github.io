@@ -55,14 +55,19 @@ export default function About({ posts }) {
               Namaste!
             </h1>
             <p>
-              I am Abhishek Shree, a Senior at the Indian Institute of Technology, Kanpur. My
-              interests are manifold and are constantly evolving, recently I found an appreciation
-              for programming languages and systems around those.
+              I am Abhishek Shree, a Senior at the Indian Institute of Technology Kanpur. My
+              interests are manifold and are constantly evolving, recently I take a particular interest 
+              in Programming Languages, Systems, and Quantitative Finance.
             </p>
             <p>
-              Apart from my daily endeavor to be a better developer, I tend to consume a lot of pop
-              culture and read, at a concerningly fast pace at times. I have also found a new appreciation towards
-              traveling and abstract photography. If not that, I can also be found solving my Rubik's cube or vibing{' '}
+              When not doing any of those I find myself dabbling around math (mostly abstract) through my coursework
+              or solving some puzzles here and there. I also have developed an appreciation for blogs and podcasts
+              pertaining to tech, geopolitics, and stories around financial markets recently.
+            </p>
+            <p>
+              Apart from those, I tend to consume a lot of pop culture and read, at a concerningly fast pace at times.
+              I also love to travel and click abstract photos every now and then. If not that, I can also 
+              be found solving my Rubik's cube or vibing{' '}
               <Link href="https://open.spotify.com/playlist/37i9dQZF1DXaQm3ZVg9Z2X">to this.</Link>
             </p>
             <div className="grid md:grid-cols-2 grid-cols-1">
