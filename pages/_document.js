@@ -63,6 +63,8 @@ class MyDocument extends Document {
             integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j"
             crossOrigin="anonymous"
           />
+          <script data-goatcounter="https://shree.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+          {/* https://shree.goatcounter.com/ */}
         </Head>
         <body className="antialiased text-black bg-white dark:bg-gray-900 dark:text-white">
           <Main />
