@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
       <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
-      <lastBuildDate>Fri, 14 Oct 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Tue, 04 Jul 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://abhishekshree.github.io//tags/linux/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://abhishekshree.github.io//blog/tilbinaries</guid>
+    <title>TIL - Binaries are weird</title>
+    <link>https://abhishekshree.github.io//blog/tilbinaries</link>
+    <description>Wanted to know why are binaries for the same program of variable size and what optimizations follow.</description>
+    <pubDate>Tue, 04 Jul 2023 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>linux</category><category>binaries</category><category>til</category>
+  </item>
+
   <item>
     <guid>https://abhishekshree.github.io//blog/dont-like-rust-use-some-cli-tools-written-in-it-once</guid>
     <title>Don't like Rust? Use some CLI tools written in it once</title>
@@ -37,7 +47,7 @@
     <description>How to move X space to some Y place on disk, and vice versa.</description>
     <pubDate>Thu, 15 Jul 2021 00:00:00 GMT</pubDate>
     <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
-    <category>TIL</category><category>Linux</category>
+    <category>TIL</category><category>Linux</category><category>til</category>
   </item>
 
     </channel>

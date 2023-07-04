@@ -1,0 +1,24 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Abhishek Shree</title>
+      <link>https://abhishekshree.github.io//blog</link>
+      <description>I am an undergraduate at Indian Institute of Technology, Kanpur. Also I try to blog about the amazing stuff I come across.</description>
+      <language>en-us</language>
+      <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
+      <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
+      <lastBuildDate>Tue, 04 Jul 2023 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://abhishekshree.github.io//tags/binaries/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://abhishekshree.github.io//blog/tilbinaries</guid>
+    <title>TIL - Binaries are weird</title>
+    <link>https://abhishekshree.github.io//blog/tilbinaries</link>
+    <description>Wanted to know why are binaries for the same program of variable size and what optimizations follow.</description>
+    <pubDate>Tue, 04 Jul 2023 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>linux</category><category>binaries</category><category>til</category>
+  </item>
+
+    </channel>
+  </rss>

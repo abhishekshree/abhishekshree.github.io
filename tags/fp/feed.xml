@@ -14,10 +14,10 @@
     <guid>https://abhishekshree.github.io//blog/tiluber-eats</guid>
     <title>TIL - The case with Uber Eats</title>
     <link>https://abhishekshree.github.io//blog/tiluber-eats</link>
-    <description>null</description>
+    <description>Do not change variables arbitrarily</description>
     <pubDate>Fri, 29 Apr 2022 00:00:00 GMT</pubDate>
     <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
-    <category>fp</category><category>idempotency</category><category>backend</category>
+    <category>fp</category><category>idempotency</category><category>backend</category><category>til</category>
   </item>
 
   <item>

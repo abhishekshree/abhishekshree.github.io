@@ -1,0 +1,1 @@
+{"pageProps":{"posts":[{"title":"TIL - Binaries are weird","date":"2023-07-04","tags":["linux","binaries","til"],"draft":false,"summary":"Wanted to know why are binaries for the same program of variable size and what optimizations follow.","images":[],"slug":"tilbinaries"}],"tag":"binaries"},"__N_SSG":true}
