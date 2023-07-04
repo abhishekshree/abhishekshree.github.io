@@ -1,0 +1,26 @@
+---
+title: TIL - Binaries are weird
+date: '2023-07-04'
+tags: ['linux', 'binaries', 'til']
+draft: false
+summary: Wanted to know why are binaries for the same program of variable size and what optimizations follow.
+images: []
+---
+
+This was a jump into a huge rabbit hole, and it turns out to no one's surprise, programming languages are weird. I was writing in a *certain language* and for setting up an action which would later be consuming my program, I needed to compile the program in cloud and again to no one's surprise, you cannot compile really huge binaries on third party cloud services. 
+
+<details>
+  <summary>What could be the the solution?</summary>
+
+  Rewrite everything in C.
+</details>
+
+--- 
+
+But I am dumping some finds here which I found to be interesting so I will dump here:
+
+- [This comparison, and it keeps on improving](https://github.com/MichalStrehovsky/sizegame)
+- [If you do end up following the suggestion above](https://stackoverflow.com/questions/6771905/how-to-decrease-the-size-of-generated-binaries)
+- [Also, use objdump with caution if you follow the advice above](https://stackoverflow.com/a/46382482)
+
+Might write a detailed blog about the same sometime later...

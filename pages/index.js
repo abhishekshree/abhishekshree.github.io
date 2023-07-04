@@ -62,7 +62,7 @@ export default function About({ posts }) {
             <p>
               When not doing any of those I find myself dabbling around math (mostly abstract) through my coursework
               or solving some puzzles here and there. I also have developed an appreciation for blogs and podcasts
-              pertaining to tech, geopolitics, and stories around financial markets recently.
+              pertaining to tech, geopolitics, and stories around markets recently.
             </p>
             <p>
               Apart from those, I tend to consume a lot of pop culture and read, at a concerningly fast pace at times.
