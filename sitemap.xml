@@ -37,6 +37,10 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io/blog/could-it-be-any-wiser</loc>
+  </url>
+
+  <url>
     <loc
       >https://abhishekshree.github.io/blog/dont-like-rust-use-some-cli-tools-written-in-it-once</loc
     >
@@ -194,6 +198,10 @@
 
   <url>
     <loc>https://abhishekshree.github.io//tags/rust/feed.xml</loc>
+  </url>
+
+  <url>
+    <loc>https://abhishekshree.github.io//tags/software/feed.xml</loc>
   </url>
 
   <url>
