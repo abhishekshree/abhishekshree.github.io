@@ -28,7 +28,10 @@ class MyDocument extends Document {
           <link rel="alternate" type="application/rss+xml" href="/index.xml" />
           <link rel="preconnect" href="https://fonts.googleapis.com" />
           <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin />
-          <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap" rel="stylesheet"></link>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap"
+            rel="stylesheet"
+          ></link>
           <link
             rel="preload"
             href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/fonts/KaTeX_Main-Regular.woff2"
@@ -63,8 +66,25 @@ class MyDocument extends Document {
             integrity="sha384-yFRtMMDnQtDRO8rLpMIKrtPCD5jdktao2TV19YiZYWMDkUR5GQZR/NOVTdquEx1j"
             crossOrigin="anonymous"
           />
-          <script data-goatcounter="https://shree.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+          <script
+            data-goatcounter="https://shree.goatcounter.com/count"
+            async
+            src="//gc.zgo.at/count.js"
+          ></script>
           {/* https://shree.goatcounter.com/ */}
+
+          <script
+            data-name="BMC-Widget"
+            data-cfasync="false"
+            src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js"
+            data-id="abhishekshree"
+            data-description="Support me on Buy me a coffee!"
+            data-message=""
+            data-color="#5F7FFF"
+            data-position="Right"
+            data-x_margin="18"
+            data-y_margin="18"
+          ></script>
         </Head>
         <body className="antialiased text-black bg-white dark:bg-gray-900 dark:text-white">
           <Main />
