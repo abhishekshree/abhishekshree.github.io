@@ -1,0 +1,67 @@
+---
+title: Lightweight threads and concurrency
+date: '2023-10-14'
+tags: ['go', 'linux']
+draft: False
+summary: A bit about what goroutines actually are.
+images: []
+---
+
+It is almost fascinating to imagine how neatly go implements its co-routines based feature, goroutines. They're not threads unlike Java and C++ (although you can do anything here), but flexible stack (starting from 4K) based execution units. How does that even work? Dug in for a while a found out that it is based on a very prominent paper by [Hoarre](https://www.cs.cmu.edu/~crary/819-f09/Hoare78.pdf).
+
+## The scheduler
+
+Go's scheduler is implemented as 3 structs in C, G, M and P, wherein a goroutines exists only in the virtual space of go runtime and not in the OS.
+
+A “G” is simply a goroutine. It’s represented by type g. When a goroutine exits, its g object is returned to a pool of free gs and can later be reused for some other goroutine.
+
+An “M” is an OS thread that can be executing user Go code, runtime code, a system call, or be idle. It’s represented by type m. There can be any number of Ms at a time since any number of threads may be blocked in system calls.
+
+Finally, a “P” represents the resources required to execute user Go code, such as scheduler and memory allocator state. It’s represented by type p. There are exactly GOMAXPROCS Ps. A P can be thought of like a CPU in the OS scheduler and the contents of the p type like per-CPU state. This is a good place to put state that needs to be sharded for efficiency, but doesn’t need to be per-thread or per-goroutine.
+
+The scheduler’s job is to match up a G (the code to execute), an M (where to execute it), and a P (the rights and resources to execute it). When an M stops executing user Go code, for example by entering a system call, it returns its P to the idle P pool. In order to resume executing user Go code, for example on return from a system call, it must acquire a P from the idle pool.
+
+All g, m, and p objects are heap allocated, but are never freed, so their memory remains type stable. As a result, the runtime can avoid write barriers in the depths of the scheduler.
+
+## Blocking
+
+If a goroutine blocks on system call, it blocks it’s running thread. But another thread is taken from the waiting queue of Scheduler (the Sched struct) and used for other runnable goroutines.
+
+However, if you communicate using channels in go which exists only in virtual space, the OS doesn’t block the thread. Such goroutines simply go in the waiting state and other runnable goroutine (from the M struct) is scheduled in it’s place. Don't communicate by sharing memory, share memory by communicating.
+
+The go runtime scheduler also does cooperative scheduling, which means another goroutine will only be scheduled if the current one is blocking or done. This is so much better than pre-emptive scheduling which uses timely system interrupts to block and schedule a new thread as that may lead a task to take longer than needed to finish when number of threads increases, etc. Found the [section 6.1](http://www1.cs.columbia.edu/~aho/cs6998/reports/12-12-11_DeshpandeSponslerWeiss_GO.pdf) pretty interesting.
+
+## Sidenote
+
+You can also check out some amazing illustrations on concurrency pattern over [here](https://divan.dev/posts/go_concurrency_visualize/).
+
+### cppgo
+
+[This](https://github.com/rachit95arora/cppgo) repo caught eye when someone questioned whether I can query an array via uncontrolled threads effectively and fast. Implementing a goroutine can help in accessing thread-safe hashmaps so much effectively in my opinion. Here's a [debate](https://news.ycombinator.com/item?id=13860962) on that.
+
+Although what was implemented looked like this later on:
+
+```cpp
+template <typename Key, typename Value>
+class Channel {
+public:
+    void send(Key key, Value value) {
+        std::lock_guard<std::mutex> lock(mutex);
+        data[key] = value;
+        cv.notify_all();
+    }
+
+    Value receive(Key key) {
+        std::unique_lock<std::mutex> lock(mutex);
+        cv.wait(lock, [this, key] { return data.find(key) != data.end(); });
+        Value value = data[key];
+        data.erase(key);
+        return value;
+    }
+
+private:
+    std::unordered_map<Key, Value> data;
+    std::mutex mutex;
+    std::condition_variable cv;
+};
+```
