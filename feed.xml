@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
       <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
-      <lastBuildDate>Tue, 11 Jul 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sat, 14 Oct 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://abhishekshree.github.io//index.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://abhishekshree.github.io//blog/goroutines</guid>
+    <title>Lightweight threads and concurrency</title>
+    <link>https://abhishekshree.github.io//blog/goroutines</link>
+    <description>A bit about what goroutines actually are.</description>
+    <pubDate>Sat, 14 Oct 2023 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>go</category><category>linux</category>
+  </item>
+
   <item>
     <guid>https://abhishekshree.github.io//blog/could-it-be-any-wiser</guid>
     <title>Could it be any wiser?</title>
