@@ -1,0 +1,38 @@
+---
+title: Engineering RAS - Next bits
+date: '2023-12-18'
+tags: ['system design', 'go', 'product', 'RAS']
+draft: false
+summary: Answering some of the questions, and some more thoughts.
+images: []
+---
+
+So Harsh recently asked me these questions I'd like to answer through this blog.
+
+
+- "We ran several security, stress, performance, and scalability tests on the portal" - How? Tools and ideas? just curious on quantifiable analysis of old vs new artitecture design. Also how did you incorporate spike testing? This most probably would be the most important thing to test as when placement season arrives, a lot of users will come.
+
+> So, there can are a ton of tools out there which give you reasonable metrics to compare old and new APIs, some of them could be as simple as cURL. Another one is by Grafana called k6, lets you load test and see how the responses come out to be. As for metrics, simple numbers like API Respolution time, number of requests handled per secons, size of the backend image, failover mechanisms, etc. were some things we were particularly curious about. Also it was microservice based so we tried to chunk out all heavy components as separate entities and tested those out. 
+
+- Why using SQL? "A very neat way to convert an obvious looking NoSQL looking model to a relational one"
+
+> SQL simply works. It works faster than you'd expect. Thanks to Harshit for making me realise that. For more details take a look at SQL performance tuning.
+
+- Also when the spike comes, how are you tackling the dynamic deadlines in goroutines? Retry mechanisms, buffer times? How did you monitor the chain of calls in the context-based model?
+
+> Did not particularly understand what you mean by "dynamic deadlines in goroutines" but yeah we have retry mechanisms for all the services, buffer time, not so much but the lost actions are just rescheduled. For monitoring, we log a lot of actions which helps, although a file based log system sucks tbh. Also there are a few tools to process such file based log, both for golang and nginx so there's that. We also monitor the docker containers log via a web interface.
+
+- Can you please breakdown the costs - "This saved us around 30,000 INR per year"
+
+> We would've needed S3 otherwise which would've been a recurring cost. It was super simplified to storing it on our machines and keeping a map of some sort (with caching).
+
+- "It is a standard to use all the exposed ports of the backend in the VM first and then proxy the ports on the VM via Nginx" - why is this best practice? just so that the size of docker image reduces!! Your approach seems to be more common sense to me!
+
+> Yeah made sense to us to ngl. But communications and real decluttering and a lot of complexities are associated with that. I mean we still fail with a single container failure.
+
+- Why implementing custom auth using jwt, why not using auth solutions of nextjs?
+
+> Auth solutions are not really that flexible and JWT just makes sense if we're writing a backend for ourselves anyway. Also I am not sure if the Next.js based auth that you mention is totally free.
+
+
+Finally on endnotes, some of the other real concerns were to maintain queues for emails, cleaning random old OTPs, notification on failure, reverting a lot of database actions (like finding inverse of a function), etc. Some of them has been looked into, hoping that this year's team can also sort a few other issue available [here](https://github.com/spo-iitk/ras) for everyone to view and contribute to. 
