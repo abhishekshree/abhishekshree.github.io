@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
       <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
-      <lastBuildDate>Mon, 02 Jan 2023 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Mon, 18 Dec 2023 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://abhishekshree.github.io//tags/ras/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://abhishekshree.github.io//blog/engineering-ras-next-bits</guid>
+    <title>Engineering RAS - Next bits</title>
+    <link>https://abhishekshree.github.io//blog/engineering-ras-next-bits</link>
+    <description>Answering some of the questions, and some more thoughts.</description>
+    <pubDate>Mon, 18 Dec 2023 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>system design</category><category>go</category><category>product</category><category>RAS</category>
+  </item>
+
   <item>
     <guid>https://abhishekshree.github.io//blog/backend101</guid>
     <title>How can my app actually work?</title>
