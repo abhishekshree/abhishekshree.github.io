@@ -1,0 +1,27 @@
+---
+title: How to not build servers
+date: '2024-03-02'
+tags: ['backend', 'go', 'system-design']
+draft: false
+summary: Why you should appreciate what already exists before disrupting it.
+images: []
+---
+
+
+Lets talk about two versions of the same application, the famous Puppy Love. I will be comparing the one [Saksham](https://github.com/pclubiitk/puppy-love) wrote back in 2017 to what has been changed this [tenure](https://github.com/pclubiitk/puppylove2.0_backend/) in 2024. 
+
+One obvious difference, lack of any Git manners at all. I mean, commits are meant to have a meaning when you push, pull requests are meant to be _reviewed_. Seems like people are forgetting all of that (use `squash` for the very least).
+
+Kubernetes was introduced this time, which is a step in the right direction, but, it is meant to _load balance_ a microservices based architecture which was removed from the OG iteration?? Also, could have kept replicas atleast. There's a vault to keep values [this](https://github.com/pclubiitk/puppylove2.0_backend/blob/a0de8a115dc4435c225a855647d7a8a986434c4c/kubernetes/deployments/db-core-deployment.yaml#L27) sensative in Kubernetes itself, putting up such a plaintext multiple times, really defeats the purpose of any CI/CD altogether (which is also not there btw).
+
+The frontend repo is something I won't comment about as it is too bad with a inconsistent UI inside.
+
+The new backend, seems like a primitive version of the older one. The [one thing](https://github.com/pclubiitk/puppylove2.0_backend/blob/a0de8a115dc4435c225a855647d7a8a986434c4c/main.go#L39) you definitely not do with real servers. Tests are linear in nature, don't call them stress tests atleast. The architecture in the OG server was so well laid, I don't understand the point of ruining it with a monolith (then ironically using kubernetes).
+
+Why are models the way they are, partly copied, partly unused, I mean [bson](https://github.com/pclubiitk/puppylove2.0_backend/blob/a0de8a115dc4435c225a855647d7a8a986434c4c/models/user.go#L13)? One quick tip, you fetch configs in a global struct, and not [this](https://github.com/pclubiitk/puppylove2.0_backend/blob/a0de8a115dc4435c225a855647d7a8a986434c4c/db/database.go#L19C1-L23C36).
+
+Coming to the mail service, it was possibly the best thing I saw on the OG server, with the channel usage, understanding and using it would have been so much better than removing such a nice thing altogether. I don't know how the mailer even survived throughout the week. It is so good in the OG server, using it even for RAS was of a lot of use with 1000 people getting emails about openings at one time.
+
+As some general remarks, I saw no use of goroutines, channels, all the good stuff which comes exclusively with Go. This server seem more like a dummy learning project instead of something real, ready to use. Using errorgroups would have been the least to do as a check against failures but all of it missing, lets not even talk logs. The whole blog might seem too critical but it's funny to see all of this being ignored in the first place. 
+
+Broadly, things needs to be advertised less before ensuring it is up to the mark to be sold to everyone. Something to keep in mind maybe. Disappointing.
