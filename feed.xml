@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
       <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
-      <lastBuildDate>Sat, 02 Mar 2024 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Thu, 06 Jun 2024 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://abhishekshree.github.io//index.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://abhishekshree.github.io//blog/guide-for-spending-midsem-breaks</guid>
+    <title>Guide for spending midsem breaks</title>
+    <link>https://abhishekshree.github.io//blog/guide-for-spending-midsem-breaks</link>
+    <description>A story of all the chaos I created in the past years</description>
+    <pubDate>Thu, 06 Jun 2024 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>life</category><category>travel</category>
+  </item>
+
   <item>
     <guid>https://abhishekshree.github.io//blog/how-to-not-build-servers</guid>
     <title>How to not build servers</title>
