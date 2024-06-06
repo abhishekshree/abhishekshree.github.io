@@ -29,7 +29,7 @@ export default function About({ posts }) {
               {siteMetadata.author}
             </h3>
             <div className="text-gray-500 mono text-xs dark:text-gray-400">
-              Fourth Year Undergraduate Student
+              Quant Tech at Qube
             </div>
             <div className="text-gray-500 mono text-xs dark:text-gray-400">
               <a
@@ -55,8 +55,8 @@ export default function About({ posts }) {
               Namaste!
             </h1>
             <p>
-              I am Abhishek Shree, a Senior at the Indian Institute of Technology Kanpur. My
-              interests are manifold and are constantly evolving, recently I take a particular interest 
+              I am Abhishek Shree, recently graduated from the Indian Institute of Technology Kanpur. My
+              interests are manifold and are constantly evolving, I take a particular interest 
               in Programming Languages, Systems, and Quantitative Finance.
             </p>
             <p>
@@ -108,7 +108,7 @@ export default function About({ posts }) {
                 <div className="">
                   <div>
                     <div className="leading-tight font-semibold ">
-                      BS Economic Sciences, 2024 (Expected)
+                      BS Economic Sciences, 2024
                     </div>
                     <div className="leading-none text-sm text-gray-500">
                       Indian Institute of Technology, Kanpur

@@ -24,7 +24,7 @@ export default function Contact() {
           <div>
             <h2 className="text-xl font-bold">Email</h2>
             abhishek[dot]shree[at]outlook[dot]com <br />
-            shreea20[at]iitk[dot]ac[dot]in <br /> <br />
+            <span style={{textDecoration: 'line-through'}}> shreea20[at]iitk[dot]ac[dot]in </span> <br /> <br />
             {/* If you are from IITK, feel free to <Link href="https://nohello.net/">ping me</Link> on
             Discord or Messenger. <br /> */}
           </div>
