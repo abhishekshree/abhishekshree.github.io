@@ -38,7 +38,34 @@ export default function Work({ posts }) {
                   </div>
                   <div className="prose text-gray-500 max-w-none dark:text-gray-400">
                     <ul>
-                      <li>Building random things</li>
+                      <li>Building some things</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </article>
+          <article className="py-4">
+            <div className="space-y-2 xl:grid xl:grid-cols-4 xl:space-y-0 xl:items-baseline">
+              <dl>
+                <dt className="sr-only">Published on</dt>
+                <dd className="text-base font-medium leading-6 text-gray-500 dark:text-gray-400">
+                  <time>November, 2024 - May, 2024</time>
+                </dd>
+              </dl>
+              <div className="space-y-5 xl:col-span-3">
+                <div className="space-y-6">
+                  <div>
+                    <h2 className="text-2xl font-bold leading-8 tracking-tight">
+                      <div className="text-gray-900 dark:text-gray-100">Research Consultant</div>
+                    </h2>
+                    <div className="flex flex-wrap">WorldQuant</div>
+                  </div>
+                  <div className="prose text-gray-500 max-w-none dark:text-gray-400">
+                    <ul>
+                      <li>Built signals around some themes I found interesting.</li>
+                      <li>Some alphas reached to a pretty decent sharpe's (a couple of 2s and 3s) and made sense to me statistically.</li>
+                      <li>Wrote an automation based on genetic algorithms and clustering ideas to speed up idea generation.</li>
                     </ul>
                   </div>
                 </div>
