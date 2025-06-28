@@ -63,8 +63,8 @@ export default function Work({ posts }) {
                   </div>
                   <div className="prose text-gray-500 max-w-none dark:text-gray-400">
                     <ul>
-                      <li>Built signals around some themes I found interesting.</li>
-                      <li>Some alphas reached to a pretty decent sharpe's (a couple of 2s and 3s) and made sense to me statistically.</li>
+                      <li>Built signals around some themes I found interesting, alt, news, etc.</li>
+                      <li>Some alphas reached to a pretty decent sharpe and made sense to me statistically, about what they worked at that time.</li>
                       <li>Wrote an automation based on genetic algorithms and clustering ideas to speed up idea generation.</li>
                     </ul>
                   </div>
