@@ -1,0 +1,1 @@
+{"pageProps":{"posts":[{"title":"Kubernetes, EKS and some Karpenter(y)","date":"2025-06-29","tags":["kubernetes","aws","eks","karpenter","devops"],"draft":false,"summary":"From container chaos to cluster harmony - understanding K8s, EKS flavors, and why Karpenter even exists.","images":[],"slug":"kubernetes-a-primer"}],"tag":"karpenter"},"__N_SSG":true}

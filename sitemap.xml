@@ -123,6 +123,10 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io/blog/kubernetes-a-primer</loc>
+  </url>
+
+  <url>
     <loc>https://abhishekshree.github.io/blog/my-fancy-title</loc>
   </url>
 
@@ -131,9 +135,17 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io/blog/ros-and-k8s</loc>
+  </url>
+
+  <url>
     <loc
       >https://abhishekshree.github.io/blog/til-how-to-tranfer-storage-space-between-operating-systems</loc
     >
+  </url>
+
+  <url>
+    <loc>https://abhishekshree.github.io//tags/aws/feed.xml</loc>
   </url>
 
   <url>
@@ -161,7 +173,19 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io//tags/devops/feed.xml</loc>
+  </url>
+
+  <url>
+    <loc>https://abhishekshree.github.io//tags/distributed-systems/feed.xml</loc>
+  </url>
+
+  <url>
     <loc>https://abhishekshree.github.io//tags/dsa/feed.xml</loc>
+  </url>
+
+  <url>
+    <loc>https://abhishekshree.github.io//tags/eks/feed.xml</loc>
   </url>
 
   <url>
@@ -197,6 +221,14 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io//tags/karpenter/feed.xml</loc>
+  </url>
+
+  <url>
+    <loc>https://abhishekshree.github.io//tags/kubernetes/feed.xml</loc>
+  </url>
+
+  <url>
     <loc>https://abhishekshree.github.io//tags/lambda-calculus/feed.xml</loc>
   </url>
 
@@ -210,6 +242,10 @@
 
   <url>
     <loc>https://abhishekshree.github.io//tags/math/feed.xml</loc>
+  </url>
+
+  <url>
+    <loc>https://abhishekshree.github.io//tags/orchestration/feed.xml</loc>
   </url>
 
   <url>

@@ -1,0 +1,34 @@
+
+  <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+      <title>Abhishek Shree</title>
+      <link>https://abhishekshree.github.io//blog</link>
+      <description>I am an undergraduate at Indian Institute of Technology, Kanpur. Also I try to blog about the amazing stuff I come across.</description>
+      <language>en-us</language>
+      <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
+      <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
+      <lastBuildDate>Sun, 29 Jun 2025 00:00:00 GMT</lastBuildDate>
+      <atom:link href="https://abhishekshree.github.io//tags/kubernetes/feed.xml" rel="self" type="application/rss+xml"/>
+      
+  <item>
+    <guid>https://abhishekshree.github.io//blog/kubernetes-a-primer</guid>
+    <title>Kubernetes, EKS and some Karpenter(y)</title>
+    <link>https://abhishekshree.github.io//blog/kubernetes-a-primer</link>
+    <description>From container chaos to cluster harmony - understanding K8s, EKS flavors, and why Karpenter even exists.</description>
+    <pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>kubernetes</category><category>aws</category><category>eks</category><category>karpenter</category><category>devops</category>
+  </item>
+
+  <item>
+    <guid>https://abhishekshree.github.io//blog/ros-and-k8s</guid>
+    <title>Kubernetes and ROS are surprisingly similar</title>
+    <link>https://abhishekshree.github.io//blog/ros-and-k8s</link>
+    <description>Why learning ROS made Kubernetes click for me.</description>
+    <pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>kubernetes</category><category>ROS</category><category>distributed systems</category><category>orchestration</category>
+  </item>
+
+    </channel>
+  </rss>

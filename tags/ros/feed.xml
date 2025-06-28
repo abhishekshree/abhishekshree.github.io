@@ -7,9 +7,19 @@
       <language>en-us</language>
       <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
       <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
-      <lastBuildDate>Tue, 28 Jun 2022 00:00:00 GMT</lastBuildDate>
+      <lastBuildDate>Sun, 29 Jun 2025 00:00:00 GMT</lastBuildDate>
       <atom:link href="https://abhishekshree.github.io//tags/ros/feed.xml" rel="self" type="application/rss+xml"/>
       
+  <item>
+    <guid>https://abhishekshree.github.io//blog/ros-and-k8s</guid>
+    <title>Kubernetes and ROS are surprisingly similar</title>
+    <link>https://abhishekshree.github.io//blog/ros-and-k8s</link>
+    <description>Why learning ROS made Kubernetes click for me.</description>
+    <pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate>
+    <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+    <category>kubernetes</category><category>ROS</category><category>distributed systems</category><category>orchestration</category>
+  </item>
+
   <item>
     <guid>https://abhishekshree.github.io//blog/ros-a-primer</guid>
     <title>ROS - A Primer</title>
