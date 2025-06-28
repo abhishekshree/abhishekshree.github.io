@@ -1,5 +1,11 @@
 const projectsData = [
   {
+    title: 'Ted',
+    description: 'Wrote a vim replacement because I love it so much with a friend, also have no life.',
+    imgSrc: '/static/images/pp/ted.png',
+    href: 'https://github.com/abhishekshree/ted',
+  },
+  {
     title: 'Engn',
     description: 'Wrote a dummy trading and order matching engine with guarantees of matching in Rust while learning the language.',
     imgSrc: '/static/images/pp/engn.png',

@@ -1,7 +1,7 @@
 ---
 title: Kubernetes and ROS are surprisingly similar
 date: '2025-06-29'
-tags: ['kubernetes', 'ROS', 'distributed systems', 'orchestration']
+tags: ['kubernetes', 'ROS', 'distributed systems']
 draft: false
 summary: Why learning ROS made Kubernetes click for me.
 images: []
