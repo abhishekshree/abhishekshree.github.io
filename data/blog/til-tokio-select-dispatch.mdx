@@ -1,0 +1,52 @@
+---
+title: 'TIL - Non-blocking Tokio select! loops'
+date: '2026-04-15'
+tags: ['rust', 'tokio', 'async', 'til']
+draft: false
+summary: Slingshot tokio select loops.
+images: []
+---
+
+Figured this trick to offload heavy work from a select loop in tokio, the concept felt cool enough to drag me out of this AI work and write a blog after ages.
+
+The trick is to make each `select!` branch *synchronous and tiny*, and call a broker that immediately spawns the actual async work, keeping the loop snappy.
+
+```rust
+// Setup channels
+let (tx, rx_result) = mpsc::channel(100);
+let broker = Broker { tx };
+
+// The non-blocking loop
+loop {
+    tokio::select! {
+        Some(msg) = rx.recv() => {
+            broker.handle(msg); // sync, non-blocking
+        }
+
+        Some(result) = rx_result.recv() => {
+            handle_result(result); // sync point back in loop
+        }
+    }
+}
+
+// The broker handles the offloading
+impl Broker {
+    fn handle(&self, input: String) {
+        let tx = self.tx.clone();
+        tokio::spawn(async move {
+            let res = heavy_work(input).await;
+            let _ = tx.send(res).await;
+        });
+    }
+}
+```
+
+That’s it:
+
+* `select!` = event detection
+* broker = offloaded work
+* channel = synchronization back into the loop
+
+**Surfacing errors?** Just make the channel carry a `Result`. Since everything converges back at the "sync point" branch in your `select!` loop, you have one clean place to handle failures (log, retry, etc.) without ever stalling the main event loop, so cool.
+
+Just a memory for me to look back at, and maybe it helps someone else 🤷‍♂️.
