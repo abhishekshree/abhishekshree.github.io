@@ -29,19 +29,25 @@ Now Mythos is out here claiming it can break the internet and escape black boxes
 
 ## I did the math
 
-I was clearly thinking about it way too much to generalize it as this probability puzzle. Let $C_a(t)$ be the cost of mounting an attack and $C_d(t)$ the cost of defending, both as functions of time $t$. What we're observing is:
+I was clearly thinking about it way too much to generalize it as this probability puzzle. Let $C_a(t)$ be the cost of mounting an attack and $C_d(t)$ the cost of defending. What we're observing is the absolute cratering of attack costs relative to defense:
 
 $$
 \frac{dC_a}{dt} \ll \frac{dC_d}{dt} \lt 0
 $$
 
-Both are falling, but attack cost is cratering. The attacker needs *one* exploitable path across $n$ surfaces. The defender needs to secure *all* of them. So:
+We can model the "per-surface" breach probability $p_i$ as a function of this economic gap. As the cost of attack vanishes relative to the cost of defense, the security barrier disappears:
+
+$$
+p_i(t) = f\left(C_d(t), \frac{1}{C_a(t)}\right); 0 \le p_i(t) \le 1
+$$
+
+The attacker needs *one* exploitable path across $n$ surfaces; the defender needs to secure *all* of them. The math for the total probability of breach becomes brutal:
 
 $$
 P(\text{breach}) = 1 - \prod_{i=1}^{n}(1 - p_i)
 $$
 
-As AI pushes every $p_i$ up and $n$ grows with every new dependency, every AI-generated PR, every vibe-coded microservice — $P(\text{breach}) \to 1$.
+As AI cratering $C_a$ pushes every $p_i$ up and $n$ grows with every new dependency, every AI-generated PR, every vibe-coded microservice $P(\text{breach}) \to 1$.
 
 For the nerds, model each surface with a time-varying compromise rate $\lambda_i(t)$. The [Poisson survival model](https://en.wikipedia.org/wiki/Survival_analysis) (yes I read Durrett's book at some point) gives you:
 
