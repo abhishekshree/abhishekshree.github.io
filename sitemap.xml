@@ -49,6 +49,10 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io/blog/cybersecurity-needs-a-new-definition</loc>
+  </url>
+
+  <url>
     <loc
       >https://abhishekshree.github.io/blog/dont-like-rust-use-some-cli-tools-written-in-it-once</loc
     >
@@ -149,6 +153,10 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io//tags/ai/feed.xml</loc>
+  </url>
+
+  <url>
     <loc>https://abhishekshree.github.io//tags/aws/feed.xml</loc>
   </url>
 
@@ -169,11 +177,19 @@
   </url>
 
   <url>
+    <loc>https://abhishekshree.github.io//tags/claude-opus/feed.xml</loc>
+  </url>
+
+  <url>
     <loc>https://abhishekshree.github.io//tags/cli/feed.xml</loc>
   </url>
 
   <url>
     <loc>https://abhishekshree.github.io//tags/cp/feed.xml</loc>
+  </url>
+
+  <url>
+    <loc>https://abhishekshree.github.io//tags/cybersecurity/feed.xml</loc>
   </url>
 
   <url>
@@ -262,6 +278,10 @@
 
   <url>
     <loc>https://abhishekshree.github.io//tags/rust/feed.xml</loc>
+  </url>
+
+  <url>
+    <loc>https://abhishekshree.github.io//tags/security/feed.xml</loc>
   </url>
 
   <url>
