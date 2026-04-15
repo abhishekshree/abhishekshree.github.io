@@ -38,8 +38,67 @@ $$
 We can model the "per-surface" breach probability $p_i$ as a function of this economic gap. As the cost of attack vanishes relative to the cost of defense, the security barrier disappears:
 
 $$
-p_i(t) = f\left(C_d(t), \frac{1}{C_a(t)}\right); 0 \le p_i(t) \le 1
+p_i(t) = \mathbb{P}(\text{compromise}_i \mid C_a(t), C_d(t))
 $$
+where breach probability decreases with attack cost and increases with defense cost, i.e.,
+$$
+\frac{\partial p_i}{\partial C_a} < 0
+\quad \text{and} \quad
+\frac{\partial p_i}{\partial C_d} > 0
+$$
+
+Also food for thought and chain rule says:
+
+$$
+\frac{dp_i}{dt}
+=
+\underbrace{\left(\frac{\partial p_i}{\partial C_d}\right)}_{\mathrm{sensitivity\ to\ defense}}
+\frac{dC_d}{dt}
++
+\underbrace{\left(\frac{\partial p_i}{\partial C_a}\right)}_{\mathrm{sensitivity\ to\ attack}}
+\frac{dC_a}{dt}
+$$
+
+
+Under a first-order assumption that the system is **approximately equally sensitive** to marginal changes in attack and defense costs,
+
+$$
+\left|\frac{\partial p_i}{\partial C_d}\right|
+\approx
+\left|\frac{\partial p_i}{\partial C_a}\right|
+\;\Longrightarrow\;
+\frac{\partial p_i}{\partial C_d}
+\approx
+-\frac{\partial p_i}{\partial C_a}
+$$
+
+we can rewrite the total derivative as
+
+$$
+\frac{dp_i}{dt}
+=
+\frac{\partial p_i}{\partial C_d}
+\left(
+\frac{dC_d}{dt}
+-
+\frac{dC_a}{dt}
+\right)
+$$
+
+
+and since attack costs are collapsing faster than defense costs
+
+$$
+\left(\frac{dC_a}{dt} \ll \frac{dC_d}{dt} < 0\right),
+$$
+
+it follows (to first order) that
+
+$$
+\frac{dp_i}{dt} > 0.
+$$
+
+with breach probability increasing as defense becomes more costly $(\frac{\partial p}{\partial C_d} > 0)$ and decreasing as attacks become more expensive $(\frac{\partial p}{\partial C_a} < 0)$.
 
 The attacker needs *one* exploitable path across $n$ surfaces; the defender needs to secure *all* of them. The math for the total probability of breach becomes brutal:
 
@@ -49,7 +108,11 @@ $$
 
 As AI cratering $C_a$ pushes every $p_i$ up and $n$ grows with every new dependency, every AI-generated PR, every vibe-coded microservice $P(\text{breach}) \to 1$.
 
-For the nerds, model each surface with a time-varying compromise rate $\lambda_i(t)$. The [Poisson survival model](https://en.wikipedia.org/wiki/Survival_analysis) (yes I read Durrett's book at some point) gives you:
+<div className="border-2 border-gray-300 dark:border-gray-700 rounded-lg p-6 my-10">
+
+#### For the nerds
+
+Model each surface with a time-varying compromise rate $\lambda_i(t)$. The [Poisson survival model](https://en.wikipedia.org/wiki/Survival_analysis) (yes I read Durrett's book at some point) gives you:
 
 $$
 \begin{aligned}
@@ -59,6 +122,9 @@ P(\text{safe}) &= \prod_{i=1}^{n} e^{\displaystyle -\int_0^T \lambda_i(t)\, dt} 
 $$
 
 That exponent is a sum of integrals, which is growing. Good luck.
+
+</div>
+
 
 Defense is a human problem: context, trust, judgment, thankless work over years. Offense is a compute problem: pattern match, generate variants, probe at scale, move on. One of these scales with Moore's law. The other doesn't.
 
