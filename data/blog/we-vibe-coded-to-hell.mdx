@@ -1,0 +1,78 @@
+---
+title: "Vibe code to hell"
+date: "2026-06-21"
+summary: "Yeah I think this is the time to read code"
+slug: "vibe-code-hell"
+tags:
+  - vibe-coding
+  - personal
+---
+
+I asked my claude to give me this mdx file, as I could not remember what I called the script which generated it. To no one's surprise, it also gave me a bunch of advice on what the blog should be about, and here we read: 
+
+```
+## Notes / Outline
+
+- Opening scene: late-night setup, snacks, playlist
+- Key moment: a risky refactor that worked (or didn't)
+- Reflection: tradeoffs, ergonomics, and what 'vibing' costs
+- Takeaways: practical tips for pair-programming and sanity
+```
+
+No man, I'm not snacking, nor refactoring, can you please just do what I ask you to! This is one of the major motivators for the blog (rant, sorry).
+
+## AI can do this in a day
+
+I agree, I am an inefficient man. All of this started last year when we saw a rise in coding agents and Cursor, which is going public now, kudos to them $60Bn is crazy, but things have been really getting out of hand these days. What's being advertised is that a month's worth of work can be done in a week, heck, even in a day. The amount of fun people are having in publicising that they don't even read the code, which is written or even a sophisticated way of AI generating their tests, is kind of concerning to me as a human being who reads code every day and is surprised by the kind of slop it's writing and good engineers hand waving around those. 
+
+I'm in no way against the fact that Claude has improved my productivity to 100 times more, or that it can solve tasks which earlier would have taken a month in merely a few days. This made me realise: do we really need to optimise for time so much as engineers, or as somebody who's solving a problem, is time your only constraint? I'm baffled by the fact that engineers these days say that they don't even read the code, plus their test suites are so sophisticated that they can confidently merge any sort of merge request, be it AI or human written. It practically doesn't matter to them. That raises a question: is the code which is being written even needed? Do you really think that's the best way to solve a problem? For most of my daily work and for most of what I've been observing around open source, I think there's a big no for it. 
+
+I love AI, and I am grateful that it enables so much velocity for the things I want to do. I've never been confident enough in life to say that maybe AI would be replacing me as an engineer because it knows all about me. I think this is the top difference in the code which is being written versus what an organisation might really need. 
+
+Not so much at my org yet, but I've been seeing so many instances of FAANG completely shifting their focus to AI-written code. Things are 90% not working, or there's some massive outage. Amazon does that right now, and there's nobody to hold accountable for it. I think that's the key difference between human beings and AI. 
+
+Making mistakes is a very human thing to do. While you can ask your AI agent to be apologetic once it makes a mistake and even say sorry a hundred times each time it makes a mistake, there is no potential for learning. If a human makes a mistake, there is a sense of guilt which tags along with the person for the longest time possible, which forces them into taking one of the two paths:
+1. Take ownership and fix something
+2. Leave the firm
+
+Both are productive in some senses. With AI, that completely goes out of the picture. You can't blame your AI session for a bug that it introduced very smartly, and also your AI will not leave your company if it makes a mistake.
+
+With this new approach to coding, I think we have given up all discipline and agency for writing valuable code and a piece of software which would be remembered for decades, giving into the fact that code can be so easily commoditized with reference to everything else which is present on the Internet. I am also of a strong opinion that most of the things which are present on the Internet are trash anyways. There is nearly 10% of code which actually seems valuable. Yes, ffmpeg, that's you, but I just can't digest the fact that people accept that as the truth and acknowledge that what is present on the Internet. If there is a process which can remember everything on the Internet and replicate it word by word, it would work in the end. That's such a big misconception. 
+
+It's amazing that AI gets to build C compilers from scratch, even though it does not work, or maybe somebody's mother can now open a website to sell her handmade products very quickly. I am very in for that, but I think extrapolating those evidences and saying that it can maybe work and that a matching engine by itself can maybe write this amazing ray tracing software end to end and think that it will be correct is such a naïve mistake people tend to make so often at such high levels of profession. Now again, this can work for your side project barely anyone is using, including yourself. And hey, maybe there's somebody out there who can actually make this work for a software product that's not a steaming pile of garbage and is used by actual humans in anger.
+
+If that's you, more power to you. But at least among my circle of peers I have yet to find evidence that this kind of shit works. Maybe we all have skill issues.
+
+## Compounding trash
+
+Ok, there's this new hype around test-driven development and how it's the hottest thing in the market right now. Everybody is forcing their agents to write tests first and then validate a spec and then make sure that the code it's writing is following the spec end to end. That's such a naive outlook on writing a spec.
+
+In my opinion, a perfect spec is a piece of programme. As long as it's not written as a programme, there are moving parts to it. Once you have your AI agent filling those gaps and moving parts, you are exposing yourself to all the slop on the internet and a machine which can crank up the internet and find out the worst possible solution to a particular gap in your spec. Write tests for it, validate those tests, write your software to comply with those fluff-filled internet solutions. The number of times I have seen such code is massively surprising. 
+
+Again, humans do make the same errors, they're not perfect. But eventually they learn not to make them again. Either because someone starts screaming at them or because they're on a genuine learning path. An agent has no such learning ability. At least not out of the box. It will continue making the same errors over and over again. Depending on the training data it might also come up with glorious new interpolations of different errors.
+
+Now you can try to teach your agent. Tell it to not make that error again in your AGENTS.md. Concoct the most complex memory system and have it look up previous errors and best practices. And that can be effective for a specific category of errors. But it also requires you to actually observe the agent making that error.
+
+## Humans are a bottleneck (and it's okay)
+
+Humans are a bottleneck. They are slow. They cannot write 20,000 lines of Rust code in a day which would work end to end. That's the most essential thing a human is being paid for. For whatever 500 lines of code they write, they are completely accountable for it, and if something goes south, you know who to blame. Code reviews are also now being considered a bottleneck at so many places. Everybody has their agent and a review agent reviewing the work of that agent, but that's again such a rookie mistake of exposing all the clutter on the Internet to the same reviewer who will read through the clutter and find it okay.
+
+With humans in the loop, each line of code you write is something you do, being completely aware of what the consequences might be. For real-world software, which is decently big and not a side project, I think it's impossible at the given time to pass the context completely through your AI agent and make it work end-to-end without having a fluff of abstractions, a lot of tests which are done by AI, which are potentially slow, or accepting the fact that AI might write incorrect code and live with it. Again, I see you Amazon, you do that a lot now. 
+
+## Transferred complexity
+
+Okay, my Claude knows more internet than me. It can come up with an elegant solution to a problem way faster than I could, and it can look up as many paths as I could look up in my whole lifetime. The decision to accept or reject that complexity still is something which I need to do, because I'm not blinded by knowing everything on the internet. With the constraint that I have to spend my time going through what the solution actually requires and what's the shortest way to approach it, versus what's the most new, hottest way of fixing a similar problem which might not even be required in my case.
+
+Now, that sort of complexity might be good in some research cases, but for most of software engineering I think it just adds a lot of burden and unnecessary code. Otherwise I could have given so many examples from my day-to-day work where I get to know about technology which I could have never even looked for, but it exists, and my AI harness would suggest that as the first way out of a problem. 
+
+## Agentic search has low recall
+
+Iterating on the same fact, even with all the great 1M token models (we know how well they work), my AI gets lost. Before my agent can try and help fix the mess, it needs to find all the code that needs changing and all existing code it can reuse. We call that agentic search. How the agent does that depends on the tools it has. You can give it a Bash tool so it can ripgrep its way through the codebase. You can give it some queryable codebase index, an LSP server, a vector database. In the end it doesn't matter much. The bigger the codebase, the lower the recall. Low recall means that your agent will, in fact, not find all the code it needs to do a good job.
+
+## So should I stop using claude?
+
+Hell, I think the biggest productivity gains come from Claude being something which can work on its own 24/7 without complaining and at times with complete autonomy, which is great in my opinion. There are so many side projects, there are so many peripherals which I am able to build right now on my own which I would have never even thought of doing if there was not a strong enough usage of Claude in my workplace and in my personal life.
+
+Does that mean that I change my expectations and expect people to do code reviews instead of 3 PRs a day, maybe 11 PRs, or maybe ship a feature which would take me, a human being, one month in a few days? No, now that's being unreasonable, even with an agent in your way.
+
+I think the more complex a system gets, the more care it needs, and AI is still not at a spot where it can take over completely. The fact that it does take over and works really well in small, low-hanging fruit makes people believe that the same could be extrapolated over to big code bases with a bigger token budget or a bigger allowance for exploring with different agents and everything. In the end, it is lacking the creative mentality of a good engineer, and you would eventually need to spend some time, either in terms of customer satisfaction or in terms of maintaining the slog which you push. It's something like picking your poison or just wasting some time reading code actually and not taking the poison altogether.

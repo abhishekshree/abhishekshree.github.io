@@ -33,3 +33,15 @@ npm run dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+### Requirements
+
+- **Node:** Recommend using Node 16 (LTS). This project was tested with Next.js 11 and Node 16.
+- To install and use Node 16 with `nvm`:
+
+```bash
+nvm install 16
+nvm use 16
+```
+
+- The repository includes a `.nvmrc` file to pin the Node version. Run `nvm use` to automatically switch to the correct version.
