@@ -1,51 +1,70 @@
 // import Image from 'next/image'
 import Link from '@/components/Link'
 
-const Card = ({ title, description, imgSrc, href }) => (
-  <div className="p-4 md:w-1/2 md" style={{ maxWidth: '628px' }}>
-    <div className="h-full border-2 border-gray-300 border-opacity-60 dark:border-gray-700 rounded-md overflow-hidden">
-      {href ? (
-        <Link href={href} aria-label={`Link to ${title}`}>
-          <img
-            alt={title}
-            src={imgSrc}
-            className="lg:h-48 md:h-36 object-cover object-center"
-            width={628}
-            height={306}
-          />
-        </Link>
-      ) : (
-        <img
-          alt={title}
-          src={imgSrc}
-          className="lg:h-48 md:h-36 object-cover object-center"
-          width={628}
-          height={306}
-        />
-      )}
-      <div className="p-6">
-        <h2 className="text-2xl font-bold leading-8 tracking-tight mb-3">
+const Card = ({ title, description, imgSrc, href }) => {
+  let domain = ''
+  if (href) {
+    try {
+      if (href.startsWith('/') || href.startsWith('#')) {
+        domain = 'internal'
+      } else {
+        domain = new URL(href).hostname.replace('www.', '')
+      }
+    } catch (e) {
+      domain = ''
+    }
+  }
+
+  return (
+    <div className="flex flex-col h-full group">
+      {imgSrc && (
+        <div
+          style={{ aspectRatio: '16/10' }}
+          className="relative w-full rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-800 mb-3.5"
+        >
           {href ? (
             <Link href={href} aria-label={`Link to ${title}`}>
+              <img
+                alt={title}
+                src={imgSrc}
+                className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              />
+            </Link>
+          ) : (
+            <img
+              alt={title}
+              src={imgSrc}
+              className="w-full h-full object-cover"
+            />
+          )}
+        </div>
+      )}
+      <div className="flex flex-col flex-grow">
+        <h2 className="text-base font-bold tracking-tight text-gray-900 dark:text-gray-100 group-hover:text-blue-500 transition-colors">
+          {href ? (
+            <Link
+              href={href}
+              aria-label={`Link to ${title}`}
+              style={{ textDecoration: 'none' }}
+              className="hover:text-blue-500 transition-colors"
+            >
               {title}
             </Link>
           ) : (
             title
           )}
         </h2>
-        <p className="prose text-gray-600 max-w-none dark:text-gray-400 mb-3">{description}</p>
-        {href && (
-          <Link
-            href={href}
-            className="text-base font-medium leading-6 text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
-            aria-label={`Link to ${title}`}
-          >
-            Explore &rarr;
-          </Link>
+        {domain && (
+          <span className="text-xs text-gray-400 dark:text-gray-500 font-mono mb-1.5">
+            {domain}
+          </span>
         )}
+        <p className="text-sm text-gray-500 dark:text-gray-400 leading-relaxed">
+          {description}
+        </p>
       </div>
     </div>
-  </div>
-)
+  )
+}
 
 export default Card

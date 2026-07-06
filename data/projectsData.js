@@ -1,5 +1,17 @@
 const projectsData = [
   {
+    title: 'tokio-fsm',
+    description: 'Compile-time validated, zero-overhead asynchronous finite state machines for Tokio. Features an attribute macro to generate state/event types and validate transition reachability at compile time.',
+    imgSrc: '/static/images/pp/tokio-fsm.jpg',
+    href: 'https://crates.io/crates/tokio-fsm',
+  },
+  {
+    title: 'Microbench',
+    description: 'A benchmark suite designed to isolate and measure the hardware-level cost of Python\'s object model (PyObject) compared to C++ and Rust, focusing on pointer indirection, reference counting, and L1 cache pollution.',
+    imgSrc: '/static/images/pp/microbench.jpg',
+    href: 'https://abhishekshree.github.io/microbench/',
+  },
+  {
     title: 'Ted',
     description: 'Wrote a vim replacement because I love it so much with a friend, also have no life.',
     imgSrc: '/static/images/pp/ted.png',
