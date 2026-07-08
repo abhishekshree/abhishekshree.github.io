@@ -4,7 +4,7 @@ const prettier = require('prettier')
 const siteMetadata = require('../data/siteMetadata')
 
 ;(async () => {
-  const prettierConfig = await prettier.resolveConfig('./.prettierrc.js')
+  const prettierConfig = await prettier.resolveConfig('./prettier.config.js')
   const pages = await globby([
     'pages/*.js',
     'data/**/*.mdx',
@@ -38,7 +38,7 @@ const siteMetadata = require('../data/siteMetadata')
         </urlset>
     `
 
-  const formatted = prettier.format(sitemap, {
+  const formatted = await prettier.format(sitemap, {
     ...prettierConfig,
     parser: 'html',
   })

@@ -3,7 +3,6 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "start": "cross-env SOCKET=true node ./scripts/next-remote-watch.js ./data",
     "dev": "next dev",
     "build": "node ./scripts/generate-sitemap && next build",
     "serve": "next start",
@@ -31,30 +30,18 @@
     "remark-autolink-headings": "^7.0.1",
     "remark-math": "^6.0.0",
     "remark-slug": "^7.0.1",
-    "tailwindcss": "^4.3.2"
+    "tailwindcss": "^4.3.2",
+    "unist-util-visit": "2.0.3"
   },
   "devDependencies": {
     "@next/bundle-analyzer": "^16.2.10",
-    "@svgr/webpack": "^5.5.0",
-    "cross-env": "^7.0.3",
-    "eslint": "^7.17.0",
-    "eslint-config-prettier": "^7.1.0",
-    "eslint-plugin-jsx-a11y": "^6.4.1",
-    "eslint-plugin-prettier": "^3.3.1",
-    "eslint-plugin-react": "^7.22.0",
-    "eslint-plugin-react-hooks": "^4.2.0",
+    "eslint": "^8.56.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-prettier": "^5.1.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
     "globby": "11.0.1",
-    "husky": "^4.3.7",
-    "lint-staged": "^10.5.3",
-    "next-remote-watch": "^0.3.0",
-    "prettier": "2.2.1",
-    "rehype": "11.0.0",
-    "remark-frontmatter": "3.0.0",
-    "remark-parse": "9.0.0",
-    "remark-stringify": "9.0.0",
-    "socket.io": "^4.4.0",
-    "socket.io-client": "^4.4.0",
-    "unified": "9.2.0",
-    "unist-util-visit": "2.0.3"
+    "prettier": "^3.2.0"
   }
 }

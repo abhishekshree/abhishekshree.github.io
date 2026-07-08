@@ -8,19 +8,22 @@ import Head from 'next/head'
 import { SEO } from '@/components/SEO'
 import LayoutWrapper from '@/components/LayoutWrapper'
 import MDXComponents from '@/components/MDXComponents'
+import { inconsolata, breeSerif, jetbrainsMono } from '@/lib/fonts'
 
 export default function App({ Component, pageProps }) {
   return (
-    <ThemeProvider attribute="class">
-      <MDXProvider components={MDXComponents}>
-        <Head>
-          <meta content="width=device-width, initial-scale=1" name="viewport" />
-        </Head>
-        <DefaultSeo {...SEO} />
-        <LayoutWrapper>
-          <Component {...pageProps} />
-        </LayoutWrapper>
-      </MDXProvider>
-    </ThemeProvider>
+    <div className={`font-sans ${inconsolata.variable} ${breeSerif.variable} ${jetbrainsMono.variable}`}>
+      <ThemeProvider attribute="class">
+        <MDXProvider components={MDXComponents}>
+          <Head>
+            <meta content="width=device-width, initial-scale=1" name="viewport" />
+          </Head>
+          <DefaultSeo {...SEO} />
+          <LayoutWrapper>
+            <Component {...pageProps} />
+          </LayoutWrapper>
+        </MDXProvider>
+      </ThemeProvider>
+    </div>
   )
 }
