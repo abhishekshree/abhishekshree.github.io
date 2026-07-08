@@ -27,7 +27,7 @@
     "reading-time": "1.2.1",
     "rehype-code-titles": "^1.2.1",
     "rehype-katex": "^7.0.1",
-    "remark-autolink-headings": "^7.0.1",
+    "remark-autolink-headings": "^8.0.0",
     "remark-math": "^6.0.0",
     "remark-slug": "^7.0.1",
     "tailwindcss": "^4.3.2",
