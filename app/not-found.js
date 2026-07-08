@@ -1,12 +1,14 @@
 import Link from '@/components/Link'
-import { PageSEO } from '@/components/SEO'
 import siteMetadata from '@/data/siteMetadata'
 
-export default function FourZeroFour() {
+export const metadata = {
+  title: `404 - ${siteMetadata.author}`,
+  description: 'Page not found',
+}
+
+export default function NotFound() {
   return (
-    <>
-      <PageSEO title={`404 - ${siteMetadata.author}`} description="Page not found" />
-      <div className="flex flex-col items-start justify-start md:justify-center md:items-center md:flex-row md:space-x-6 md:mt-24">
+    <div className="flex flex-col items-start justify-start md:justify-center md:items-center md:flex-row md:space-x-6 md:mt-24">
       <div className="pt-6 pb-8 space-x-2 md:space-y-5">
         <h1 className="text-6xl font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 md:text-8xl md:leading-14 md:border-r-2 md:px-6">
           404
@@ -23,7 +25,6 @@ export default function FourZeroFour() {
           </button>
         </Link>
       </div>
-      </div>
-    </>
+    </div>
   )
 }

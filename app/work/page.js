@@ -1,6 +1,10 @@
-import siteMetadata from '@/data/siteMetadata'
-import { PageSEO } from '@/components/SEO'
 import Link from '@/components/Link'
+import siteMetadata from '@/data/siteMetadata'
+
+export const metadata = {
+  title: `Work - ${siteMetadata.author}`,
+  description: 'Work experience and professional background.',
+}
 
 const workExperience = [
   {
@@ -66,16 +70,16 @@ const workExperience = [
     ]
   },
   {
-    company: 'Students’ Placement Office, IIT Kanpur',
+    company: 'Students\u2019 Placement Office, IIT Kanpur',
     dates: 'Mar 2022 - Apr 2023',
     roles: [
       {
-        role: 'Web Head, Students’ Placement Office',
+        role: 'Web Head, Students\u2019 Placement Office',
         dates: 'Mar 2022 - Apr 2023',
         current: false,
         description: [
           'Leading a team of 5 Web Executives.',
-          'Maintaining the organization’s servers and VM, designed new infrastructure including the website, CDN, and portals.',
+          'Maintaining the organization\u2019s servers and VM, designed new infrastructure including the website, CDN, and portals.',
           'Solved critical networking challenges while various deployments within IITK and SPO internal networks.'
         ],
         tags: ['Linux', 'Nginx', 'System Administration', 'Network Engineering']
@@ -136,18 +140,14 @@ const workExperience = [
 ]
 
 export default function Work() {
-  // Flattening grouped experiences into individual timeline items for simple, linear rendering
   const timelineItems = []
   workExperience.forEach((firm) => {
-    // Add firm header node
     timelineItems.push({
       type: 'company',
       company: firm.company,
       dates: firm.dates,
       current: firm.roles.some((r) => r.current),
     })
-
-    // Add roles
     firm.roles.forEach((role) => {
       timelineItems.push({
         type: 'role',
@@ -158,124 +158,107 @@ export default function Work() {
   })
 
   return (
-    <>
-      <PageSEO
-        title={`Work - ${siteMetadata.author}`}
-        description={siteMetadata.description}
-        url={`${siteMetadata.siteUrl}/work`}
-      />
-      <div className="divide-y divide-gray-200 dark:divide-neutral-700">
-        <div className="pt-6 pb-8 space-y-2 md:space-y-5">
-          <h1 className="text-3xl mono font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
-            Work
-          </h1>
-          <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
-            Contributed some bits to the following organizations.
-          </p>
-        </div>
+    <div className="divide-y divide-gray-200 dark:divide-neutral-700">
+      <div className="pt-6 pb-8 space-y-2 md:space-y-5">
+        <h1 className="text-3xl mono font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
+          Work
+        </h1>
+        <p className="text-lg leading-7 text-gray-500 dark:text-gray-400">
+          Contributed some bits to the following organizations.
+        </p>
+      </div>
 
-        <div className="py-12 max-w-none">
-          <div className="flex flex-col">
-            {timelineItems.map((item, idx) => (
-              <div key={idx} className="flex gap-4 sm:gap-6 group">
-                {/* Column 1: Date (Desktop only, right-aligned) */}
-                <div className="hidden sm:block w-[180px] text-right text-xs font-mono text-gray-450 dark:text-gray-500 pt-[5px] shrink-0">
-                  {item.dates.endsWith('Present') ? `${item.dates}\u00a0` : item.dates}
-                </div>
+      <div className="py-12 max-w-none">
+        <div className="flex flex-col">
+          {timelineItems.map((item, idx) => (
+            <div key={idx} className="flex gap-4 sm:gap-6 group">
+              <div className="hidden sm:block w-[180px] text-right text-xs font-mono text-gray-450 dark:text-gray-500 pt-[5px] shrink-0">
+                {item.dates.endsWith('Present') ? `${item.dates}\u00a0` : item.dates}
+              </div>
 
-                {/* Column 2: Vertical Line & Center Dot (Desktop only) */}
-                <div className="hidden sm:flex relative w-6 shrink-0 justify-center">
-                  {/* Vertical line segment (stops at the center of the first/last dots at 12px) */}
-                  {idx === 0 ? (
-                    <div className="w-0.5 bg-gray-200 dark:bg-neutral-800 absolute left-1/2 transform -translate-x-1/2 top-[12px] bottom-0" />
-                  ) : idx === timelineItems.length - 1 ? (
-                    <div className="w-0.5 bg-gray-200 dark:bg-neutral-800 absolute left-1/2 transform -translate-x-1/2 top-0 h-[12px]" />
-                  ) : (
-                    <div className="w-0.5 bg-gray-200 dark:bg-neutral-800 absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0" />
-                  )}
+              <div className="hidden sm:flex relative w-6 shrink-0 justify-center">
+                {idx === 0 ? (
+                  <div className="w-0.5 bg-gray-200 dark:bg-neutral-800 absolute left-1/2 transform -translate-x-1/2 top-[12px] bottom-0" />
+                ) : idx === timelineItems.length - 1 ? (
+                  <div className="w-0.5 bg-gray-200 dark:bg-neutral-800 absolute left-1/2 transform -translate-x-1/2 top-0 h-[12px]" />
+                ) : (
+                  <div className="w-0.5 bg-gray-200 dark:bg-neutral-800 absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0" />
+                )}
 
-                  {/* Dot container */}
-                  {item.type === 'company' ? (
-                    item.current ? (
-                      <div className="absolute top-[7px] h-3 w-3 rounded-full bg-green-500 left-1/2 transform -translate-x-1/2 ring-4 ring-green-500/25 dark:ring-green-500/30 flex items-center justify-center">
-                        <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500 border border-white dark:border-neutral-950"></span>
-                      </div>
-                    ) : (
-                      <div className="absolute top-[5px] h-4 w-4 rounded-full border-4 border-gray-100 bg-blue-500 dark:border-neutral-900 dark:bg-blue-400 left-1/2 transform -translate-x-1/2 transition-transform duration-200 group-hover:scale-110" />
-                    )
-                  ) : item.current ? (
+                {item.type === 'company' ? (
+                  item.current ? (
                     <div className="absolute top-[7px] h-3 w-3 rounded-full bg-green-500 left-1/2 transform -translate-x-1/2 ring-4 ring-green-500/25 dark:ring-green-500/30 flex items-center justify-center">
                       <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500"></span>
+                      <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500 border border-white dark:border-neutral-950"></span>
                     </div>
                   ) : (
-                    <div className="absolute top-[8px] h-2 w-2 rounded-full border-2 border-gray-300 bg-white dark:border-neutral-700 dark:bg-neutral-950 left-1/2 transform -translate-x-1/2 transition-colors duration-200 group-hover:border-blue-500 dark:group-hover:border-blue-400" />
-                  )}
-                </div>
-
-                {/* Column 3: Main Experience Content */}
-                {item.type === 'company' ? (
-                  <div className="pb-4 pt-[3px] grow">
-                    <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
-                      {item.company}
-                    </h3>
+                    <div className="absolute top-[5px] h-4 w-4 rounded-full border-4 border-gray-100 bg-blue-500 dark:border-neutral-900 dark:bg-blue-400 left-1/2 transform -translate-x-1/2 transition-transform duration-200 group-hover:scale-110" />
+                  )
+                ) : item.current ? (
+                  <div className="absolute top-[7px] h-3 w-3 rounded-full bg-green-500 left-1/2 transform -translate-x-1/2 ring-4 ring-green-500/25 dark:ring-green-500/30 flex items-center justify-center">
+                    <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
+                    <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500"></span>
                   </div>
                 ) : (
-                  <div className="pb-8 sm:pb-10 pl-4 sm:pl-2 pt-[3px] grow flex flex-col space-y-2 border-l-2 border-gray-200 dark:border-neutral-800 sm:border-l-0 ml-3 sm:ml-0">
-                    {/* Header Title */}
-                    <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
-                      <h4 className="text-lg font-semibold tracking-tight text-blue-600 dark:text-blue-400 group-hover:text-blue-500 dark:group-hover:text-blue-300 transition-colors">
-                        {item.role}
-                      </h4>
-                    </div>
-
-                    {/* Date (Mobile only, shown below role title) */}
-                    <div className="block sm:hidden text-xs font-mono text-gray-450 dark:text-gray-500">
-                      {item.dates.endsWith('Present') ? `${item.dates}\u00a0` : item.dates}
-                    </div>
-
-                    {/* Optional blog post redirect */}
-                    {item.blogLink && (
-                      <div className="text-xs font-mono">
-                        <Link
-                          href={item.blogLink}
-                          className="text-blue-500 hover:underline dark:text-blue-400"
-                        >
-                          Read Architecture Post &rarr;
-                        </Link>
-                      </div>
-                    )}
-
-                    {/* Description bullets in prose styling */}
-                    <div className="prose max-w-none text-gray-500 dark:text-gray-400 mt-1 dark:prose-invert">
-                      <ul className="space-y-1.5">
-                        {item.description.map((bullet, bIdx) => (
-                          <li key={bIdx} className="leading-relaxed">
-                            {bullet}
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
-
-                    {/* Tech stack badges */}
-                    <div className="flex flex-wrap pt-2 gap-2">
-                      {item.tags.map((tag) => (
-                        <span
-                          key={tag}
-                          className="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono font-medium bg-gray-100 dark:bg-neutral-800 text-gray-600 dark:text-gray-350 hover:bg-gray-200 dark:hover:bg-neutral-700 transition-colors"
-                        >
-                          {tag}
-                        </span>
-                      ))}
-                    </div>
-                  </div>
+                  <div className="absolute top-[8px] h-2 w-2 rounded-full border-2 border-gray-300 bg-white dark:border-neutral-700 dark:bg-neutral-950 left-1/2 transform -translate-x-1/2 transition-colors duration-200 group-hover:border-blue-500 dark:group-hover:border-blue-400" />
                 )}
               </div>
-            ))}
-          </div>
+
+              {item.type === 'company' ? (
+                <div className="pb-4 pt-[3px] grow">
+                  <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
+                    {item.company}
+                  </h3>
+                </div>
+              ) : (
+                <div className="pb-8 sm:pb-10 pl-4 sm:pl-2 pt-[3px] grow flex flex-col space-y-2 border-l-2 border-gray-200 dark:border-neutral-800 sm:border-l-0 ml-3 sm:ml-0">
+                  <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
+                    <h4 className="text-lg font-semibold tracking-tight text-blue-600 dark:text-blue-400 group-hover:text-blue-500 dark:group-hover:text-blue-300 transition-colors">
+                      {item.role}
+                    </h4>
+                  </div>
+
+                  <div className="block sm:hidden text-xs font-mono text-gray-450 dark:text-gray-500">
+                    {item.dates.endsWith('Present') ? `${item.dates}\u00a0` : item.dates}
+                  </div>
+
+                  {item.blogLink && (
+                    <div className="text-xs font-mono">
+                      <Link
+                        href={item.blogLink}
+                        className="text-blue-500 hover:underline dark:text-blue-400"
+                      >
+                        Read Architecture Post &rarr;
+                      </Link>
+                    </div>
+                  )}
+
+                  <div className="prose max-w-none text-gray-500 dark:text-gray-400 mt-1 dark:prose-invert">
+                    <ul className="space-y-1.5">
+                      {item.description.map((bullet, bIdx) => (
+                        <li key={bIdx} className="leading-relaxed">
+                          {bullet}
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
+
+                  <div className="flex flex-wrap pt-2 gap-2">
+                    {item.tags.map((tag) => (
+                      <span
+                        key={tag}
+                        className="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono font-medium bg-gray-100 dark:bg-neutral-800 text-gray-600 dark:text-gray-350 hover:bg-gray-200 dark:hover:bg-neutral-700 transition-colors"
+                      >
+                        {tag}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
-    </>
+    </div>
   )
 }
