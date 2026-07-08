@@ -3,6 +3,79 @@ import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import Link from '@/components/Link'
+import { useState, useEffect, useRef } from 'react'
+
+function StatusBadge({ title, links, children }) {
+  const [flipped, setFlipped] = useState(false)
+  const timer = useRef(null)
+
+  useEffect(() => {
+    if (flipped) {
+      timer.current = setTimeout(() => setFlipped(false), 5000)
+    }
+    return () => clearTimeout(timer.current)
+  }, [flipped])
+
+  return (
+    <div className="relative" style={{ perspective: '1000px' }}>
+      <div
+        className="relative transition-transform duration-700 ease-in-out"
+        style={{
+          transformStyle: 'preserve-3d',
+          transform: flipped ? 'rotateY(180deg)' : 'rotateY(0deg)',
+        }}
+      >
+        {/* Front — avatar */}
+        <div style={{ backfaceVisibility: 'hidden' }}>{children}</div>
+
+        {/* Back — status content */}
+        <div
+          className="absolute inset-0 w-60 h-60 rounded-full bg-gray-50 dark:bg-neutral-900/90 flex flex-col items-center justify-center p-8 text-center shadow-xl ring-1 ring-gray-200 dark:ring-neutral-700"
+          style={{ backfaceVisibility: 'hidden', transform: 'rotateY(180deg)' }}
+        >
+          <div className="font-mono font-semibold text-sm text-green-600 dark:text-green-400 mb-2 leading-tight">
+            {title}
+          </div>
+          <p className="text-sm text-gray-600 dark:text-gray-400 leading-relaxed">
+            Building{' '}
+            <a
+              href={links[0].href}
+              target="_blank"
+              rel="noreferrer"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {links[0].text}
+            </a>{' '}
+            & benchmarking memory layouts in{' '}
+            <a
+              href={links[1].href}
+              target="_blank"
+              rel="noreferrer"
+              className="text-blue-600 dark:text-blue-400 hover:underline"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {links[1].text}
+            </a>
+            .
+          </p>
+
+        </div>
+      </div>
+
+      <button
+        className="absolute z-10 cursor-pointer"
+        style={{ right: '18px', bottom: '18px' }}
+        onClick={(e) => { e.stopPropagation(); setFlipped(!flipped) }}
+        title={title}
+      >
+          <span className="flex h-6 w-6 items-center justify-center rounded-full bg-gray-100 dark:bg-neutral-700 ring-2 ring-white dark:ring-neutral-900 text-sm leading-none select-none shadow-sm">
+            💻
+        </span>
+      </button>
+    </div>
+  )
+}
 
 const MAX_DISPLAY = 3
 
@@ -24,11 +97,20 @@ export default function About({ posts }) {
         <div className="items-start space-y-2 xl:grid xl:grid-cols-3 xl:gap-x-8 xl:space-y-0">
           {/* ── Left column: Avatar & meta ── */}
           <div className="flex flex-col items-center pt-8 space-x-2 animate-fade-in-up">
-            <img
-              src={siteMetadata.image}
-              alt="Abhishek Shree"
-              className="w-60 h-60 rounded-full object-cover shadow-xl glow-ring"
-            />
+            {/* Avatar with GitHub-style status badge */}
+            <StatusBadge
+              title="On the side I am"
+              links={[
+                { text: 'tokio-fsm', href: 'https://crates.io/crates/tokio-fsm' },
+                { text: 'microbench', href: 'https://abhishekshree.github.io/microbench/' },
+              ]}
+            >
+              <img
+                src={siteMetadata.image}
+                alt="Abhishek Shree"
+                className="w-60 h-60 rounded-full object-cover shadow-xl glow-ring"
+              />
+            </StatusBadge>
             <h3 className="pt-4 pb-2 mono text-2xl font-bold leading-8 tracking-tight">
               {siteMetadata.author}
             </h3>
@@ -44,36 +126,6 @@ export default function About({ posts }) {
               >
                 Indian Institute of Technology Kanpur
               </a>
-            </div>
-
-            {/* Focusing on card */}
-            <div className="mt-8 p-4 bg-gray-50/50 dark:bg-neutral-900/30 rounded-lg border border-gray-150 dark:border-neutral-800 text-xs w-full max-w-[240px] animate-fade-in-up animation-delay-200">
-              <div className="flex items-center space-x-2 mb-2 font-mono font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
-                <span className="relative flex h-2 w-2">
-                  <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                  <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500"></span>
-                </span>
-                <span>On the side I am</span>
-              </div>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed font-mono">
-                Building{' '}
-                <Link
-                  href="https://crates.io/crates/tokio-fsm"
-                  style={{ textDecoration: 'underline' }}
-                  className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
-                >
-                  tokio-fsm
-                </Link>{' '}
-                & benchmarking memory layouts in{' '}
-                <Link
-                  href="https://abhishekshree.github.io/microbench/"
-                  style={{ textDecoration: 'underline' }}
-                  className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400"
-                >
-                  microbench
-                </Link>
-                .
-              </p>
             </div>
           </div>
 
