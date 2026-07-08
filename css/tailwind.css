@@ -148,6 +148,16 @@ html {
 
 }
 
+/* Page fade-in transition */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.page-content {
+  animation: fadeIn 0.25s ease;
+}
+
 /* Entrance animation */
 @keyframes fadeInUp {
   from {
