@@ -47,7 +47,7 @@ export default function About({ posts }) {
             </div>
 
             {/* Focusing on card */}
-            <div className="mt-8 p-4 bg-gray-50 dark:bg-gray-900 bg-opacity-50 dark:bg-opacity-30 rounded-lg border border-gray-150 dark:border-gray-800 text-xs w-full max-w-[240px] animate-fade-in-up animation-delay-200">
+            <div className="mt-8 p-4 bg-gray-50/50 dark:bg-gray-900/30 rounded-lg border border-gray-150 dark:border-gray-800 text-xs w-full max-w-[240px] animate-fade-in-up animation-delay-200">
               <div className="flex items-center space-x-2 mb-2 font-mono font-semibold text-gray-500 dark:text-gray-400 uppercase tracking-wider">
                 <span className="relative flex h-2 w-2">
                   <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
@@ -78,7 +78,7 @@ export default function About({ posts }) {
           </div>
 
           {/* ── Right column: Bio & content ── */}
-          <div className="pt-8 pb-8 prose dark:prose-dark max-w-none xl:col-span-2">
+          <div className="pt-8 pb-8 prose max-w-none xl:col-span-2 dark:prose-invert">
             {/* Greeting */}
             <h1 className="serif text-2xl font-bold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-3xl sm:leading-10 md:text-5xl md:leading-14 animate-fade-in-up">
               <span className="inline-block" style={{ animationDuration: '0.4s', animationIterationCount: 1 }}>👋</span>{' '}
@@ -118,7 +118,7 @@ export default function About({ posts }) {
                         className="text-gray-900 dark:text-gray-100"
                         style={{ textDecoration: 'none' }}
                       >
-                        <div className="blog-card px-3 py-2.5 -mx-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:bg-opacity-50 flex items-center justify-between group">
+                        <div className="blog-card px-3 py-2.5 -mx-3 rounded-lg hover:bg-gray-50 dark:hover:bg-gray-800 dark:hover:bg-gray-800/50 flex items-center justify-between group">
                           <span className="font-bold leading-tight">{title}</span>
                           <span className="arrow-slide text-gray-400 dark:text-gray-600 ml-2 opacity-0 group-hover:opacity-100 transition-opacity text-sm">
                             →

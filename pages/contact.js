@@ -20,7 +20,7 @@ export default function Contact() {
             Feel free to reach out to me via email or social media.
           </p>
         </div>
-        <div className="container prose dark:prose-dark max-w-none grid md:grid-cols-2 grid-cols-1">
+        <div className="container prose max-w-none grid md:grid-cols-2 grid-cols-1 dark:prose-invert">
           <div>
             <h2 className="text-xl font-bold">Email</h2>
             abhishek[dot]shree[at]outlook[dot]com <br />

@@ -1,15 +1,129 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap');
+@import 'tailwindcss';
 
-.remark-code-title {
-  @apply px-5 py-3 font-mono text-sm font-bold text-gray-200 bg-gray-700 rounded-t;
+@plugin "@tailwindcss/typography";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+.prose {
+  --tw-prose-links: #2563eb;
+}
+.dark .prose {
+  --tw-prose-links: #60a5fa;
+}
+.prose a {
+  color: #2563eb;
+  text-decoration: none;
+}
+.dark .prose a {
+  color: #60a5fa;
 }
 
-.remark-code-title+pre {
+@theme {
+  --font-mono: 'IBM Plex Mono', monospace;
+  --font-serif: 'Bree Serif', serif;
+  --font-sans: 'Inconsolata', monospace;
+  --font-m: 'Montserrat', 'sans-serif';
+
+  --color-code-green: #b5f4a5;
+  --color-code-yellow: #ffe484;
+  --color-code-purple: #d9a9ff;
+  --color-code-red: #ff8383;
+  --color-code-blue: #93ddfd;
+  --color-code-white: #fff;
+
+  --color-gray-150: #e5e7eb;
+  --color-gray-350: #a3a6ad;
+  --color-gray-450: #8b8f96;
+
+  --line-height-11: 2.75rem;
+  --line-height-12: 3rem;
+  --line-height-13: 3.25rem;
+  --line-height-14: 3.5rem;
+}
+
+@utility strikethrough {
+  font-family: 'IBM Plex Mono', monospace;
+  position: relative;
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: rgba(17, 24, 39, 1);
+  }
+
+  &:before {
+    left: 0px;
+  }
+
+  &:after {
+    right: 0px;
+    background: rgba(17, 24, 39, 1);
+    transition: width 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  &:hover:before {
+    background: rgba(17, 24, 39, 1);
+    width: 100%;
+    transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  &:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+}
+
+@utility strikethrough-dark {
+  font-family: 'IBM Plex Mono', monospace;
+  position: relative;
+  cursor: pointer;
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    width: 0%;
+    height: 1px;
+    top: 50%;
+    margin-top: -0.5px;
+    background: rgba(243, 244, 246, 1);
+  }
+
+  &:before {
+    left: 0px;
+  }
+
+  &:after {
+    right: 0px;
+    background: rgba(243, 244, 246, 1);
+    transition: width 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  &:hover:before {
+    background: rgba(243, 244, 246, 1);
+    width: 100%;
+    transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
+  }
+
+  &:hover:after {
+    background: transparent;
+    width: 100%;
+    transition: 0s;
+  }
+}
+
+.rehype-code-title {
+  @apply px-5 py-3 font-mono text-sm font-bold text-gray-200 bg-gray-700 rounded-t-sm;
+}
+
+.rehype-code-title+pre {
   @apply mt-0 rounded-t-none;
 }
 
@@ -40,91 +154,6 @@ html {
   max-width: 60px;
   max-height: 60px;
 
-}
-
-@layer utilities {
-  @variants dark {
-    .strikethrough {
-      font-family: 'IBM Plex Mono', monospace;
-      position: relative;
-      cursor: pointer;
-    }
-
-    .strikethrough:before,
-    .strikethrough:after {
-      content: '';
-      position: absolute;
-      width: 0%;
-      height: 1px;
-      top: 50%;
-      margin-top: -0.5px;
-      background: rgba(17, 24, 39, 1);
-    }
-
-    .strikethrough:before {
-      left: 0px;
-    }
-
-    .strikethrough:after {
-      right: 0px;
-      background: rgba(17, 24, 39, 1);
-      transition: width 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
-    }
-
-    .strikethrough:hover:before {
-      background: rgba(17, 24, 39, 1);
-      width: 100%;
-      transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
-    }
-
-    .strikethrough:hover:after {
-      background: transparent;
-      width: 100%;
-      transition: 0s;
-    }
-
-    /* Dark Strike */
-
-    .strikethrough-dark {
-      font-family: 'IBM Plex Mono', monospace;
-      position: relative;
-      cursor: pointer;
-    }
-
-    .strikethrough-dark:before,
-    .strikethrough-dark:after {
-      content: '';
-      position: absolute;
-      width: 0%;
-      height: 1px;
-      top: 50%;
-      margin-top: -0.5px;
-      background: rgba(243, 244, 246, 1);
-    }
-
-    .strikethrough-dark:before {
-      left: 0px;
-    }
-
-    .strikethrough-dark:after {
-      right: 0px;
-      background: rgba(243, 244, 246, 1);
-      transition: width 0.6s cubic-bezier(0.22, 0.61, 0.36, 1);
-    }
-
-    .strikethrough-dark:hover:before {
-      background: rgba(243, 244, 246, 1);
-      width: 100%;
-      transition: width 0.3s cubic-bezier(0.22, 0.61, 0.36, 1);
-    }
-
-    .strikethrough-dark:hover:after {
-      background: transparent;
-      width: 100%;
-      transition: 0s;
-    }
-
-  }
 }
 
 /* Entrance animation */

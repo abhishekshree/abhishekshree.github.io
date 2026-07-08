@@ -31,7 +31,19 @@ class MyDocument extends Document {
           <link
             href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;500;600;700&display=swap"
             rel="stylesheet"
-          ></link>
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap"
+            rel="stylesheet"
+          />
+          <link
+            href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap"
+            rel="stylesheet"
+          />
           <link
             rel="preload"
             href="https://cdn.jsdelivr.net/npm/katex@0.10.2/dist/fonts/KaTeX_Main-Regular.woff2"

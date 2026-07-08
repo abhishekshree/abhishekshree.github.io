@@ -5,15 +5,7 @@ const withBundleAnalyzer = require('@next/bundle-analyzer')({
 module.exports = withBundleAnalyzer({
   output: 'export',
   pageExtensions: ['js', 'jsx', 'md', 'mdx'],
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
-  webpack: (config) => {
-    config.module.rules.push({
-      test: /\.svg$/,
-      use: ['@svgr/webpack'],
-    })
-
-    return config
+  experimental: {
+    largePageDataBytes: 512 * 1000,
   },
 })

@@ -66,7 +66,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
               </dd>
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-gray-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
-              <div className="pt-10 pb-8 prose dark:prose-dark max-w-none">{children}</div>
+              <div className="pt-10 pb-8 prose max-w-none dark:prose-invert">{children}</div>
               <div className="pt-6 pb-6 text-sm text-gray-500 dark:text-gray-300">
                 Hi, In case you want to discuss anything about this post, you can reach out to me
                 over{' '}

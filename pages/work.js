@@ -1,6 +1,6 @@
 import siteMetadata from '@/data/siteMetadata'
 import { PageSEO } from '@/components/SEO'
-import Link from 'next/link'
+import Link from '@/components/Link'
 
 const workExperience = [
   {
@@ -179,12 +179,12 @@ export default function Work() {
             {timelineItems.map((item, idx) => (
               <div key={idx} className="flex gap-4 sm:gap-6 group">
                 {/* Column 1: Date (Desktop only, right-aligned) */}
-                <div className="hidden sm:block w-[180px] text-right text-xs font-mono text-gray-450 dark:text-gray-500 pt-[5px] flex-shrink-0">
+                <div className="hidden sm:block w-[180px] text-right text-xs font-mono text-gray-450 dark:text-gray-500 pt-[5px] shrink-0">
                   {item.dates.endsWith('Present') ? `${item.dates}\u00a0` : item.dates}
                 </div>
 
                 {/* Column 2: Vertical Line & Center Dot (Desktop only) */}
-                <div className="hidden sm:flex relative w-6 flex-shrink-0 justify-center">
+                <div className="hidden sm:flex relative w-6 shrink-0 justify-center">
                   {/* Vertical line segment (stops at the center of the first/last dots at 12px) */}
                   {idx === 0 ? (
                     <div className="w-0.5 bg-gray-200 dark:bg-gray-800 absolute left-1/2 transform -translate-x-1/2 top-[12px] bottom-0" />
@@ -216,13 +216,13 @@ export default function Work() {
 
                 {/* Column 3: Main Experience Content */}
                 {item.type === 'company' ? (
-                  <div className="pb-4 pt-[3px] flex-grow">
+                  <div className="pb-4 pt-[3px] grow">
                     <h3 className="text-xl sm:text-2xl font-bold tracking-tight text-gray-900 dark:text-gray-100">
                       {item.company}
                     </h3>
                   </div>
                 ) : (
-                  <div className="pb-8 sm:pb-10 pl-4 sm:pl-2 pt-[3px] flex-grow flex flex-col space-y-2 border-l-2 border-gray-200 dark:border-gray-800 sm:border-l-0 ml-3 sm:ml-0">
+                  <div className="pb-8 sm:pb-10 pl-4 sm:pl-2 pt-[3px] grow flex flex-col space-y-2 border-l-2 border-gray-200 dark:border-gray-800 sm:border-l-0 ml-3 sm:ml-0">
                     {/* Header Title */}
                     <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
                       <h4 className="text-lg font-semibold tracking-tight text-blue-600 dark:text-blue-400 group-hover:text-blue-500 dark:group-hover:text-blue-300 transition-colors">
@@ -238,16 +238,17 @@ export default function Work() {
                     {/* Optional blog post redirect */}
                     {item.blogLink && (
                       <div className="text-xs font-mono">
-                        <Link href={item.blogLink}>
-                          <a className="text-blue-500 hover:underline dark:text-blue-400">
-                            Read Architecture Post &rarr;
-                          </a>
+                        <Link
+                          href={item.blogLink}
+                          className="text-blue-500 hover:underline dark:text-blue-400"
+                        >
+                          Read Architecture Post &rarr;
                         </Link>
                       </div>
                     )}
 
                     {/* Description bullets in prose styling */}
-                    <div className="prose dark:prose-dark max-w-none text-gray-500 dark:text-gray-400 mt-1">
+                    <div className="prose max-w-none text-gray-500 dark:text-gray-400 mt-1 dark:prose-invert">
                       <ul className="space-y-1.5">
                         {item.description.map((bullet, bIdx) => (
                           <li key={bIdx} className="leading-relaxed">

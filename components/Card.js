@@ -39,7 +39,7 @@ const Card = ({ title, description, imgSrc, href }) => {
           )}
         </div>
       )}
-      <div className="flex flex-col flex-grow">
+      <div className="flex flex-col grow">
         <h2 className="text-base font-bold tracking-tight text-gray-900 dark:text-gray-100 group-hover:text-blue-500 transition-colors">
           {href ? (
             <Link
