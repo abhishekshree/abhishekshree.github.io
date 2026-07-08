@@ -4,7 +4,6 @@ const headerNavLinks = [
   { href: '/work', title: 'Work' },
   { href: '/projects', title: 'Projects' },
   { href: '/contact', title: 'Contact' },
-  // { href: '/static/cv/cv.pdf', title: 'CV' },
 ]
 
 export default headerNavLinks

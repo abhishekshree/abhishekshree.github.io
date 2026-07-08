@@ -1,14 +1,11 @@
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
+import Head from 'next/head'
 
-const ugp = () => {
-  const router = useRouter()
+const ugp = () => (
+  <Head>
+    <meta httpEquiv="refresh" content="0; URL=/static/ugp/ugp.pdf" />
+  </Head>
+)
 
-  useEffect(() => {
-    router.replace('/static/ugp/ugp.pdf')
-  }, [router])
-
-  return null
-}
+ugp.noLayout = true
 
 export default ugp

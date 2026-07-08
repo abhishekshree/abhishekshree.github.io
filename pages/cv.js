@@ -1,14 +1,11 @@
-import { useEffect } from 'react'
-import { useRouter } from 'next/router'
+import Head from 'next/head'
 
-const cv = () => {
-  const router = useRouter()
+const cv = () => (
+  <Head>
+    <meta httpEquiv="refresh" content="0; URL=/static/cv/cv.pdf" />
+  </Head>
+)
 
-  useEffect(() => {
-    router.replace('/static/cv/cv.pdf')
-  }, [router])
-
-  return null
-}
+cv.noLayout = true
 
 export default cv
