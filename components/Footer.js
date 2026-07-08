@@ -14,11 +14,23 @@ export default function Footer() {
           <SocialIcon kind="twitter" href={siteMetadata.twitter} size="4" />
         </div>
         <div className="flex mono mb-2 space-x-2 text-sm text-gray-500 dark:text-gray-400">
-          {/* <div>{siteMetadata.author}</div> */}
-          {/* <div>{` • `}</div> */}
           <div>{`© ${new Date().getFullYear()}`}</div>
           <div>{` • `}</div>
           <Link href="/">{siteMetadata.title}</Link>
+          <div>{` • `}</div>
+          <Link
+            href="/tags"
+            className="no-underline hover:underline hover:underline-offset-4 hover:decoration-dotted"
+          >
+            by tags
+          </Link>
+          <div>{` • `}</div>
+          <Link
+            href="/index.xml"
+            className="no-underline hover:underline hover:underline-offset-4 hover:decoration-dotted"
+          >
+            rss
+          </Link>
         </div>
       </div>
     </footer>

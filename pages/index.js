@@ -26,7 +26,7 @@ export default function About({ posts }) {
           <div className="flex flex-col items-center pt-8 space-x-2 animate-fade-in-up">
             <img
               src={siteMetadata.image}
-              alt="avatar"
+              alt="Abhishek Shree"
               className="w-60 h-60 rounded-full object-cover shadow-xl glow-ring"
             />
             <h3 className="pt-4 pb-2 mono text-2xl font-bold leading-8 tracking-tight">
@@ -38,7 +38,7 @@ export default function About({ posts }) {
             <div className="text-gray-500 mono text-xs dark:text-gray-400">
               <a
                 href="https://iitk.ac.in"
-                style={{ textDecoration: 'none', color: 'slate' }}
+                style={{ textDecoration: 'none', color: '#708090' }}
                 target="_blank"
                 rel="noreferrer"
               >

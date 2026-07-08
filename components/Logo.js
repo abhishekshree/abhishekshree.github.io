@@ -1,4 +1,4 @@
-const LogoSvg = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="53pt" height="44pt" viewBox="0 0 53 44" version="1.1">
+const LogoSvg = `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="36pt" height="30pt" viewBox="0 0 53 44" version="1.1">
 <g id="surface1">
 <path style=" stroke:none;fill-rule:nonzero;fill:rgb(95.686275%,49.803922%,19.215686%);fill-opacity:1;" d="M 42.125 24.847656 L 45.011719 24.847656 L 45.011719 27.695312 L 42.125 27.695312 Z M 42.125 24.847656 "/>
 <path style=" stroke:none;fill-rule:nonzero;fill:rgb(92.156863%,41.568627%,18.431373%);fill-opacity:1;" d="M 44.507812 21.820312 L 44.507812 14.882812 C 44.507812 14.09375 43.738281 13.457031 42.792969 13.457031 L 6.777344 13.457031 C 4.851562 13.457031 3.296875 14.777344 3.351562 16.386719 L 3.351562 21.820312 Z M 44.507812 21.820312 "/>

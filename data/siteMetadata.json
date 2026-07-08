@@ -4,7 +4,7 @@
   "headerTitle": "shree_e",
   "description": "I am an undergraduate at Indian Institute of Technology, Kanpur. Also I try to blog about the amazing stuff I come across.",
   "language": "en-us",
-  "siteUrl": "https://abhishekshree.github.io/",
+  "siteUrl": "https://abhishekshree.github.io",
   "siteRepo": "https://github.com/abhishekshree/abhishekshree.github.io",
   "image": "/static/images/dp.png",
   "socialBanner": "/static/images/twitter-card.png",
@@ -16,6 +16,7 @@
   "linkedin": "https://www.linkedin.com/in/abhishekshree/",
   "instagram": "https://www.instagram.com/_shree.e_/",
   "discord": "https://discord.com/users/701418832589357076",
+  "siteLogo": "/static/favicons/apple-touch-icon.png",
   "cv": "/static/cv/cv.pdf",
   "locale": "en-US"
 }
