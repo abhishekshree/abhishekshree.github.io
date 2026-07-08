@@ -1,0 +1,6 @@
+# Allow all crawlers full access
+User-agent: *
+Allow: /
+
+# Sitemaps
+Sitemap: https://abhishekshree.github.io/sitemap.xml

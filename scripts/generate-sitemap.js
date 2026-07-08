@@ -27,7 +27,7 @@ const siteMetadata = require('../data/siteMetadata')
                   .replace('.mdx', '')
                   .replace('.md', '')
                   .replace('/index.xml', '')
-                const route = path === '/index' ? '' : path
+                const route = path === 'index' ? '' : `/${path}`
                 return `
                         <url>
                             <loc>${`${siteMetadata.siteUrl}${route}`}</loc>
