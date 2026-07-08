@@ -2,6 +2,22 @@ import Head from 'next/head'
 import { useRouter } from 'next/router'
 import siteMetadata from '@/data/siteMetadata'
 
+export const SEO = {
+  title: siteMetadata.title,
+  description: siteMetadata.description,
+  openGraph: {
+    type: 'website',
+    locale: siteMetadata.locale || 'en_US',
+    url: siteMetadata.siteUrl,
+    site_name: siteMetadata.title,
+  },
+  twitter: {
+    handle: siteMetadata.twitter,
+    site: siteMetadata.twitter,
+    cardType: 'summary_large_image',
+  },
+}
+
 const CommonSEO = ({ title, description, ogType, ogImage, twImage, canonicalUrl }) => {
   const router = useRouter()
   return (
