@@ -9,7 +9,7 @@ const siteMetadata = require('../data/siteMetadata')
     'pages/*.js',
     'data/**/*.mdx',
     'data/**/*.md',
-    'public/tags/**/*.xml',
+    'public/tags/**/index.xml',
     '!pages/_*.js',
     '!pages/api',
   ])
@@ -19,14 +19,15 @@ const siteMetadata = require('../data/siteMetadata')
         <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
             ${pages
               .map((page) => {
-                const path = page
+                let path = page
                   .replace('pages/', '')
                   .replace('data/blog', 'blog')
-                  .replace('public/', '/')
+                  .replace('public/', '')
                   .replace('.js', '')
                   .replace('.mdx', '')
                   .replace('.md', '')
                   .replace('/index.xml', '')
+                  .replace('/feed.xml', '')
                 const route = path === 'index' ? '' : `/${path}`
                 return `
                         <url>
