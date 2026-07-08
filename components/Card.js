@@ -20,7 +20,7 @@ const Card = ({ title, description, imgSrc, href }) => {
       {imgSrc && (
         <div
           style={{ aspectRatio: '16/10' }}
-          className="relative w-full rounded-lg overflow-hidden bg-gray-100 dark:bg-gray-800 border border-gray-200 dark:border-gray-800 mb-3.5"
+          className="relative w-full rounded-lg overflow-hidden bg-gray-100 dark:bg-neutral-800 border border-gray-200 dark:border-neutral-800 mb-3.5"
         >
           {href ? (
             <Link href={href} aria-label={`Link to ${title}`}>

@@ -164,7 +164,7 @@ export default function Work() {
         description={siteMetadata.description}
         url={`${siteMetadata.siteUrl}/work`}
       />
-      <div className="divide-y divide-gray-200 dark:divide-gray-700">
+      <div className="divide-y divide-gray-200 dark:divide-neutral-700">
         <div className="pt-6 pb-8 space-y-2 md:space-y-5">
           <h1 className="text-3xl mono font-extrabold leading-9 tracking-tight text-gray-900 dark:text-gray-100 sm:text-4xl sm:leading-10 md:text-6xl md:leading-14">
             Work
@@ -187,11 +187,11 @@ export default function Work() {
                 <div className="hidden sm:flex relative w-6 shrink-0 justify-center">
                   {/* Vertical line segment (stops at the center of the first/last dots at 12px) */}
                   {idx === 0 ? (
-                    <div className="w-0.5 bg-gray-200 dark:bg-gray-800 absolute left-1/2 transform -translate-x-1/2 top-[12px] bottom-0" />
+                    <div className="w-0.5 bg-gray-200 dark:bg-neutral-800 absolute left-1/2 transform -translate-x-1/2 top-[12px] bottom-0" />
                   ) : idx === timelineItems.length - 1 ? (
-                    <div className="w-0.5 bg-gray-200 dark:bg-gray-800 absolute left-1/2 transform -translate-x-1/2 top-0 h-[12px]" />
+                    <div className="w-0.5 bg-gray-200 dark:bg-neutral-800 absolute left-1/2 transform -translate-x-1/2 top-0 h-[12px]" />
                   ) : (
-                    <div className="w-0.5 bg-gray-200 dark:bg-gray-800 absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0" />
+                    <div className="w-0.5 bg-gray-200 dark:bg-neutral-800 absolute left-1/2 transform -translate-x-1/2 top-0 bottom-0" />
                   )}
 
                   {/* Dot container */}
@@ -199,10 +199,10 @@ export default function Work() {
                     item.current ? (
                       <div className="absolute top-[7px] h-3 w-3 rounded-full bg-green-500 left-1/2 transform -translate-x-1/2 ring-4 ring-green-500/25 dark:ring-green-500/30 flex items-center justify-center">
                         <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-400 opacity-75"></span>
-                        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500 border border-white dark:border-gray-950"></span>
+                        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500 border border-white dark:border-neutral-950"></span>
                       </div>
                     ) : (
-                      <div className="absolute top-[5px] h-4 w-4 rounded-full border-4 border-gray-100 bg-blue-500 dark:border-gray-900 dark:bg-blue-400 left-1/2 transform -translate-x-1/2 transition-transform duration-200 group-hover:scale-110" />
+                      <div className="absolute top-[5px] h-4 w-4 rounded-full border-4 border-gray-100 bg-blue-500 dark:border-neutral-900 dark:bg-blue-400 left-1/2 transform -translate-x-1/2 transition-transform duration-200 group-hover:scale-110" />
                     )
                   ) : item.current ? (
                     <div className="absolute top-[7px] h-3 w-3 rounded-full bg-green-500 left-1/2 transform -translate-x-1/2 ring-4 ring-green-500/25 dark:ring-green-500/30 flex items-center justify-center">
@@ -210,7 +210,7 @@ export default function Work() {
                       <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500"></span>
                     </div>
                   ) : (
-                    <div className="absolute top-[8px] h-2 w-2 rounded-full border-2 border-gray-300 bg-white dark:border-gray-700 dark:bg-gray-950 left-1/2 transform -translate-x-1/2 transition-colors duration-200 group-hover:border-blue-500 dark:group-hover:border-blue-400" />
+                    <div className="absolute top-[8px] h-2 w-2 rounded-full border-2 border-gray-300 bg-white dark:border-neutral-700 dark:bg-neutral-950 left-1/2 transform -translate-x-1/2 transition-colors duration-200 group-hover:border-blue-500 dark:group-hover:border-blue-400" />
                   )}
                 </div>
 
@@ -222,7 +222,7 @@ export default function Work() {
                     </h3>
                   </div>
                 ) : (
-                  <div className="pb-8 sm:pb-10 pl-4 sm:pl-2 pt-[3px] grow flex flex-col space-y-2 border-l-2 border-gray-200 dark:border-gray-800 sm:border-l-0 ml-3 sm:ml-0">
+                  <div className="pb-8 sm:pb-10 pl-4 sm:pl-2 pt-[3px] grow flex flex-col space-y-2 border-l-2 border-gray-200 dark:border-neutral-800 sm:border-l-0 ml-3 sm:ml-0">
                     {/* Header Title */}
                     <div className="flex flex-col sm:flex-row sm:items-baseline sm:justify-between gap-1">
                       <h4 className="text-lg font-semibold tracking-tight text-blue-600 dark:text-blue-400 group-hover:text-blue-500 dark:group-hover:text-blue-300 transition-colors">
@@ -263,7 +263,7 @@ export default function Work() {
                       {item.tags.map((tag) => (
                         <span
                           key={tag}
-                          className="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono font-medium bg-gray-100 dark:bg-gray-800 text-gray-600 dark:text-gray-350 hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors"
+                          className="inline-flex items-center px-2 py-0.5 rounded text-xs font-mono font-medium bg-gray-100 dark:bg-neutral-800 text-gray-600 dark:text-gray-350 hover:bg-gray-200 dark:hover:bg-neutral-700 transition-colors"
                         >
                           {tag}
                         </span>

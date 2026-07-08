@@ -22,7 +22,6 @@
   --font-mono: 'IBM Plex Mono', monospace;
   --font-serif: 'Bree Serif', serif;
   --font-sans: 'Inconsolata', monospace;
-  --font-m: 'Montserrat', 'sans-serif';
 
   --color-code-green: #b5f4a5;
   --color-code-yellow: #ffe484;
@@ -120,7 +119,7 @@
 }
 
 .rehype-code-title {
-  @apply px-5 py-3 font-mono text-sm font-bold text-gray-200 bg-gray-700 rounded-t-sm;
+  @apply px-5 py-3 font-mono text-sm font-bold text-gray-200 bg-neutral-700 rounded-t-sm;
 }
 
 .rehype-code-title+pre {
@@ -141,13 +140,6 @@ html {
 
 .serif {
   font-family: 'Bree Serif', serif;
-}
-
-.m {
-  font-family: 'Montserrat', 'sans-serif';
-  font-size: 28px;
-  line-height: 30px;
-
 }
 
 .logo {
