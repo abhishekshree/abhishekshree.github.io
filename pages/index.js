@@ -1,5 +1,5 @@
 import siteMetadata from '@/data/siteMetadata'
-import SocialIcon from '@/components/social-icons'
+
 import { PageSEO } from '@/components/SEO'
 import { getAllFilesFrontMatter } from '@/lib/mdx'
 import Link from '@/components/Link'
@@ -32,7 +32,7 @@ export default function About({ posts }) {
             <h3 className="pt-4 pb-2 mono text-2xl font-bold leading-8 tracking-tight">
               {siteMetadata.author}
             </h3>
-            <div className="text-gray-500 mono text-xs dark:text-gray-400">
+            <div className="text-gray-500 mono text-sm dark:text-gray-400">
               Quant Technologist at QRT
             </div>
             <div className="text-gray-500 mono text-xs dark:text-gray-400">
@@ -55,7 +55,7 @@ export default function About({ posts }) {
                 </span>
                 <span>On the side I am</span>
               </div>
-              <p className="text-gray-600 dark:text-gray-400 leading-relaxed font-sans">
+              <p className="text-gray-600 dark:text-gray-400 leading-relaxed font-mono">
                 Building{' '}
                 <Link
                   href="https://crates.io/crates/tokio-fsm"
@@ -105,7 +105,7 @@ export default function About({ posts }) {
             <div className="grid md:grid-cols-2 grid-cols-1 animate-fade-in-up animation-delay-200">
               {/* Recently I Wrote */}
               <div className="mr-5">
-                <p className="antialiased font-bold text-lg leading-tight uppercase tracking-wide text-gray-500">
+                <p className="antialiased font-mono font-semibold text-xs uppercase tracking-widest text-gray-500">
                   Recently I wrote
                 </p>
                 <div className="space-y-3">
@@ -133,13 +133,13 @@ export default function About({ posts }) {
               {/* Education */}
               <div>
                 <div className="leading-none">
-                  <p className="antialiased font-bold text-lg leading-tight uppercase tracking-wide text-gray-500">
+                  <p className="antialiased font-mono font-semibold text-xs uppercase tracking-widest text-gray-500">
                     Education
                   </p>
                 </div>
                 <div className="space-y-4">
                   <div className="pl-3 border-l-2 border-blue-400 dark:border-blue-500">
-                    <div className="leading-tight font-semibold">
+                    <div className="leading-tight font-bold">
                       BS Economic Sciences, 2024
                     </div>
                     <div className="leading-none text-sm text-gray-500">
@@ -147,13 +147,13 @@ export default function About({ posts }) {
                     </div>
                   </div>
                   <div className="pl-3 border-l-2 border-gray-300 dark:border-gray-700">
-                    <div className="leading-tight font-semibold">AISSCE - XII, 2020</div>
+                    <div className="leading-tight font-bold">AISSCE - XII, 2020</div>
                     <div className="leading-none text-sm text-gray-500">
                       Loyola High School, Patna
                     </div>
                   </div>
                   <div className="pl-3 border-l-2 border-gray-300 dark:border-gray-700">
-                    <div className="leading-tight font-semibold">CBSE - X, 2018</div>
+                    <div className="leading-tight font-bold">CBSE - X, 2018</div>
                     <div className="leading-none text-sm text-gray-500">
                       Loyola High School, Patna
                     </div>
