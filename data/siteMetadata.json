@@ -18,5 +18,6 @@
   "discord": "https://discord.com/users/701418832589357076",
   "siteLogo": "/static/favicons/apple-touch-icon.png",
   "cv": "/static/cv/cv.pdf",
-  "locale": "en-US"
+  "locale": "en-US",
+  "commentServerUrl": "https://abhishekshree-comments.vercel.app"
 }

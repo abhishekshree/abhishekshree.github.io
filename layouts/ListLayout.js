@@ -4,6 +4,7 @@ import Link from '@/components/Link'
 import Tag from '@/components/Tag'
 import siteMetdata from '@/data/siteMetadata'
 import Pagination from '@/components/Pagination'
+import PageCounter from '@/components/PageCounter'
 import { useState } from 'react'
 
 const postDateTemplate = { year: 'numeric', month: 'long', day: 'numeric' }
@@ -63,6 +64,7 @@ export default function ListLayout({ posts, title, initialDisplayPosts = [], pag
                       <time dateTime={date}>
                         {new Date(date).toLocaleDateString(siteMetdata.locale, postDateTemplate)}
                       </time>
+                      <PageCounter path={`/blog/${slug}`} className="block text-xs mt-0.5" readonly />
                     </dd>
                   </dl>
                   <div className="space-y-3 xl:col-span-3">

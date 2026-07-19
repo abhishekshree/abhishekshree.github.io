@@ -4,6 +4,8 @@ import SectionContainer from '@/components/SectionContainer'
 import Tag from '@/components/Tag'
 import siteMetdata from '@/data/siteMetadata'
 import ScrollToTop from '@/components/ScrollToTop'
+import PageCounter from '@/components/PageCounter'
+import WalineComments from '@/components/WalineComments'
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
 
@@ -24,6 +26,7 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                     <time dateTime={date}>
                       {new Date(date).toLocaleDateString(siteMetdata.locale, postDateTemplate)}
                     </time>
+                    <PageCounter path={`/blog/${slug}`} className="block text-xs mt-0.5" />
                   </dd>
                 </div>
               </dl>
@@ -65,13 +68,8 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
             </dl>
             <div className="divide-y divide-gray-200 dark:divide-neutral-700 xl:pb-0 xl:col-span-3 xl:row-span-2">
               <div className="pt-10 pb-8 prose max-w-none dark:prose-invert">{children}</div>
-              <div className="pt-6 pb-6 text-sm text-gray-500 dark:text-gray-300">
-                Hi, In case you want to discuss anything about this post, you can reach out to me
-                over{' '}
-                <span className="text-blue-500 hover:text-blue-600 dark:hover:text-blue-400">
-                  <Link href={`/contact`}>here</Link>
-                </span>
-                .
+              <div className="pt-6 pb-6">
+                <WalineComments path={`/blog/${slug}`} />
               </div>
             </div>
             <footer>

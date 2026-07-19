@@ -148,6 +148,19 @@ html {
 
 }
 
+/* Waline theme */
+:root {
+  --waline-font-size: 1rem;
+  --waline-theme-color: #2563eb;
+  --waline-active-color: #1d4ed8;
+}
+.dark {
+  --waline-bgcolor: #262626;
+  --waline-bgcolor-light: #333;
+  --waline-border-color: #404040;
+  --waline-color: #d4d4d4;
+}
+
 /* Page fade-in transition */
 @keyframes fadeIn {
   from { opacity: 0; }
