@@ -26,6 +26,7 @@ export default function WalineComments({ path }) {
       noRss: true,
       noCopyright: true,
       reaction: false,
+      pageview: false,
     })
 
     return () => {

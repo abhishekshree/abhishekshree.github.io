@@ -5,6 +5,7 @@ import Tag from '@/components/Tag'
 import siteMetdata from '@/data/siteMetadata'
 import ScrollToTop from '@/components/ScrollToTop'
 import PageCounter from '@/components/PageCounter'
+import UpvoteCounter from '@/components/UpvoteCounter'
 import WalineComments from '@/components/WalineComments'
 
 const postDateTemplate = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' }
@@ -26,7 +27,10 @@ export default function PostLayout({ children, frontMatter, next, prev }) {
                     <time dateTime={date}>
                       {new Date(date).toLocaleDateString(siteMetdata.locale, postDateTemplate)}
                     </time>
-                    <PageCounter path={`/blog/${slug}`} className="block text-xs mt-0.5" />
+                    <span className="mx-2">|</span>
+                    <PageCounter path={`/blog/${slug}`} className="inline text-xs" />
+                    <span className="mx-2">|</span>
+                    <UpvoteCounter path={`/blog/${slug}`} />
                   </dd>
                 </div>
               </dl>
