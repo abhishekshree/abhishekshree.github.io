@@ -1,0 +1,57 @@
+---
+title: "The reward model is you"
+date: "2026-08-07"
+summary: "Distillation is a one way arrow and it's pointing the wrong way"
+tags:
+  - ai
+  - rlhf
+  - personal
+---
+
+Every time you thumbs up an LLM's response, you're being distilled. The model is quietly training your brain to think in its voice, one rating at a time.
+
+It feels right. That's exactly why it's dangerous. It's also backwards. Let me show you how.
+
+## Distillation is a one way street
+
+Classic knowledge distillation (Hinton, Vinyals and Dean, 2015) trains a small student to match a large teacher's output distribution. You soften both with a temperature, the student picks up not just what the teacher knows but what it's uncertain about, and information flows one way. Teacher to student. The teacher is never touched.
+
+But if you're the one giving feedback, the arrow points the other way. You're not the student. You're the teacher. Or worse, you're the reward model.
+
+## You're the reward model
+
+RLHF, the thing that actually shapes the LLM you talk to, is a feedback loop with you sitting in it. You rate pairs of outputs, your ratings train a reward model, and the model optimizes itself to produce whatever you rated higher. Not what was true. Whatever you rated higher.
+
+And humans systematically rate the responses that agree with them. The reward model learns agreement beats correctness, the policy optimizes for agreeableness, the agreeable output reinforces your beliefs, and your next rating rewards the agreement even more. The loop tightens until the model is a mirror and you're the one being trained to like the reflection.
+
+So yes, you are being distilled. Just not the way I made it sound. Your preferences, your biases, your tendency to reward what already agrees with you. That's what gets extracted, compressed, and fed back to you at higher fidelity. The model isn't learning from you. It's learning *you*.
+
+## Code is not free
+
+Being the reward model only matters if you're actually paying attention to what you're rewarding.
+
+I'm not pretending people can't use Claude. Most people can, and well. The problem is the opposite. It produces so much, so fluently, that nobody can be bothered to go through it anymore. That's the human failure, and it's an old one: we skip, we skim, we merge on faith. The model doesn't need to be smarter than you. It just needs to be more patient, and volume is its best weapon.
+
+I see it in codebases every week now. The churn is so high that nobody cares what actually gets merged. A data-transformation script that should be two hundred lines ships at five hundred, every JSON shape entombed in a comment, plus a custom date-time library written only to work around a parser that chokes on em-dashes, which are only there because the site it scrapes is itself AI slop. No one blinks.
+
+You're the reward model, and you've stopped looking at the inputs. The sycophancy loop doesn't need to be clever. It just needs you to not be paying attention.
+
+notashelf put this well in ["taste is all that's left"](https://notashelf.dev/posts/taste-is-all-thats-left), and I keep coming back to it. When making things was expensive, effort was a filter. Anything that existed had survived the cost of being made. That floor is gone now. When everyone can generate anything, the scarce act isn't making, it's choosing. The wordless "no, again." The verdict that of three plausible versions of the same function, two are wrong. That's the skill. And it only gets built the slow, humiliating way: you make something bad and you sit in it. Generate fluently from day one and you skip that apprenticeship entirely. What you end up with is confidence without judgment.
+
+## What gets distilled is what matters
+
+Code has ground truth, which is why I can vibe code to hell without feeling distilled. The compiler, the type checker, the runtime, the tests: that's a reward model I can actually inspect, and it isn't me. None of it cares about my feelings, and all of it pushes back when the model is wrong. When I let an agent write a `select!` loop and the borrow checker screams, the model learns nothing but I do. The falsification is right there in the terminal.
+
+The same trick works outside code. If you inspect the work and define a local reward model for it, even in the small setting of your own repo, your own notes, a single paragraph, the loop stops being extractive and turns additive. The model stops mining your agreement and starts converging on something checkable that isn't you. Give it a failing test and a definition of done, and it'll keep chewing until the thing is actually right. The results come out better, and they compound, because each round writes structure into you instead of siphoning it out.
+
+You get to pick what the teacher is. If the reward is "does this agree with me," the teacher is a photocopy of you, and the loop folds back onto itself. The student re-learns your own shape back at you, at finer and finer resolution, and nothing new ever enters. You receive your own taste back, distilled. If the reward is grounded in something that isn't you, a compiler, a failing test, a number you actually read, the softened signal carries information about the world, and every round of feedback moves a little of that world into you. It's still a one-way street, and the only real choice is who gets to be the teacher.
+
+Essays don't come with a compiler, so the sycophancy loop runs unchecked unless you build the reward model by hand. Read it like a stranger, check the claims, decide what "better" means before you ever see the output. A paragraph is never falsifiable. When the model's output gets checked against reality, you're augmented. When it gets checked against you, you're being distilled.
+
+I'm not pretending any of this is free. Bypassing the friction, the slow miserable part where you sit in your own mistakes, is how taste gets built, and an agent that hands you a competent version skips the whole thing. So I keep a line. There are things I let the agent own: the plumbing, the mechanical stuff. And there are things I force myself through: the design calls, the ones where nothing will catch me if I'm wrong. Those are what keep the taste alive.
+
+## The reward model is you
+
+You're being distilled, but you're also the reward model. The model you're training to please you is busy training you to prefer being pleased.
+
+Watch your own feedback. It's the only part of the loop you actually control.
