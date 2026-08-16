@@ -1,5 +1,11 @@
 const projectsData = [
   {
+    title: 'pwned-butter',
+    description:
+      "Is the Mumbai Butter Real? Live tracker of Maharashtra FDA food-safety enforcement — licence suspensions, raids, seals and seizures, built daily from news via Gemini Flash.",
+    href: 'https://pwned-butter.vercel.app',
+  },
+  {
     title: 'tokio-fsm',
     description: 'Compile-time validated, zero-overhead asynchronous finite state machines for Tokio. Features an attribute macro to generate state/event types and validate transition reachability at compile time.',
     imgSrc: '/static/images/pp/tokio-fsm.jpg',
