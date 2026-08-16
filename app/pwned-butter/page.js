@@ -27,7 +27,7 @@ export default function PwnedButter() {
           government body; use as a reference only.
         </p>
       </div>
-      <div className="flex flex-col h-[calc(100vh-14rem)] min-h-[28rem]">
+      <div className="w-screen mx-[calc(50%-50vw)] flex flex-col h-[calc(100vh-14rem)] min-h-[28rem]">
         <iframe
           src="https://pwned-butter.vercel.app"
           title="Is the Mumbai Butter Real?"
