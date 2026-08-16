@@ -3,7 +3,7 @@ const projectsData = [
     title: 'pwned-butter',
     description:
       "Is the Mumbai Butter Real? Live tracker of Maharashtra FDA food-safety enforcement — licence suspensions, raids, seals and seizures, built daily from news via Gemini Flash.",
-    href: 'https://pwned-butter.vercel.app',
+    href: '/pwned-butter',
   },
   {
     title: 'tokio-fsm',
