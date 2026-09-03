@@ -3,4 +3,4 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://abhishekshree.github.io/sitemap.xml
+Sitemap: https://abhishekshree.xyz/sitemap.xml

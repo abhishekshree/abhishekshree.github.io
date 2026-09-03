@@ -4,7 +4,7 @@ const projectsData = [
     description:
       "Is the Mumbai Butter Real? Live tracker of Maharashtra FDA food-safety enforcement — licence suspensions, raids, seals and seizures, built daily from news via Gemini Flash.",
     imgSrc: '/static/images/pp/pwned-butter.svg',
-    href: '/pwned-butter',
+    href: 'https://fda.abhishekshree.xyz',
   },
   {
     title: 'tokio-fsm',
