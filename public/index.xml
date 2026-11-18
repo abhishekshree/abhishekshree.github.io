@@ -2,19 +2,29 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
         <title>Abhishek Shree</title>
-        <link>https://abhishekshree.github.io/</link>
+        <link>https://abhishekshree.xyz/</link>
         <description>I am an undergraduate at Indian Institute of Technology, Kanpur. Also I try to blog about the amazing stuff I come across.</description>
-        <lastBuildDate>Sun, 21 Jun 2026 00:00:00 GMT</lastBuildDate>
+        <lastBuildDate>Wed, 18 Nov 2026 00:00:00 GMT</lastBuildDate>
         <docs>https://validator.w3.org/feed/docs/rss2.html</docs>
         <generator>https://github.com/jpmonette/feed</generator>
         <managingEditor>abhishek.shree@outlook.com (Abhishek Shree)</managingEditor>
         <webMaster>abhishek.shree@outlook.com (Abhishek Shree)</webMaster>
         <language>en-us</language>
-        <atom:link href="https://abhishekshree.github.io/index.xml" rel="self" type="application/rss+xml"/>
+        <atom:link href="https://abhishekshree.xyz/index.xml" rel="self" type="application/rss+xml"/>
+        <item>
+            <title><![CDATA[Anthropic is a public benefit for 7 people]]></title>
+            <link>https://abhishekshree.xyz/blog/anthropic-founder-llc</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/anthropic-founder-llc</guid>
+            <pubDate>Wed, 18 Nov 2026 00:00:00 GMT</pubDate>
+            <description><![CDATA[Anthropic's structure in plain terms, and the loop that keeps the founders in charge.]]></description>
+            <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
+            <category>ai</category>
+            <category>governance</category>
+        </item>
         <item>
             <title><![CDATA[Vibe code to hell]]></title>
-            <link>https://abhishekshree.github.io/blog/we-vibe-coded-to-hell</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/we-vibe-coded-to-hell</guid>
+            <link>https://abhishekshree.xyz/blog/we-vibe-coded-to-hell</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/we-vibe-coded-to-hell</guid>
             <pubDate>Sun, 21 Jun 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Yeah I think this is the time to read code]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -23,8 +33,8 @@
         </item>
         <item>
             <title><![CDATA[Cybersecurity needs a new definition?]]></title>
-            <link>https://abhishekshree.github.io/blog/cybersecurity-needs-a-new-definition</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/cybersecurity-needs-a-new-definition</guid>
+            <link>https://abhishekshree.xyz/blog/cybersecurity-needs-a-new-definition</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/cybersecurity-needs-a-new-definition</guid>
             <pubDate>Thu, 16 Apr 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Pay to win game now.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -35,8 +45,8 @@
         </item>
         <item>
             <title><![CDATA[TIL - Non-blocking Tokio select! loops]]></title>
-            <link>https://abhishekshree.github.io/blog/til-tokio-select-dispatch</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/til-tokio-select-dispatch</guid>
+            <link>https://abhishekshree.xyz/blog/til-tokio-select-dispatch</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/til-tokio-select-dispatch</guid>
             <pubDate>Wed, 15 Apr 2026 00:00:00 GMT</pubDate>
             <description><![CDATA[Slingshot tokio select loops.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -47,8 +57,8 @@
         </item>
         <item>
             <title><![CDATA[Kubernetes, EKS and some Karpenter(y)]]></title>
-            <link>https://abhishekshree.github.io/blog/kubernetes-a-primer</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/kubernetes-a-primer</guid>
+            <link>https://abhishekshree.xyz/blog/kubernetes-a-primer</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/kubernetes-a-primer</guid>
             <pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[From container chaos to cluster harmony - understanding K8s, EKS flavors, and why Karpenter even exists.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -60,8 +70,8 @@
         </item>
         <item>
             <title><![CDATA[Kubernetes and ROS are surprisingly similar]]></title>
-            <link>https://abhishekshree.github.io/blog/ros-and-k8s</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/ros-and-k8s</guid>
+            <link>https://abhishekshree.xyz/blog/ros-and-k8s</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/ros-and-k8s</guid>
             <pubDate>Sun, 29 Jun 2025 00:00:00 GMT</pubDate>
             <description><![CDATA[Why learning ROS made Kubernetes click for me.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -71,8 +81,8 @@
         </item>
         <item>
             <title><![CDATA[Endnotes]]></title>
-            <link>https://abhishekshree.github.io/blog/endnotes</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/endnotes</guid>
+            <link>https://abhishekshree.xyz/blog/endnotes</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/endnotes</guid>
             <pubDate>Sun, 09 Jun 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[My take as I leave?]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -80,8 +90,8 @@
         </item>
         <item>
             <title><![CDATA[Guide for spending midsem breaks]]></title>
-            <link>https://abhishekshree.github.io/blog/guide-for-spending-midsem-breaks</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/guide-for-spending-midsem-breaks</guid>
+            <link>https://abhishekshree.xyz/blog/guide-for-spending-midsem-breaks</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/guide-for-spending-midsem-breaks</guid>
             <pubDate>Thu, 06 Jun 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[A story of all the chaos I created in the past years]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -90,8 +100,8 @@
         </item>
         <item>
             <title><![CDATA[How to not build servers]]></title>
-            <link>https://abhishekshree.github.io/blog/how-to-not-build-servers</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/how-to-not-build-servers</guid>
+            <link>https://abhishekshree.xyz/blog/how-to-not-build-servers</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/how-to-not-build-servers</guid>
             <pubDate>Sat, 02 Mar 2024 00:00:00 GMT</pubDate>
             <description><![CDATA[Why you should appreciate what already exists before disrupting it.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -101,8 +111,8 @@
         </item>
         <item>
             <title><![CDATA[Engineering RAS - Next bits]]></title>
-            <link>https://abhishekshree.github.io/blog/engineering-ras-next-bits</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/engineering-ras-next-bits</guid>
+            <link>https://abhishekshree.xyz/blog/engineering-ras-next-bits</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/engineering-ras-next-bits</guid>
             <pubDate>Mon, 18 Dec 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Answering some of the questions, and some more thoughts.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -113,8 +123,8 @@
         </item>
         <item>
             <title><![CDATA[Lightweight threads and concurrency]]></title>
-            <link>https://abhishekshree.github.io/blog/goroutines</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/goroutines</guid>
+            <link>https://abhishekshree.xyz/blog/goroutines</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/goroutines</guid>
             <pubDate>Sat, 14 Oct 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[A bit about what goroutines actually are.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -123,8 +133,8 @@
         </item>
         <item>
             <title><![CDATA[Could it be any wiser?]]></title>
-            <link>https://abhishekshree.github.io/blog/could-it-be-any-wiser</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/could-it-be-any-wiser</guid>
+            <link>https://abhishekshree.xyz/blog/could-it-be-any-wiser</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/could-it-be-any-wiser</guid>
             <pubDate>Tue, 11 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[A word for everyone who is here measuring work quality.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -132,16 +142,16 @@
         </item>
         <item>
             <title><![CDATA[Generics and code correctness]]></title>
-            <link>https://abhishekshree.github.io/blog/generics-and-code-correctness</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/generics-and-code-correctness</guid>
+            <link>https://abhishekshree.xyz/blog/generics-and-code-correctness</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/generics-and-code-correctness</guid>
             <pubDate>Wed, 05 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Summarizing how generics and abstractions help in explainability of code]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
         </item>
         <item>
             <title><![CDATA[TIL - Binaries are weird]]></title>
-            <link>https://abhishekshree.github.io/blog/tilbinaries</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/tilbinaries</guid>
+            <link>https://abhishekshree.xyz/blog/tilbinaries</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/tilbinaries</guid>
             <pubDate>Tue, 04 Jul 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[Wanted to know why are binaries for the same program of variable size and what optimizations follow.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -151,8 +161,8 @@
         </item>
         <item>
             <title><![CDATA[How can my app actually work?]]></title>
-            <link>https://abhishekshree.github.io/blog/backend101</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/backend101</guid>
+            <link>https://abhishekshree.xyz/blog/backend101</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/backend101</guid>
             <pubDate>Mon, 02 Jan 2023 00:00:00 GMT</pubDate>
             <description><![CDATA[A summary of learnings and failings and the loop.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -163,8 +173,8 @@
         </item>
         <item>
             <title><![CDATA[Don't like Rust? Use some CLI tools written in it once]]></title>
-            <link>https://abhishekshree.github.io/blog/dont-like-rust-use-some-cli-tools-written-in-it-once</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/dont-like-rust-use-some-cli-tools-written-in-it-once</guid>
+            <link>https://abhishekshree.xyz/blog/dont-like-rust-use-some-cli-tools-written-in-it-once</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/dont-like-rust-use-some-cli-tools-written-in-it-once</guid>
             <pubDate>Fri, 14 Oct 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[🦀 appreciation era]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -174,8 +184,8 @@
         </item>
         <item>
             <title><![CDATA[Engineering the Recruitment Automation System]]></title>
-            <link>https://abhishekshree.github.io/blog/engineering-ras</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/engineering-ras</guid>
+            <link>https://abhishekshree.xyz/blog/engineering-ras</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/engineering-ras</guid>
             <pubDate>Sat, 02 Jul 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Discussed the design and implementational complexity behind the new Recruitment Automation System.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -186,8 +196,8 @@
         </item>
         <item>
             <title><![CDATA[ROS - A Primer]]></title>
-            <link>https://abhishekshree.github.io/blog/ros-a-primer</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/ros-a-primer</guid>
+            <link>https://abhishekshree.xyz/blog/ros-a-primer</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/ros-a-primer</guid>
             <pubDate>Tue, 28 Jun 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Discussed the essentials of ROS for a smoother learning curve.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -196,8 +206,8 @@
         </item>
         <item>
             <title><![CDATA[TIL - The case with Uber Eats]]></title>
-            <link>https://abhishekshree.github.io/blog/tiluber-eats</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/tiluber-eats</guid>
+            <link>https://abhishekshree.xyz/blog/tiluber-eats</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/tiluber-eats</guid>
             <pubDate>Fri, 29 Apr 2022 00:00:00 GMT</pubDate>
             <description><![CDATA[Do not change variables arbitrarily]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -208,8 +218,8 @@
         </item>
         <item>
             <title><![CDATA[TIL - Github and ASCIIbetically sorted folders]]></title>
-            <link>https://abhishekshree.github.io/blog/til-git-folders</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/til-git-folders</guid>
+            <link>https://abhishekshree.xyz/blog/til-git-folders</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/til-git-folders</guid>
             <pubDate>Mon, 13 Dec 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Weirdly sorted oof!]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -220,8 +230,8 @@
         </item>
         <item>
             <title><![CDATA[Lambda Calculus and all the fuzz around it]]></title>
-            <link>https://abhishekshree.github.io/blog/lambda-calculus</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/lambda-calculus</guid>
+            <link>https://abhishekshree.xyz/blog/lambda-calculus</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/lambda-calculus</guid>
             <pubDate>Fri, 05 Nov 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[Wait, you're saying that I have to generate numbers from functions?]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -231,8 +241,8 @@
         </item>
         <item>
             <title><![CDATA[Life update - Travelling post/amidst(?) pandemic]]></title>
-            <link>https://abhishekshree.github.io/blog/life-update-travelling-postamidst-pandemic</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/life-update-travelling-postamidst-pandemic</guid>
+            <link>https://abhishekshree.xyz/blog/life-update-travelling-postamidst-pandemic</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/life-update-travelling-postamidst-pandemic</guid>
             <pubDate>Mon, 02 Aug 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[The one where everyone meets in Jaipur.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -242,8 +252,8 @@
         </item>
         <item>
             <title><![CDATA[TIL - How to tranfer storage space between Operating Systems]]></title>
-            <link>https://abhishekshree.github.io/blog/til-how-to-tranfer-storage-space-between-operating-systems</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/til-how-to-tranfer-storage-space-between-operating-systems</guid>
+            <link>https://abhishekshree.xyz/blog/til-how-to-tranfer-storage-space-between-operating-systems</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/til-how-to-tranfer-storage-space-between-operating-systems</guid>
             <pubDate>Thu, 15 Jul 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[How to move X space to some Y place on disk, and vice versa.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -253,8 +263,8 @@
         </item>
         <item>
             <title><![CDATA[About vim and building a basic .vimrc]]></title>
-            <link>https://abhishekshree.github.io/blog/building-a-basic-vimrc</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/building-a-basic-vimrc</guid>
+            <link>https://abhishekshree.xyz/blog/building-a-basic-vimrc</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/building-a-basic-vimrc</guid>
             <pubDate>Mon, 01 Mar 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[This is a blog about vim and what a basic vimrc should contain, also a reminder for me on how I set up my .vimrc]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -266,8 +276,8 @@
         </item>
         <item>
             <title><![CDATA[Revision Resources]]></title>
-            <link>https://abhishekshree.github.io/blog/revision-resources</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/revision-resources</guid>
+            <link>https://abhishekshree.xyz/blog/revision-resources</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/revision-resources</guid>
             <pubDate>Sat, 20 Feb 2021 00:00:00 GMT</pubDate>
             <description><![CDATA[A list of helpful resources.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>
@@ -277,8 +287,8 @@
         </item>
         <item>
             <title><![CDATA[Markdown Guide]]></title>
-            <link>https://abhishekshree.github.io/blog/github-markdown-guide</link>
-            <guid isPermaLink="false">https://abhishekshree.github.io/blog/github-markdown-guide</guid>
+            <link>https://abhishekshree.xyz/blog/github-markdown-guide</link>
+            <guid isPermaLink="false">https://abhishekshree.xyz/blog/github-markdown-guide</guid>
             <pubDate>Fri, 11 Oct 2019 00:00:00 GMT</pubDate>
             <description><![CDATA[Markdown cheatsheet for all your blogging needs - headers, lists, images, tables and more! An illustrated guide based on Github Flavored Markdown.]]></description>
             <author>abhishek.shree@outlook.com (Abhishek Shree)</author>

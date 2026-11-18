@@ -241,3 +241,8 @@ html {
 .blog-card:hover .arrow-slide {
   transform: translateX(3px);
 }
+/* Mermaid diagrams are sized by the renderer; keep them inside the column */
+.mermaid svg {
+  max-width: 100%;
+  height: auto;
+}
